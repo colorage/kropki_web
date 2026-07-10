@@ -37,6 +37,8 @@ const lengthFormatter = new Intl.NumberFormat("en", {
   maximumFractionDigits: 2,
 });
 
+const STORAGE_KEY = "roofRibbonCalculator";
+
 const inputs = {
   a: document.getElementById("sideA"),
   b: document.getElementById("sideB"),
@@ -45,6 +47,35 @@ const inputs = {
   ribbonCount: document.getElementById("ribbonCount"),
   sagRatio: document.getElementById("sagRatio"),
 };
+
+function loadSavedInputs() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+
+    const saved = JSON.parse(raw);
+    for (const [key, input] of Object.entries(inputs)) {
+      if (saved[key] != null) {
+        input.value = saved[key];
+      }
+    }
+  } catch {
+    // Ignore corrupt or unavailable storage.
+  }
+}
+
+function saveInputs() {
+  const data = {};
+  for (const [key, input] of Object.entries(inputs)) {
+    data[key] = input.value;
+  }
+
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  } catch {
+    // Ignore quota or privacy-mode errors.
+  }
+}
 
 const sagRatioValue = document.getElementById("sagRatioValue");
 const warningBanner = document.getElementById("warningBanner");
@@ -100,6 +131,7 @@ function renderSummary(result) {
 
 function update() {
   sagRatioValue.textContent = `${inputs.sagRatio.value}%`;
+  saveInputs();
 
   const params = readInputs();
   const errors = validateInputs(params);
@@ -193,4 +225,5 @@ for (const input of Object.values(inputs)) {
   input.addEventListener("input", update);
 }
 
+loadSavedInputs();
 update();
