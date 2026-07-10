@@ -46,11 +46,15 @@ function wallChordDistance(p1, p2) {
   return Math.hypot(p1.x - p2.x, p1.y - p2.y);
 }
 
+const PERIMETER_EPS = 1e-9;
+
 function perimeterDistanceFromPoint(a, b, x, y) {
-  if (y === 0) return x;
-  if (x === a) return a + y;
-  if (y === b) return a + b + (a - x);
-  return 2 * a + b + (b - y);
+  if (Math.abs(y) < PERIMETER_EPS) return Math.max(0, Math.min(a, x));
+  if (Math.abs(x - a) < PERIMETER_EPS) return a + Math.max(0, Math.min(b, y));
+  if (Math.abs(y - b) < PERIMETER_EPS) {
+    return a + b + (a - Math.max(0, Math.min(a, x)));
+  }
+  return 2 * a + b + (b - Math.max(0, Math.min(b, y)));
 }
 
 function pointFromCenterAngle(a, b, angle) {
