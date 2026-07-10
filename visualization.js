@@ -330,14 +330,10 @@ function renderSchematic(container, result) {
   frontSlot.appendChild(frontSvg);
 
   const sideSlot = document.createElement("div");
-  sideSlot.className = "view-slot view-slot-wide";
+  sideSlot.className = "view-slot";
   sideSlot.appendChild(sideSvg);
 
-  const topRow = document.createElement("div");
-  topRow.className = "views-row";
-  topRow.append(topSlot, frontSlot);
-
-  container.append(topRow, sideSlot);
+  container.append(topSlot, frontSlot, sideSlot);
 }
 
 export { renderSchematic };
