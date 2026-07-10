@@ -138,11 +138,11 @@ function drawTopView(result) {
 
     group.appendChild(
       textEl(labelX, labelY, String(ribbon.index), {
-        "font-size": 9,
+        "font-size": 7,
         "font-weight": "bold",
         fill: "#1e40af",
         stroke: "#ffffff",
-        "stroke-width": 2.5,
+        "stroke-width": 2,
         "paint-order": "stroke",
       })
     );
