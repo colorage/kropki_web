@@ -46,6 +46,15 @@ function fitBox(modelWidth, modelHeight, padding = 24) {
   };
 }
 
+// Keep marker size consistent across views when SVGs scale to the same slot height.
+const MARKER_REF_VIEWBOX_HEIGHT = 150;
+const MARKER_DOT_R = 3;
+const MARKER_PEAK_R = 4;
+
+function markerRadius(viewBoxHeight, baseRadius) {
+  return baseRadius * (viewBoxHeight / MARKER_REF_VIEWBOX_HEIGHT);
+}
+
 function drawTopView(result) {
   const { a, b, ribbons } = result;
   const maxDim = Math.max(a, b);
@@ -117,6 +126,9 @@ function drawTopView(result) {
   const centerX = a / 2;
   const centerY = b / 2;
 
+  const dotR = markerRadius(box.height, MARKER_DOT_R);
+  const peakR = markerRadius(box.height, MARKER_PEAK_R);
+
   for (const ribbon of ribbons) {
     const cx = mapX(ribbon.x);
     const cy = mapY(ribbon.y);
@@ -125,7 +137,7 @@ function drawTopView(result) {
       el("circle", {
         cx,
         cy,
-        r: 3,
+        r: dotR,
         fill: "#2563eb",
       })
     );
@@ -148,7 +160,7 @@ function drawTopView(result) {
     );
   }
 
-  group.appendChild(el("circle", { cx: peakX, cy: peakY, r: 4, fill: "#dc2626" }));
+  group.appendChild(el("circle", { cx: peakX, cy: peakY, r: peakR, fill: "#dc2626" }));
 
   group.appendChild(textEl((mapX(0) + mapX(a)) / 2, mapY(-0.35), `a = ${result.a} m`));
   group.appendChild(
@@ -203,6 +215,9 @@ function drawFrontElevation(result) {
   const peakX = mapX(a / 2);
   const peakY = mapY(hWall + hRise);
 
+  const dotR = markerRadius(box.height, MARKER_DOT_R);
+  const peakR = markerRadius(box.height, MARKER_PEAK_R);
+
   const frontRibbons = ribbons.filter((ribbon) => ribbon.side === "front");
   for (const ribbon of frontRibbons) {
     const endX = mapX(ribbon.x);
@@ -217,10 +232,10 @@ function drawFrontElevation(result) {
         opacity: 0.85,
       })
     );
-    group.appendChild(el("circle", { cx: endX, cy: endY, r: 3, fill: "#2563eb" }));
+    group.appendChild(el("circle", { cx: endX, cy: endY, r: dotR, fill: "#2563eb" }));
   }
 
-  group.appendChild(el("circle", { cx: peakX, cy: peakY, r: 4, fill: "#dc2626" }));
+  group.appendChild(el("circle", { cx: peakX, cy: peakY, r: peakR, fill: "#dc2626" }));
   group.appendChild(textEl((mapX(0) + mapX(a)) / 2, mapY(hWall + hRise) - 10, "Front gable"));
 
   return svg;
@@ -268,6 +283,9 @@ function drawSideElevation(result) {
   const peakX = mapX(b / 2);
   const peakY = mapY(hWall + hRise);
 
+  const dotR = markerRadius(box.height, MARKER_DOT_R);
+  const peakR = markerRadius(box.height, MARKER_PEAK_R);
+
   const sideRibbons = ribbons.filter((ribbon) => ribbon.side === "right" || ribbon.side === "left");
   for (const ribbon of sideRibbons) {
     const endX = mapX(ribbon.y);
@@ -282,10 +300,10 @@ function drawSideElevation(result) {
         opacity: 0.85,
       })
     );
-    group.appendChild(el("circle", { cx: endX, cy: endY, r: 3, fill: "#7c3aed" }));
+    group.appendChild(el("circle", { cx: endX, cy: endY, r: dotR, fill: "#7c3aed" }));
   }
 
-  group.appendChild(el("circle", { cx: peakX, cy: peakY, r: 4, fill: "#dc2626" }));
+  group.appendChild(el("circle", { cx: peakX, cy: peakY, r: peakR, fill: "#dc2626" }));
   group.appendChild(textEl((mapX(0) + mapX(b)) / 2, mapY(hWall + hRise) - 10, "Side elevation"));
 
   return svg;
