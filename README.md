@@ -6,7 +6,7 @@ Static interactive map of historic buildings in **Mahilioŭ (Магілёў)** f
 - Data imported from a Notion HTML/CSV export
 - Pin icons by building type and preservation status
 
-**Live:** https://colorage.github.io/kropki_web/
+**Live:** https://kropki.siaroza.com/
 
 ## GitHub Pages setup (important)
 
@@ -26,7 +26,7 @@ npm run dev
 
 `npm run dev` restores `index.source.html` → `index.html` for Vite.
 
-Open http://localhost:5173/kropki_web/
+Open http://localhost:5173/
 
 ## Import from Notion
 
