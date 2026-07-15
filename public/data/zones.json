@@ -6,26 +6,1736 @@
       {
         "lat": 53.887898257994,
         "lon": 30.337217563734,
-        "order": 1,
-        "connected": false
-      },
-      {
-        "lat": 53.8885,
-        "lon": 30.338,
-        "order": 2,
-        "connected": false
-      },
-      {
-        "lat": 53.8875,
-        "lon": 30.339,
         "order": 3,
         "connected": false
-      },
+      }
+    ]
+  },
+  {
+    "id": "I",
+    "name": "I",
+    "points": [
       {
-        "lat": 53.887,
-        "lon": 30.3375,
+        "lat": 53.893799539172,
+        "lon": 30.327711788387,
+        "order": 1,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "II",
+    "name": "II",
+    "points": [
+      {
+        "lat": 53.898742524556,
+        "lon": 30.336456440069,
+        "order": 2,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "III-2",
+    "name": "III-2",
+    "points": [
+      {
+        "lat": 53.890941630887,
+        "lon": 30.345506894368,
         "order": 4,
         "connected": false
+      }
+    ]
+  },
+  {
+    "id": "III-3",
+    "name": "III-3",
+    "points": [
+      {
+        "lat": 53.894087218141,
+        "lon": 30.342105113511,
+        "order": 5,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "III-4",
+    "name": "III-4",
+    "points": [
+      {
+        "lat": 53.893647173977,
+        "lon": 30.354412114307,
+        "order": 6,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "IV",
+    "name": "IV",
+    "points": [
+      {
+        "lat": 53.894496227409,
+        "lon": 30.32275495866,
+        "order": 7,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "V",
+    "name": "V",
+    "points": [
+      {
+        "lat": 53.902121712247,
+        "lon": 30.325769285419,
+        "order": 8,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "VI",
+    "name": "VI",
+    "points": [
+      {
+        "lat": 53.885550404386,
+        "lon": 30.328808176347,
+        "order": 9,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "zone",
+    "name": "zone",
+    "points": [
+      {
+        "lat": 53.8948069,
+        "lon": 30.3292864,
+        "order": 10,
+        "connected": false
+      },
+      {
+        "lat": 53.8944497,
+        "lon": 30.3296404,
+        "order": 11,
+        "connected": true
+      },
+      {
+        "lat": 53.8937637,
+        "lon": 30.3294365,
+        "order": 12,
+        "connected": true
+      },
+      {
+        "lat": 53.8934539,
+        "lon": 30.3286855,
+        "order": 13,
+        "connected": true
+      },
+      {
+        "lat": 53.8932516,
+        "lon": 30.3268402,
+        "order": 14,
+        "connected": true
+      },
+      {
+        "lat": 53.8935614,
+        "lon": 30.3264539,
+        "order": 15,
+        "connected": true
+      },
+      {
+        "lat": 53.893985,
+        "lon": 30.3265612,
+        "order": 16,
+        "connected": true
+      },
+      {
+        "lat": 53.8944592,
+        "lon": 30.3276126,
+        "order": 17,
+        "connected": true
+      },
+      {
+        "lat": 53.8949017,
+        "lon": 30.3281706,
+        "order": 18,
+        "connected": true
+      },
+      {
+        "lat": 53.8948069,
+        "lon": 30.3292864,
+        "order": 19,
+        "connected": true
+      },
+      {
+        "lat": 53.8946051,
+        "lon": 30.3271215,
+        "order": 20,
+        "connected": false
+      },
+      {
+        "lat": 53.8946999,
+        "lon": 30.3272824,
+        "order": 21,
+        "connected": true
+      },
+      {
+        "lat": 53.8950103,
+        "lon": 30.3276549,
+        "order": 22,
+        "connected": true
+      },
+      {
+        "lat": 53.8953333,
+        "lon": 30.3278128,
+        "order": 23,
+        "connected": true
+      },
+      {
+        "lat": 53.8957269,
+        "lon": 30.3277232,
+        "order": 24,
+        "connected": true
+      },
+      {
+        "lat": 53.896268,
+        "lon": 30.3274418,
+        "order": 25,
+        "connected": true
+      },
+      {
+        "lat": 53.8965069,
+        "lon": 30.3278376,
+        "order": 26,
+        "connected": true
+      },
+      {
+        "lat": 53.8970689,
+        "lon": 30.3281749,
+        "order": 27,
+        "connected": true
+      },
+      {
+        "lat": 53.897508,
+        "lon": 30.3280432,
+        "order": 28,
+        "connected": true
+      },
+      {
+        "lat": 53.8978919,
+        "lon": 30.3276554,
+        "order": 29,
+        "connected": true
+      },
+      {
+        "lat": 53.8992746,
+        "lon": 30.3269351,
+        "order": 30,
+        "connected": true
+      },
+      {
+        "lat": 53.8998442,
+        "lon": 30.32763,
+        "order": 31,
+        "connected": true
+      },
+      {
+        "lat": 53.9000406,
+        "lon": 30.3285139,
+        "order": 32,
+        "connected": true
+      },
+      {
+        "lat": 53.9004358,
+        "lon": 30.329267,
+        "order": 33,
+        "connected": true
+      },
+      {
+        "lat": 53.9018661,
+        "lon": 30.3304161,
+        "order": 34,
+        "connected": true
+      },
+      {
+        "lat": 53.9031636,
+        "lon": 30.3313721,
+        "order": 35,
+        "connected": true
+      },
+      {
+        "lat": 53.9038448,
+        "lon": 30.3312063,
+        "order": 36,
+        "connected": true
+      },
+      {
+        "lat": 53.9048491,
+        "lon": 30.3315312,
+        "order": 37,
+        "connected": true
+      },
+      {
+        "lat": 53.9057396,
+        "lon": 30.3314483,
+        "order": 38,
+        "connected": true
+      },
+      {
+        "lat": 53.907083,
+        "lon": 30.3336063,
+        "order": 39,
+        "connected": true
+      },
+      {
+        "lat": 53.9077546,
+        "lon": 30.3350716,
+        "order": 40,
+        "connected": true
+      },
+      {
+        "lat": 53.907769,
+        "lon": 30.3361078,
+        "order": 41,
+        "connected": true
+      },
+      {
+        "lat": 53.9063668,
+        "lon": 30.3390754,
+        "order": 42,
+        "connected": true
+      },
+      {
+        "lat": 53.9049275,
+        "lon": 30.3383157,
+        "order": 43,
+        "connected": true
+      },
+      {
+        "lat": 53.9032367,
+        "lon": 30.3389848,
+        "order": 44,
+        "connected": true
+      },
+      {
+        "lat": 53.899197,
+        "lon": 30.3457302,
+        "order": 45,
+        "connected": true
+      },
+      {
+        "lat": 53.899443,
+        "lon": 30.3469396,
+        "order": 46,
+        "connected": true
+      },
+      {
+        "lat": 53.8994614,
+        "lon": 30.3480632,
+        "order": 47,
+        "connected": true
+      },
+      {
+        "lat": 53.8991581,
+        "lon": 30.3489605,
+        "order": 48,
+        "connected": true
+      },
+      {
+        "lat": 53.8980708,
+        "lon": 30.3492998,
+        "order": 49,
+        "connected": true
+      },
+      {
+        "lat": 53.8972869,
+        "lon": 30.3500294,
+        "order": 50,
+        "connected": true
+      },
+      {
+        "lat": 53.8969811,
+        "lon": 30.3493383,
+        "order": 51,
+        "connected": true
+      },
+      {
+        "lat": 53.895919,
+        "lon": 30.3477933,
+        "order": 52,
+        "connected": true
+      },
+      {
+        "lat": 53.895919,
+        "lon": 30.3443601,
+        "order": 53,
+        "connected": true
+      },
+      {
+        "lat": 53.8949075,
+        "lon": 30.3385236,
+        "order": 54,
+        "connected": true
+      },
+      {
+        "lat": 53.8938454,
+        "lon": 30.3351762,
+        "order": 55,
+        "connected": true
+      },
+      {
+        "lat": 53.8932384,
+        "lon": 30.331743,
+        "order": 56,
+        "connected": true
+      },
+      {
+        "lat": 53.8927326,
+        "lon": 30.3299405,
+        "order": 57,
+        "connected": true
+      },
+      {
+        "lat": 53.8926704,
+        "lon": 30.3287201,
+        "order": 58,
+        "connected": true
+      },
+      {
+        "lat": 53.8927337,
+        "lon": 30.3280227,
+        "order": 59,
+        "connected": true
+      },
+      {
+        "lat": 53.8926704,
+        "lon": 30.3269391,
+        "order": 60,
+        "connected": true
+      },
+      {
+        "lat": 53.8924997,
+        "lon": 30.3256838,
+        "order": 61,
+        "connected": true
+      },
+      {
+        "lat": 53.8923859,
+        "lon": 30.3251903,
+        "order": 62,
+        "connected": true
+      },
+      {
+        "lat": 53.8920761,
+        "lon": 30.3247826,
+        "order": 63,
+        "connected": true
+      },
+      {
+        "lat": 53.8918801,
+        "lon": 30.3242891,
+        "order": 64,
+        "connected": true
+      },
+      {
+        "lat": 53.8921646,
+        "lon": 30.3242998,
+        "order": 65,
+        "connected": true
+      },
+      {
+        "lat": 53.8928475,
+        "lon": 30.3242462,
+        "order": 66,
+        "connected": true
+      },
+      {
+        "lat": 53.8931486,
+        "lon": 30.3242461,
+        "order": 67,
+        "connected": true
+      },
+      {
+        "lat": 53.8934434,
+        "lon": 30.3243427,
+        "order": 68,
+        "connected": true
+      },
+      {
+        "lat": 53.8940961,
+        "lon": 30.3247397,
+        "order": 69,
+        "connected": true
+      },
+      {
+        "lat": 53.8943441,
+        "lon": 30.3249395,
+        "order": 70,
+        "connected": true
+      },
+      {
+        "lat": 53.8945794,
+        "lon": 30.3252895,
+        "order": 71,
+        "connected": true
+      },
+      {
+        "lat": 53.8947104,
+        "lon": 30.3257254,
+        "order": 72,
+        "connected": true
+      },
+      {
+        "lat": 53.8946833,
+        "lon": 30.3261183,
+        "order": 73,
+        "connected": true
+      },
+      {
+        "lat": 53.8945466,
+        "lon": 30.326703,
+        "order": 74,
+        "connected": true
+      },
+      {
+        "lat": 53.8945577,
+        "lon": 30.3269713,
+        "order": 75,
+        "connected": true
+      },
+      {
+        "lat": 53.8946051,
+        "lon": 30.3271215,
+        "order": 76,
+        "connected": true
+      },
+      {
+        "lat": 53.8946051,
+        "lon": 30.3271215,
+        "order": 77,
+        "connected": false
+      },
+      {
+        "lat": 53.8946999,
+        "lon": 30.3272824,
+        "order": 78,
+        "connected": true
+      },
+      {
+        "lat": 53.8950103,
+        "lon": 30.3276549,
+        "order": 79,
+        "connected": true
+      },
+      {
+        "lat": 53.8953333,
+        "lon": 30.3278128,
+        "order": 80,
+        "connected": true
+      },
+      {
+        "lat": 53.8957269,
+        "lon": 30.3277232,
+        "order": 81,
+        "connected": true
+      },
+      {
+        "lat": 53.896268,
+        "lon": 30.3274418,
+        "order": 82,
+        "connected": true
+      },
+      {
+        "lat": 53.8965069,
+        "lon": 30.3278376,
+        "order": 83,
+        "connected": true
+      },
+      {
+        "lat": 53.8970689,
+        "lon": 30.3281749,
+        "order": 84,
+        "connected": true
+      },
+      {
+        "lat": 53.897508,
+        "lon": 30.3280432,
+        "order": 85,
+        "connected": true
+      },
+      {
+        "lat": 53.8978919,
+        "lon": 30.3276554,
+        "order": 86,
+        "connected": true
+      },
+      {
+        "lat": 53.8992746,
+        "lon": 30.3269351,
+        "order": 87,
+        "connected": true
+      },
+      {
+        "lat": 53.8998442,
+        "lon": 30.32763,
+        "order": 88,
+        "connected": true
+      },
+      {
+        "lat": 53.9000406,
+        "lon": 30.3285139,
+        "order": 89,
+        "connected": true
+      },
+      {
+        "lat": 53.9004358,
+        "lon": 30.329267,
+        "order": 90,
+        "connected": true
+      },
+      {
+        "lat": 53.9018661,
+        "lon": 30.3304161,
+        "order": 91,
+        "connected": true
+      },
+      {
+        "lat": 53.9031636,
+        "lon": 30.3313721,
+        "order": 92,
+        "connected": true
+      },
+      {
+        "lat": 53.9038448,
+        "lon": 30.3312063,
+        "order": 93,
+        "connected": true
+      },
+      {
+        "lat": 53.9048491,
+        "lon": 30.3315312,
+        "order": 94,
+        "connected": true
+      },
+      {
+        "lat": 53.9057396,
+        "lon": 30.3314483,
+        "order": 95,
+        "connected": true
+      },
+      {
+        "lat": 53.907083,
+        "lon": 30.3336063,
+        "order": 96,
+        "connected": true
+      },
+      {
+        "lat": 53.9077546,
+        "lon": 30.3350716,
+        "order": 97,
+        "connected": true
+      },
+      {
+        "lat": 53.907769,
+        "lon": 30.3361078,
+        "order": 98,
+        "connected": true
+      },
+      {
+        "lat": 53.9063668,
+        "lon": 30.3390754,
+        "order": 99,
+        "connected": true
+      },
+      {
+        "lat": 53.9049275,
+        "lon": 30.3383157,
+        "order": 100,
+        "connected": true
+      },
+      {
+        "lat": 53.9032367,
+        "lon": 30.3389848,
+        "order": 101,
+        "connected": true
+      },
+      {
+        "lat": 53.899197,
+        "lon": 30.3457302,
+        "order": 102,
+        "connected": true
+      },
+      {
+        "lat": 53.899443,
+        "lon": 30.3469396,
+        "order": 103,
+        "connected": true
+      },
+      {
+        "lat": 53.8994614,
+        "lon": 30.3480632,
+        "order": 104,
+        "connected": true
+      },
+      {
+        "lat": 53.8991581,
+        "lon": 30.3489605,
+        "order": 105,
+        "connected": true
+      },
+      {
+        "lat": 53.8980708,
+        "lon": 30.3492998,
+        "order": 106,
+        "connected": true
+      },
+      {
+        "lat": 53.8972869,
+        "lon": 30.3500294,
+        "order": 107,
+        "connected": true
+      },
+      {
+        "lat": 53.8969811,
+        "lon": 30.3493383,
+        "order": 108,
+        "connected": true
+      },
+      {
+        "lat": 53.895919,
+        "lon": 30.3477933,
+        "order": 109,
+        "connected": true
+      },
+      {
+        "lat": 53.895919,
+        "lon": 30.3443601,
+        "order": 110,
+        "connected": true
+      },
+      {
+        "lat": 53.8949075,
+        "lon": 30.3385236,
+        "order": 111,
+        "connected": true
+      },
+      {
+        "lat": 53.8938454,
+        "lon": 30.3351762,
+        "order": 112,
+        "connected": true
+      },
+      {
+        "lat": 53.8932384,
+        "lon": 30.331743,
+        "order": 113,
+        "connected": true
+      },
+      {
+        "lat": 53.8927326,
+        "lon": 30.3299405,
+        "order": 114,
+        "connected": true
+      },
+      {
+        "lat": 53.8926704,
+        "lon": 30.3287201,
+        "order": 115,
+        "connected": true
+      },
+      {
+        "lat": 53.8927337,
+        "lon": 30.3280227,
+        "order": 116,
+        "connected": true
+      },
+      {
+        "lat": 53.8926704,
+        "lon": 30.3269391,
+        "order": 117,
+        "connected": true
+      },
+      {
+        "lat": 53.8924997,
+        "lon": 30.3256838,
+        "order": 118,
+        "connected": true
+      },
+      {
+        "lat": 53.8923859,
+        "lon": 30.3251903,
+        "order": 119,
+        "connected": true
+      },
+      {
+        "lat": 53.8920761,
+        "lon": 30.3247826,
+        "order": 120,
+        "connected": true
+      },
+      {
+        "lat": 53.8918801,
+        "lon": 30.3242891,
+        "order": 121,
+        "connected": true
+      },
+      {
+        "lat": 53.8921646,
+        "lon": 30.3242998,
+        "order": 122,
+        "connected": true
+      },
+      {
+        "lat": 53.8928475,
+        "lon": 30.3242462,
+        "order": 123,
+        "connected": true
+      },
+      {
+        "lat": 53.8931486,
+        "lon": 30.3242461,
+        "order": 124,
+        "connected": true
+      },
+      {
+        "lat": 53.8934434,
+        "lon": 30.3243427,
+        "order": 125,
+        "connected": true
+      },
+      {
+        "lat": 53.8940961,
+        "lon": 30.3247397,
+        "order": 126,
+        "connected": true
+      },
+      {
+        "lat": 53.8943441,
+        "lon": 30.3249395,
+        "order": 127,
+        "connected": true
+      },
+      {
+        "lat": 53.8945794,
+        "lon": 30.3252895,
+        "order": 128,
+        "connected": true
+      },
+      {
+        "lat": 53.8947104,
+        "lon": 30.3257254,
+        "order": 129,
+        "connected": true
+      },
+      {
+        "lat": 53.8946833,
+        "lon": 30.3261183,
+        "order": 130,
+        "connected": true
+      },
+      {
+        "lat": 53.8945466,
+        "lon": 30.326703,
+        "order": 131,
+        "connected": true
+      },
+      {
+        "lat": 53.8945577,
+        "lon": 30.3269713,
+        "order": 132,
+        "connected": true
+      },
+      {
+        "lat": 53.8946051,
+        "lon": 30.3271215,
+        "order": 133,
+        "connected": true
+      },
+      {
+        "lat": 53.8927326,
+        "lon": 30.3299405,
+        "order": 134,
+        "connected": false
+      },
+      {
+        "lat": 53.8932384,
+        "lon": 30.331743,
+        "order": 135,
+        "connected": true
+      },
+      {
+        "lat": 53.8938454,
+        "lon": 30.3351762,
+        "order": 136,
+        "connected": true
+      },
+      {
+        "lat": 53.8949075,
+        "lon": 30.3385236,
+        "order": 137,
+        "connected": true
+      },
+      {
+        "lat": 53.895919,
+        "lon": 30.3443601,
+        "order": 138,
+        "connected": true
+      },
+      {
+        "lat": 53.895919,
+        "lon": 30.3477933,
+        "order": 139,
+        "connected": true
+      },
+      {
+        "lat": 53.8969811,
+        "lon": 30.3493383,
+        "order": 140,
+        "connected": true
+      },
+      {
+        "lat": 53.8958179,
+        "lon": 30.3510549,
+        "order": 141,
+        "connected": true
+      },
+      {
+        "lat": 53.8938959,
+        "lon": 30.3522565,
+        "order": 142,
+        "connected": true
+      },
+      {
+        "lat": 53.893643,
+        "lon": 30.3488233,
+        "order": 143,
+        "connected": true
+      },
+      {
+        "lat": 53.893643,
+        "lon": 30.3466775,
+        "order": 144,
+        "connected": true
+      },
+      {
+        "lat": 53.8927832,
+        "lon": 30.341871,
+        "order": 145,
+        "connected": true
+      },
+      {
+        "lat": 53.8910129,
+        "lon": 30.3344896,
+        "order": 146,
+        "connected": true
+      },
+      {
+        "lat": 53.8910129,
+        "lon": 30.3332021,
+        "order": 147,
+        "connected": true
+      },
+      {
+        "lat": 53.8917135,
+        "lon": 30.3325623,
+        "order": 148,
+        "connected": true
+      },
+      {
+        "lat": 53.8920929,
+        "lon": 30.3315323,
+        "order": 149,
+        "connected": true
+      },
+      {
+        "lat": 53.8923837,
+        "lon": 30.3308028,
+        "order": 150,
+        "connected": true
+      },
+      {
+        "lat": 53.8927326,
+        "lon": 30.3299405,
+        "order": 151,
+        "connected": true
+      },
+      {
+        "lat": 53.8900486,
+        "lon": 30.342835,
+        "order": 152,
+        "connected": false
+      },
+      {
+        "lat": 53.8927832,
+        "lon": 30.341871,
+        "order": 153,
+        "connected": true
+      },
+      {
+        "lat": 53.893643,
+        "lon": 30.3466775,
+        "order": 154,
+        "connected": true
+      },
+      {
+        "lat": 53.893643,
+        "lon": 30.3488233,
+        "order": 155,
+        "connected": true
+      },
+      {
+        "lat": 53.8891184,
+        "lon": 30.349214,
+        "order": 156,
+        "connected": true
+      },
+      {
+        "lat": 53.888,
+        "lon": 30.3437362,
+        "order": 157,
+        "connected": true
+      },
+      {
+        "lat": 53.8900486,
+        "lon": 30.342835,
+        "order": 158,
+        "connected": true
+      },
+      {
+        "lat": 53.8910129,
+        "lon": 30.3332021,
+        "order": 159,
+        "connected": false
+      },
+      {
+        "lat": 53.8910129,
+        "lon": 30.3344896,
+        "order": 160,
+        "connected": true
+      },
+      {
+        "lat": 53.8927832,
+        "lon": 30.341871,
+        "order": 161,
+        "connected": true
+      },
+      {
+        "lat": 53.8900486,
+        "lon": 30.342835,
+        "order": 162,
+        "connected": true
+      },
+      {
+        "lat": 53.888,
+        "lon": 30.3437362,
+        "order": 163,
+        "connected": true
+      },
+      {
+        "lat": 53.8871995,
+        "lon": 30.3427098,
+        "order": 164,
+        "connected": true
+      },
+      {
+        "lat": 53.8864723,
+        "lon": 30.3414975,
+        "order": 165,
+        "connected": true
+      },
+      {
+        "lat": 53.8858147,
+        "lon": 30.3401456,
+        "order": 166,
+        "connected": true
+      },
+      {
+        "lat": 53.8856503,
+        "lon": 30.3390406,
+        "order": 167,
+        "connected": true
+      },
+      {
+        "lat": 53.8856882,
+        "lon": 30.3377853,
+        "order": 168,
+        "connected": true
+      },
+      {
+        "lat": 53.8860549,
+        "lon": 30.3355322,
+        "order": 169,
+        "connected": true
+      },
+      {
+        "lat": 53.8869529,
+        "lon": 30.3339658,
+        "order": 170,
+        "connected": true
+      },
+      {
+        "lat": 53.8879329,
+        "lon": 30.3334615,
+        "order": 171,
+        "connected": true
+      },
+      {
+        "lat": 53.8895741,
+        "lon": 30.3334069,
+        "order": 172,
+        "connected": true
+      },
+      {
+        "lat": 53.8904136,
+        "lon": 30.3334118,
+        "order": 173,
+        "connected": true
+      },
+      {
+        "lat": 53.8910129,
+        "lon": 30.3332021,
+        "order": 174,
+        "connected": true
+      },
+      {
+        "lat": 53.8969811,
+        "lon": 30.3493383,
+        "order": 175,
+        "connected": false
+      },
+      {
+        "lat": 53.8972869,
+        "lon": 30.3500294,
+        "order": 176,
+        "connected": true
+      },
+      {
+        "lat": 53.8980708,
+        "lon": 30.3492998,
+        "order": 177,
+        "connected": true
+      },
+      {
+        "lat": 53.8986524,
+        "lon": 30.3498148,
+        "order": 178,
+        "connected": true
+      },
+      {
+        "lat": 53.8982225,
+        "lon": 30.3514885,
+        "order": 179,
+        "connected": true
+      },
+      {
+        "lat": 53.8974639,
+        "lon": 30.3568959,
+        "order": 180,
+        "connected": true
+      },
+      {
+        "lat": 53.8967559,
+        "lon": 30.3567671,
+        "order": 181,
+        "connected": true
+      },
+      {
+        "lat": 53.8967812,
+        "lon": 30.3576683,
+        "order": 182,
+        "connected": true
+      },
+      {
+        "lat": 53.8959973,
+        "lon": 30.3592991,
+        "order": 183,
+        "connected": true
+      },
+      {
+        "lat": 53.8924062,
+        "lon": 30.3591275,
+        "order": 184,
+        "connected": true
+      },
+      {
+        "lat": 53.8926591,
+        "lon": 30.3559088,
+        "order": 185,
+        "connected": true
+      },
+      {
+        "lat": 53.8914452,
+        "lon": 30.3558659,
+        "order": 186,
+        "connected": true
+      },
+      {
+        "lat": 53.8911164,
+        "lon": 30.3526901,
+        "order": 187,
+        "connected": true
+      },
+      {
+        "lat": 53.8901553,
+        "lon": 30.3528189,
+        "order": 188,
+        "connected": true
+      },
+      {
+        "lat": 53.8892701,
+        "lon": 30.3521322,
+        "order": 189,
+        "connected": true
+      },
+      {
+        "lat": 53.8891184,
+        "lon": 30.349214,
+        "order": 190,
+        "connected": true
+      },
+      {
+        "lat": 53.893643,
+        "lon": 30.3488233,
+        "order": 191,
+        "connected": true
+      },
+      {
+        "lat": 53.8938959,
+        "lon": 30.3522565,
+        "order": 192,
+        "connected": true
+      },
+      {
+        "lat": 53.8958179,
+        "lon": 30.3510549,
+        "order": 193,
+        "connected": true
+      },
+      {
+        "lat": 53.8969811,
+        "lon": 30.3493383,
+        "order": 194,
+        "connected": true
+      },
+      {
+        "lat": 53.9011859,
+        "lon": 30.321928,
+        "order": 195,
+        "connected": false
+      },
+      {
+        "lat": 53.903373,
+        "lon": 30.3231082,
+        "order": 196,
+        "connected": true
+      },
+      {
+        "lat": 53.9046624,
+        "lon": 30.3254471,
+        "order": 197,
+        "connected": true
+      },
+      {
+        "lat": 53.905067,
+        "lon": 30.3271637,
+        "order": 198,
+        "connected": true
+      },
+      {
+        "lat": 53.9057396,
+        "lon": 30.3314483,
+        "order": 199,
+        "connected": true
+      },
+      {
+        "lat": 53.9048491,
+        "lon": 30.3315312,
+        "order": 200,
+        "connected": true
+      },
+      {
+        "lat": 53.9038448,
+        "lon": 30.3312063,
+        "order": 201,
+        "connected": true
+      },
+      {
+        "lat": 53.9031636,
+        "lon": 30.3313721,
+        "order": 202,
+        "connected": true
+      },
+      {
+        "lat": 53.9004358,
+        "lon": 30.329267,
+        "order": 203,
+        "connected": true
+      },
+      {
+        "lat": 53.8998442,
+        "lon": 30.32763,
+        "order": 204,
+        "connected": true
+      },
+      {
+        "lat": 53.8992746,
+        "lon": 30.3269351,
+        "order": 205,
+        "connected": true
+      },
+      {
+        "lat": 53.8997573,
+        "lon": 30.3252111,
+        "order": 206,
+        "connected": true
+      },
+      {
+        "lat": 53.9002251,
+        "lon": 30.3236876,
+        "order": 207,
+        "connected": true
+      },
+      {
+        "lat": 53.9006929,
+        "lon": 30.3225074,
+        "order": 208,
+        "connected": true
+      },
+      {
+        "lat": 53.9011859,
+        "lon": 30.321928,
+        "order": 209,
+        "connected": true
+      },
+      {
+        "lat": 53.8919754,
+        "lon": 30.3280205,
+        "order": 210,
+        "connected": false
+      },
+      {
+        "lat": 53.8916085,
+        "lon": 30.3302523,
+        "order": 211,
+        "connected": true
+      },
+      {
+        "lat": 53.8910465,
+        "lon": 30.3314216,
+        "order": 212,
+        "connected": true
+      },
+      {
+        "lat": 53.8900798,
+        "lon": 30.3319043,
+        "order": 213,
+        "connected": true
+      },
+      {
+        "lat": 53.8888041,
+        "lon": 30.3317539,
+        "order": 214,
+        "connected": true
+      },
+      {
+        "lat": 53.8871125,
+        "lon": 30.3322254,
+        "order": 215,
+        "connected": true
+      },
+      {
+        "lat": 53.8860057,
+        "lon": 30.33334,
+        "order": 216,
+        "connected": true
+      },
+      {
+        "lat": 53.885158,
+        "lon": 30.3354832,
+        "order": 217,
+        "connected": true
+      },
+      {
+        "lat": 53.8848284,
+        "lon": 30.3376236,
+        "order": 218,
+        "connected": true
+      },
+      {
+        "lat": 53.8849786,
+        "lon": 30.3398443,
+        "order": 219,
+        "connected": true
+      },
+      {
+        "lat": 53.885279,
+        "lon": 30.3412815,
+        "order": 220,
+        "connected": true
+      },
+      {
+        "lat": 53.8842311,
+        "lon": 30.3431388,
+        "order": 221,
+        "connected": true
+      },
+      {
+        "lat": 53.8838913,
+        "lon": 30.3466685,
+        "order": 222,
+        "connected": true
+      },
+      {
+        "lat": 53.8823519,
+        "lon": 30.346003,
+        "order": 223,
+        "connected": true
+      },
+      {
+        "lat": 53.882764,
+        "lon": 30.3406386,
+        "order": 224,
+        "connected": true
+      },
+      {
+        "lat": 53.8803,
+        "lon": 30.34081,
+        "order": 225,
+        "connected": true
+      },
+      {
+        "lat": 53.8803807,
+        "lon": 30.3381491,
+        "order": 226,
+        "connected": true
+      },
+      {
+        "lat": 53.8779622,
+        "lon": 30.3382344,
+        "order": 227,
+        "connected": true
+      },
+      {
+        "lat": 53.8784966,
+        "lon": 30.3361919,
+        "order": 228,
+        "connected": true
+      },
+      {
+        "lat": 53.8799418,
+        "lon": 30.3354368,
+        "order": 229,
+        "connected": true
+      },
+      {
+        "lat": 53.8812636,
+        "lon": 30.3309225,
+        "order": 230,
+        "connected": true
+      },
+      {
+        "lat": 53.8808462,
+        "lon": 30.325585,
+        "order": 231,
+        "connected": true
+      },
+      {
+        "lat": 53.8822881,
+        "lon": 30.3246945,
+        "order": 232,
+        "connected": true
+      },
+      {
+        "lat": 53.8829963,
+        "lon": 30.3253168,
+        "order": 233,
+        "connected": true
+      },
+      {
+        "lat": 53.8859559,
+        "lon": 30.3213687,
+        "order": 234,
+        "connected": true
+      },
+      {
+        "lat": 53.886917,
+        "lon": 30.3212399,
+        "order": 235,
+        "connected": true
+      },
+      {
+        "lat": 53.8867906,
+        "lon": 30.3187508,
+        "order": 236,
+        "connected": true
+      },
+      {
+        "lat": 53.8871447,
+        "lon": 30.3182787,
+        "order": 237,
+        "connected": true
+      },
+      {
+        "lat": 53.8906856,
+        "lon": 30.3231282,
+        "order": 238,
+        "connected": true
+      },
+      {
+        "lat": 53.8919754,
+        "lon": 30.3280205,
+        "order": 239,
+        "connected": true
+      },
+      {
+        "lat": 53.9011859,
+        "lon": 30.321928,
+        "order": 240,
+        "connected": false
+      },
+      {
+        "lat": 53.9006929,
+        "lon": 30.3225074,
+        "order": 241,
+        "connected": true
+      },
+      {
+        "lat": 53.9002251,
+        "lon": 30.3236876,
+        "order": 242,
+        "connected": true
+      },
+      {
+        "lat": 53.8992746,
+        "lon": 30.3269351,
+        "order": 243,
+        "connected": true
+      },
+      {
+        "lat": 53.8978919,
+        "lon": 30.3276554,
+        "order": 244,
+        "connected": true
+      },
+      {
+        "lat": 53.897508,
+        "lon": 30.3280432,
+        "order": 245,
+        "connected": true
+      },
+      {
+        "lat": 53.8970689,
+        "lon": 30.3281749,
+        "order": 246,
+        "connected": true
+      },
+      {
+        "lat": 53.8965069,
+        "lon": 30.3278376,
+        "order": 247,
+        "connected": true
+      },
+      {
+        "lat": 53.896268,
+        "lon": 30.3274418,
+        "order": 248,
+        "connected": true
+      },
+      {
+        "lat": 53.8957269,
+        "lon": 30.3277232,
+        "order": 249,
+        "connected": true
+      },
+      {
+        "lat": 53.8953333,
+        "lon": 30.3278128,
+        "order": 250,
+        "connected": true
+      },
+      {
+        "lat": 53.8950103,
+        "lon": 30.3276549,
+        "order": 251,
+        "connected": true
+      },
+      {
+        "lat": 53.8946999,
+        "lon": 30.3272824,
+        "order": 252,
+        "connected": true
+      },
+      {
+        "lat": 53.8946051,
+        "lon": 30.3271215,
+        "order": 253,
+        "connected": true
+      },
+      {
+        "lat": 53.8945577,
+        "lon": 30.3269713,
+        "order": 254,
+        "connected": true
+      },
+      {
+        "lat": 53.8945466,
+        "lon": 30.326703,
+        "order": 255,
+        "connected": true
+      },
+      {
+        "lat": 53.8946833,
+        "lon": 30.3261183,
+        "order": 256,
+        "connected": true
+      },
+      {
+        "lat": 53.8947104,
+        "lon": 30.3257254,
+        "order": 257,
+        "connected": true
+      },
+      {
+        "lat": 53.8945794,
+        "lon": 30.3252895,
+        "order": 258,
+        "connected": true
+      },
+      {
+        "lat": 53.8943441,
+        "lon": 30.3249395,
+        "order": 259,
+        "connected": true
+      },
+      {
+        "lat": 53.8934434,
+        "lon": 30.3243427,
+        "order": 260,
+        "connected": true
+      },
+      {
+        "lat": 53.8931486,
+        "lon": 30.3242461,
+        "order": 261,
+        "connected": true
+      },
+      {
+        "lat": 53.8928475,
+        "lon": 30.3242462,
+        "order": 262,
+        "connected": true
+      },
+      {
+        "lat": 53.8918801,
+        "lon": 30.3242891,
+        "order": 263,
+        "connected": true
+      },
+      {
+        "lat": 53.8910861,
+        "lon": 30.3223635,
+        "order": 264,
+        "connected": true
+      },
+      {
+        "lat": 53.890732,
+        "lon": 30.3218056,
+        "order": 265,
+        "connected": true
+      },
+      {
+        "lat": 53.8904791,
+        "lon": 30.3211619,
+        "order": 266,
+        "connected": true
+      },
+      {
+        "lat": 53.890125,
+        "lon": 30.321076,
+        "order": 267,
+        "connected": true
+      },
+      {
+        "lat": 53.8899732,
+        "lon": 30.3203465,
+        "order": 268,
+        "connected": true
+      },
+      {
+        "lat": 53.8893409,
+        "lon": 30.3199173,
+        "order": 269,
+        "connected": true
+      },
+      {
+        "lat": 53.8887592,
+        "lon": 30.3189732,
+        "order": 270,
+        "connected": true
+      },
+      {
+        "lat": 53.8887844,
+        "lon": 30.3173854,
+        "order": 271,
+        "connected": true
+      },
+      {
+        "lat": 53.8860779,
+        "lon": 30.3108623,
+        "order": 272,
+        "connected": true
+      },
+      {
+        "lat": 53.8876524,
+        "lon": 30.309875,
+        "order": 273,
+        "connected": true
+      },
+      {
+        "lat": 53.8891731,
+        "lon": 30.3099822,
+        "order": 274,
+        "connected": true
+      },
+      {
+        "lat": 53.8896062,
+        "lon": 30.3114198,
+        "order": 275,
+        "connected": true
+      },
+      {
+        "lat": 53.8938108,
+        "lon": 30.313587,
+        "order": 276,
+        "connected": true
+      },
+      {
+        "lat": 53.8956382,
+        "lon": 30.3163124,
+        "order": 277,
+        "connected": true
+      },
+      {
+        "lat": 53.8969279,
+        "lon": 30.3166558,
+        "order": 278,
+        "connected": true
+      },
+      {
+        "lat": 53.8989508,
+        "lon": 30.3188444,
+        "order": 279,
+        "connected": true
+      },
+      {
+        "lat": 53.9011859,
+        "lon": 30.321928,
+        "order": 280,
+        "connected": true
       }
     ]
   }

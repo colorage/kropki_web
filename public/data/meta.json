@@ -1,8 +1,4 @@
 {
-  "importedAt": "2026-07-15T19:27:16.945976+00:00",
-  "source": "notion-fixture+osm-bootstrap",
-  "note": "Run NOTION_DIR=~/Downloads/notion npm run import to replace with full Notion export (180 buildings + media).",
-  "count": 124,
-  "notionCount": 2,
-  "osmCount": 122
+  "importedAt": "2026-07-15T20:49:04.034Z",
+  "source": "/workspace/notion-export/notion/Кропкі"
 }

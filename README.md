@@ -1,42 +1,38 @@
 # Кропкі (kropki_web)
 
-Static interactive map of historic buildings in **Mahilioŭ (Магілёў)**, built for GitHub Pages.
+Static interactive map of historic buildings in **Mahilioŭ (Магілёў)** for GitHub Pages.
 
 - Leaflet + white Carto Positron (OSM) tiles — no Mapbox / no backend
 - Data imported from a Notion HTML/CSV export
 - Pin icons by building type and preservation status
 
-Live (after Pages is enabled): `https://colorage.github.io/kropki_web/`
+**Live:** https://colorage.github.io/kropki_web/
 
-## Create the GitHub repo
+## Setup
 
-This project is meant to live at **`colorage/kropki_web`**. If you only have this branch on another repository, publish it with:
-
-```bash
-gh repo create colorage/kropki_web --public --source=. --remote=origin --push
-# or, from an existing clone of this branch:
-git remote add kropki https://github.com/colorage/kropki_web.git
-git push -u kropki HEAD:main
-```
-
-Then enable **Settings → Pages → Source: GitHub Actions**.
+1. Enable **Settings → Pages → Source: GitHub Actions**
+2. Push to `main` — the workflow builds with Vite `base: '/kropki_web/'` and deploys
 
 ## Develop
 
 ```bash
 npm install
-NOTION_DIR=~/Downloads/notion npm run import   # preferred
+NOTION_DIR=~/Downloads/notion npm run import   # preferred (full dataset + photos)
 # or, if Notion export is missing:
 npm run bootstrap
 npm run dev
 ```
 
+Open http://localhost:5173/kropki_web/
+
 ## Import from Notion
 
-Export the Notion workspace as HTML (with assets). Point the importer at the folder that contains `Кропкі/` (or the `Кропкі` folder itself):
+Export the Notion workspace as **HTML** (including assets). Point the importer at the folder that contains `Кропкі/` (or the `Кропкі` folder itself):
 
 ```bash
 NOTION_DIR=~/Downloads/notion npm run import
+# or after unzipping into the repo:
+NOTION_DIR=./notion-export/notion npm run import
 ```
 
 This writes:
@@ -47,21 +43,26 @@ This writes:
 - `public/data/icons.json`
 - compressed images under `public/media/`
 
-The cloud build may ship with an OSM bootstrap + a tiny Notion sample so the map is not empty. Re-run the import locally with your full `~/Downloads/notion` export to replace it with all ~180 buildings, photos, and descriptions.
+Raw Notion export folders (`notion-export/`) stay gitignored — only generated JSON + media are committed.
 
 ## Deploy
 
-Push to `main`. GitHub Actions builds with Vite `base: '/kropki_web/'` and deploys to GitHub Pages.
+```bash
+npm run build
+git add public/data public/media src
+git commit -m "Update map data and UI"
+git push origin main
+```
 
-## UI improvements vs the old CRA app
+Site URL: `https://colorage.github.io/kropki_web/`
 
-1. Correct city center (Mahilioŭ, not Minsk)
-2. Pins wired by type + status
-3. Search restored
-4. Detail panel with Notion descriptions
-5. Status / type filters + legend
-6. Mobile-friendly header and bottom sheet
-7. No Mapbox keys
-8. Fully static JSON + media
-9. Relative asset paths for project Pages
-10. `lang="be"` and proper meta
+## UI features
+
+1. Mahilioŭ-centered map (not Minsk)
+2. Pins by type + status
+3. Search with suggestions
+4. Detail panel with descriptions + photo gallery
+5. Status / type filters, clear filters, legend (incl. restored)
+6. Tours and protection zones overlays
+7. Mobile-friendly header and bottom sheet
+8. Fully static JSON + media (no API keys)

@@ -231,10 +231,28 @@ input {
   gap: 14px;
 }
 
+.sidebar-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 .sidebar h2 {
   margin: 0;
   font-family: var(--display);
   font-size: 1.05rem;
+}
+
+.text-btn {
+  border: 0;
+  background: transparent;
+  color: var(--accent-deep);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0;
+  white-space: nowrap;
 }
 
 .filters {
@@ -288,6 +306,33 @@ input {
   background: #e8eef2;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 6px;
+}
+
+.gallery-thumb {
+  border: 2px solid transparent;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #e8eef2;
+  aspect-ratio: 1;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-thumb.is-active {
+  border-color: var(--accent);
+}
+
 .detail h3 {
   margin: 0;
   font-family: var(--display);
@@ -321,6 +366,16 @@ input {
 
 .badge.status-perspective {
   background: rgba(46, 139, 87, 0.15);
+  color: var(--ok);
+}
+
+.badge.status-restored {
+  background: rgba(47, 111, 143, 0.18);
+  color: var(--accent-deep);
+}
+
+.badge.status-preserved {
+  background: rgba(46, 139, 87, 0.12);
   color: var(--ok);
 }
 
@@ -384,8 +439,21 @@ input {
 }
 
 @media (max-width: 719px) {
+  .header {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
   .chip-toggle span {
     display: none;
+  }
+
+  .search-wrap {
+    max-width: none;
   }
 
   .sidebar {
@@ -394,7 +462,11 @@ input {
     left: 0;
     right: 0;
     width: 100%;
-    max-height: 48%;
+    max-height: min(52%, 420px);
     border-radius: 18px 18px 0 0;
+  }
+
+  .detail.open {
+    padding-bottom: 8px;
   }
 }

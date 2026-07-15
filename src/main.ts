@@ -6,6 +6,8 @@ import { STATUS_LABELS, TYPE_LABELS } from './types'
 import { asset } from './asset'
 import { createMap } from './map'
 
+const DEFAULT_COVER = 'default/building_default.svg'
+
 const app = document.querySelector<HTMLDivElement>('#app')
 if (!app) throw new Error('#app missing')
 
@@ -25,16 +27,19 @@ app.innerHTML = `
         <div class="suggestions" id="suggestions" role="listbox"></div>
       </div>
       <div class="header-actions">
-        <button class="chip-toggle" id="toggle-tours" type="button" aria-pressed="false">Туры <span>на карце</span></button>
-        <button class="chip-toggle" id="toggle-zones" type="button" aria-pressed="false">Зоны <span>аховы</span></button>
+        <button class="chip-toggle" id="toggle-tours" type="button" aria-pressed="false" hidden>Туры <span>на карце</span></button>
+        <button class="chip-toggle" id="toggle-zones" type="button" aria-pressed="false" hidden>Зоны <span>аховы</span></button>
       </div>
     </header>
     <main class="main">
       <div id="map"></div>
       <aside class="sidebar" id="sidebar">
-        <div>
-          <h2>Фільтры</h2>
-          <p class="count" id="count"></p>
+        <div class="sidebar-head">
+          <div>
+            <h2>Фільтры</h2>
+            <p class="count" id="count"></p>
+          </div>
+          <button class="text-btn" id="clear-filters" type="button" hidden>Скінуць</button>
         </div>
         <div class="filters">
           <div class="filter-row" id="status-filters"></div>
@@ -44,10 +49,11 @@ app.innerHTML = `
         <section class="detail" id="detail">
           <button class="close" id="close-detail" type="button">Закрыць</button>
           <img class="detail-cover" id="detail-cover" alt="" />
+          <div class="gallery" id="detail-gallery" hidden></div>
           <h3 id="detail-title"></h3>
           <div class="detail-meta" id="detail-meta"></div>
-          <p id="detail-address"></p>
-          <p id="detail-year"></p>
+          <p id="detail-address" hidden></p>
+          <p id="detail-year" hidden></p>
           <p id="detail-description"></p>
         </section>
       </aside>
@@ -65,9 +71,14 @@ const legendEl = document.querySelector<HTMLElement>('#legend')!
 const detailEl = document.querySelector<HTMLElement>('#detail')!
 const searchInput = document.querySelector<HTMLInputElement>('#search')!
 const clearSearchBtn = document.querySelector<HTMLButtonElement>('#clear-search')!
+const clearFiltersBtn = document.querySelector<HTMLButtonElement>('#clear-filters')!
 const suggestionsEl = document.querySelector<HTMLElement>('#suggestions')!
 const toggleToursBtn = document.querySelector<HTMLButtonElement>('#toggle-tours')!
 const toggleZonesBtn = document.querySelector<HTMLButtonElement>('#toggle-zones')!
+const coverEl = document.querySelector<HTMLImageElement>('#detail-cover')!
+const galleryEl = document.querySelector<HTMLElement>('#detail-gallery')!
+const addressEl = document.querySelector<HTMLElement>('#detail-address')!
+const yearEl = document.querySelector<HTMLElement>('#detail-year')!
 
 const map = createMap(mapEl)
 
@@ -111,6 +122,16 @@ function filtered(): Building[] {
   })
 }
 
+function pinStatusFile(status: BuildingStatus): string {
+  if (status === 'preserved' || status === 'restored') return 'default'
+  if (status === 'perspective') return 'new'
+  return status
+}
+
+function syncClearFilters() {
+  clearFiltersBtn.hidden = activeStatuses.size === 0 && activeTypes.size === 0
+}
+
 function renderFilters() {
   const statuses = uniqueStatuses(allBuildings)
   const types = uniqueTypes(allBuildings)
@@ -129,34 +150,79 @@ function renderFilters() {
     )
     .join('')
 
+  const legendStatuses: BuildingStatus[] = ['preserved', 'restored', 'perspective', 'warning', 'lost']
   legendEl.innerHTML = `
     <strong>Легенда статусаў</strong>
-    ${['preserved', 'perspective', 'warning', 'lost']
+    ${legendStatuses
       .map(
         (s) => `
       <div class="legend-item">
-        <img src="${asset(`pins/building_${s === 'preserved' ? 'default' : s === 'perspective' ? 'new' : s}.svg`)}" alt="" />
-        <span>${STATUS_LABELS[s as BuildingStatus]}</span>
+        <img src="${asset(`pins/building_${pinStatusFile(s)}.svg`)}" alt="" />
+        <span>${STATUS_LABELS[s]}</span>
       </div>`,
       )
       .join('')}
   `
+  syncClearFilters()
+}
+
+function setCover(src: string, alt: string) {
+  coverEl.onerror = () => {
+    coverEl.onerror = null
+    coverEl.src = asset(DEFAULT_COVER)
+  }
+  coverEl.src = asset(src || DEFAULT_COVER)
+  coverEl.alt = alt
+}
+
+function renderGallery(b: Building) {
+  const images = (b.images || []).filter(Boolean)
+  if (images.length <= 1) {
+    galleryEl.hidden = true
+    galleryEl.innerHTML = ''
+    return
+  }
+
+  galleryEl.hidden = false
+  galleryEl.innerHTML = images
+    .map(
+      (src, i) => `
+      <button type="button" class="gallery-thumb${i === 0 ? ' is-active' : ''}" data-src="${src}" aria-label="Фота ${i + 1}">
+        <img src="${asset(src)}" alt="" loading="lazy" />
+      </button>`,
+    )
+    .join('')
 }
 
 function showDetail(b: Building) {
   selectedId = b.id
   detailEl.classList.add('open')
-  const cover = document.querySelector<HTMLImageElement>('#detail-cover')!
-  cover.src = asset(b.image || 'default/building_default.svg')
-  cover.alt = b.name
+  setCover(b.image || DEFAULT_COVER, b.name)
+  renderGallery(b)
+
   document.querySelector('#detail-title')!.textContent = b.name
   document.querySelector('#detail-meta')!.innerHTML = `
     <span class="badge status-${b.status}">${b.statusLabel || STATUS_LABELS[b.status]}</span>
     <span class="badge">${b.typeLabel || TYPE_LABELS[b.type]}</span>
     ${b.style ? `<span class="badge">${b.style}</span>` : ''}
   `
-  document.querySelector('#detail-address')!.textContent = b.address || ''
-  document.querySelector('#detail-year')!.textContent = b.year ? `Год: ${b.year}` : ''
+
+  if (b.address) {
+    addressEl.hidden = false
+    addressEl.textContent = b.address
+  } else {
+    addressEl.hidden = true
+    addressEl.textContent = ''
+  }
+
+  if (b.year) {
+    yearEl.hidden = false
+    yearEl.textContent = `Год: ${b.year}`
+  } else {
+    yearEl.hidden = true
+    yearEl.textContent = ''
+  }
+
   document.querySelector('#detail-description')!.textContent =
     b.description || 'Апісанне пакуль адсутнічае.'
 }
@@ -175,6 +241,7 @@ function refresh() {
     map.focusBuilding(b)
   })
   if (selectedId && !items.some((b) => b.id === selectedId)) hideDetail()
+  syncClearFilters()
 }
 
 function renderSuggestions() {
@@ -224,6 +291,14 @@ typeFiltersEl.addEventListener('click', (e) => {
   renderSuggestions()
 })
 
+clearFiltersBtn.addEventListener('click', () => {
+  activeStatuses.clear()
+  activeTypes.clear()
+  renderFilters()
+  refresh()
+  renderSuggestions()
+})
+
 searchInput.addEventListener('input', () => {
   query = searchInput.value
   clearSearchBtn.hidden = !query
@@ -253,6 +328,16 @@ suggestionsEl.addEventListener('click', (e) => {
   map.focusBuilding(b)
 })
 
+galleryEl.addEventListener('click', (e) => {
+  const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-src]')
+  if (!btn) return
+  const src = btn.dataset.src
+  if (!src) return
+  setCover(src, coverEl.alt)
+  galleryEl.querySelectorAll('.gallery-thumb').forEach((el) => el.classList.remove('is-active'))
+  btn.classList.add('is-active')
+})
+
 document.querySelector('#close-detail')!.addEventListener('click', hideDetail)
 
 toggleToursBtn.addEventListener('click', () => {
@@ -273,6 +358,13 @@ document.addEventListener('click', (e) => {
   }
 })
 
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    suggestionsEl.classList.remove('open')
+    if (detailEl.classList.contains('open')) hideDetail()
+  }
+})
+
 async function boot() {
   const [buildings, tourData, zoneData] = await Promise.all([
     loadJson<Building[]>('data/buildings.json', []),
@@ -283,6 +375,15 @@ async function boot() {
   allBuildings = buildings
   tours = tourData
   zones = zoneData
+
+  if (tours.length) {
+    toggleToursBtn.hidden = false
+    toggleToursBtn.innerHTML = `Туры <span>(${tours.length})</span>`
+  }
+  if (zones.length) {
+    toggleZonesBtn.hidden = false
+    toggleZonesBtn.innerHTML = `Зоны <span>(${zones.length})</span>`
+  }
 
   renderFilters()
   refresh()
