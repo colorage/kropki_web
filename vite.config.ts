@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/kropki_web/',
+  // Custom domain (kropki.siaroza.com) serves at site root — not /kropki_web/
+  base: '/',
   build: {
     outDir: 'dist',
     sourcemap: true,

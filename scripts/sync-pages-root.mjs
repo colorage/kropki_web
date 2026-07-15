@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Copy Vite dist/ to the repo root so GitHub Pages "Deploy from branch / root"
- * can serve the production site at https://colorage.github.io/kropki_web/
+ * can serve the production site at https://kropki.siaroza.com/
  *
  * Prefer switching Settings → Pages → Source to "GitHub Actions" when possible;
  * this sync exists because the API token cannot change that setting.
