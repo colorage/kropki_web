@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" viewBox="0 0 32 42">
+  
+  <path d="M16 1C9.4 1 4 6.4 4 13c0 8.5 12 27 12 27s12-18.5 12-27C28 6.4 22.6 1 16 1z" fill="#2F6F8F" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="16" cy="14" r="7.5" fill="#2F6F8F" stroke="white" stroke-width="1.5" opacity="0.95"/>
+  <text x="16" y="20" text-anchor="middle" font-size="11" fill="white" font-family="serif">✡</text>
+</svg>

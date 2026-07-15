@@ -8,53 +8,46 @@ Static interactive map of historic buildings in **Mahilioŭ (Магілёў)** f
 
 **Live:** https://colorage.github.io/kropki_web/
 
-## Setup
+## GitHub Pages setup (important)
 
-1. Enable **Settings → Pages → Source: GitHub Actions**
-2. Push to `main` — the workflow builds with Vite `base: '/kropki_web/'` and deploys
+This repo currently publishes the **built site at the repository root** so it works with:
+
+**Settings → Pages → Deploy from a branch → `main` / `/ (root)`**
+
+Optional (cleaner): switch Pages source to **GitHub Actions** (workflow already exists). Then you can stop committing root `assets/` / built `index.html` and rely on `dist/` from CI only.
 
 ## Develop
 
 ```bash
 npm install
 NOTION_DIR=~/Downloads/notion npm run import   # preferred (full dataset + photos)
-# or, if Notion export is missing:
-npm run bootstrap
 npm run dev
 ```
+
+`npm run dev` restores `index.source.html` → `index.html` for Vite.
 
 Open http://localhost:5173/kropki_web/
 
 ## Import from Notion
 
-Export the Notion workspace as **HTML** (including assets). Point the importer at the folder that contains `Кропкі/` (or the `Кропкі` folder itself):
-
 ```bash
 NOTION_DIR=~/Downloads/notion npm run import
-# or after unzipping into the repo:
+# or:
 NOTION_DIR=./notion-export/notion npm run import
 ```
 
-This writes:
+Writes `public/data/*.json` and `public/media/**`. Raw Notion folders stay gitignored.
 
-- `public/data/buildings.json`
-- `public/data/tours.json`
-- `public/data/zones.json`
-- `public/data/icons.json`
-- compressed images under `public/media/`
-
-Raw Notion export folders (`notion-export/`) stay gitignored — only generated JSON + media are committed.
-
-## Deploy
+## Build / publish
 
 ```bash
-npm run build
-git add public/data public/media src
-git commit -m "Update map data and UI"
+npm run build   # vite build + sync dist → repo root for branch Pages
+git add -A
+git commit -m "Update published site"
 git push origin main
 ```
 
-Site URL: `https://colorage.github.io/kropki_web/`
+Synced to root for Pages: `index.html`, `assets/`, `data/`, `media/`, `pins/`, `logo.svg`, …
 
 ## UI features
 

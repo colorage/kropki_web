@@ -1,0 +1,3812 @@
+[
+  {
+    "id": "Without-borders",
+    "name": "Without borders",
+    "points": [
+      {
+        "name": "1",
+        "lat": 53.9082754,
+        "lon": 30.345634,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "1",
+        "lat": 53.9053617,
+        "lon": 30.3448829,
+        "order": 2,
+        "connected": true
+      },
+      {
+        "name": "1",
+        "lat": 53.9047866,
+        "lon": 30.3447864,
+        "order": 3,
+        "connected": true
+      },
+      {
+        "name": "1",
+        "lat": 53.9072705,
+        "lon": 30.3400228,
+        "order": 4,
+        "connected": true
+      },
+      {
+        "name": "2",
+        "lat": 53.9047866,
+        "lon": 30.3447864,
+        "order": 5,
+        "connected": false
+      },
+      {
+        "name": "2",
+        "lat": 53.9033188,
+        "lon": 30.3444001,
+        "order": 6,
+        "connected": true
+      },
+      {
+        "name": "2",
+        "lat": 53.8974969,
+        "lon": 30.3388855,
+        "order": 7,
+        "connected": true
+      },
+      {
+        "name": "2",
+        "lat": 53.8962009,
+        "lon": 30.3373942,
+        "order": 8,
+        "connected": true
+      },
+      {
+        "name": "2",
+        "lat": 53.895929,
+        "lon": 30.337995,
+        "order": 9,
+        "connected": true
+      },
+      {
+        "name": "3",
+        "lat": 53.9072705,
+        "lon": 30.3400228,
+        "order": 10,
+        "connected": false
+      },
+      {
+        "name": "3",
+        "lat": 53.9049894,
+        "lon": 30.3383401,
+        "order": 11,
+        "connected": true
+      },
+      {
+        "name": "4",
+        "lat": 53.9049894,
+        "lon": 30.3383401,
+        "order": 12,
+        "connected": false
+      },
+      {
+        "name": "4",
+        "lat": 53.9039781,
+        "lon": 30.3375247,
+        "order": 13,
+        "connected": true
+      },
+      {
+        "name": "4",
+        "lat": 53.9036557,
+        "lon": 30.33878,
+        "order": 14,
+        "connected": true
+      },
+      {
+        "name": "4",
+        "lat": 53.9045786,
+        "lon": 30.3395524,
+        "order": 15,
+        "connected": true
+      },
+      {
+        "name": "4",
+        "lat": 53.9049894,
+        "lon": 30.3383401,
+        "order": 16,
+        "connected": true
+      },
+      {
+        "name": "5",
+        "lat": 53.9039781,
+        "lon": 30.3375247,
+        "order": 17,
+        "connected": false
+      },
+      {
+        "name": "5",
+        "lat": 53.9016836,
+        "lon": 30.3357437,
+        "order": 18,
+        "connected": true
+      },
+      {
+        "name": "5",
+        "lat": 53.8998251,
+        "lon": 30.3342095,
+        "order": 19,
+        "connected": true
+      },
+      {
+        "name": "5",
+        "lat": 53.8980488,
+        "lon": 30.3329113,
+        "order": 20,
+        "connected": true
+      },
+      {
+        "name": "5",
+        "lat": 53.8973913,
+        "lon": 30.33245,
+        "order": 21,
+        "connected": true
+      },
+      {
+        "name": "6",
+        "lat": 53.9052862,
+        "lon": 30.3438297,
+        "order": 22,
+        "connected": false
+      },
+      {
+        "name": "6",
+        "lat": 53.9024039,
+        "lon": 30.3409115,
+        "order": 23,
+        "connected": true
+      },
+      {
+        "name": "6",
+        "lat": 53.9009627,
+        "lon": 30.3394416,
+        "order": 24,
+        "connected": true
+      },
+      {
+        "name": "6",
+        "lat": 53.8985036,
+        "lon": 30.3370169,
+        "order": 25,
+        "connected": true
+      },
+      {
+        "name": "6",
+        "lat": 53.897037,
+        "lon": 30.3354719,
+        "order": 26,
+        "connected": true
+      },
+      {
+        "name": "6",
+        "lat": 53.8964238,
+        "lon": 30.3347531,
+        "order": 27,
+        "connected": true
+      },
+      {
+        "name": "7",
+        "lat": 53.9059184,
+        "lon": 30.3426052,
+        "order": 28,
+        "connected": false
+      },
+      {
+        "name": "7",
+        "lat": 53.9051789,
+        "lon": 30.3416718,
+        "order": 29,
+        "connected": true
+      },
+      {
+        "name": "7",
+        "lat": 53.9050398,
+        "lon": 30.3418542,
+        "order": 30,
+        "connected": true
+      },
+      {
+        "name": "7",
+        "lat": 53.9048628,
+        "lon": 30.341586,
+        "order": 31,
+        "connected": true
+      },
+      {
+        "name": "7",
+        "lat": 53.9049261,
+        "lon": 30.3412963,
+        "order": 32,
+        "connected": true
+      },
+      {
+        "name": "7",
+        "lat": 53.904629,
+        "lon": 30.3408886,
+        "order": 33,
+        "connected": true
+      },
+      {
+        "name": "7",
+        "lat": 53.9045405,
+        "lon": 30.3401698,
+        "order": 34,
+        "connected": true
+      },
+      {
+        "name": "7",
+        "lat": 53.9045786,
+        "lon": 30.3395524,
+        "order": 35,
+        "connected": true
+      },
+      {
+        "name": "8",
+        "lat": 53.9036557,
+        "lon": 30.33878,
+        "order": 36,
+        "connected": false
+      },
+      {
+        "name": "8",
+        "lat": 53.9024039,
+        "lon": 30.3409115,
+        "order": 37,
+        "connected": true
+      },
+      {
+        "name": "8",
+        "lat": 53.9016329,
+        "lon": 30.3424014,
+        "order": 38,
+        "connected": true
+      },
+      {
+        "name": "9",
+        "lat": 53.9016329,
+        "lon": 30.3424014,
+        "order": 39,
+        "connected": false
+      },
+      {
+        "name": "9",
+        "lat": 53.903447,
+        "lon": 30.3441716,
+        "order": 40,
+        "connected": true
+      },
+      {
+        "name": "9",
+        "lat": 53.9049197,
+        "lon": 30.3445149,
+        "order": 41,
+        "connected": true
+      },
+      {
+        "name": "10",
+        "lat": 53.8972291,
+        "lon": 30.3323083,
+        "order": 42,
+        "connected": false
+      },
+      {
+        "name": "10",
+        "lat": 53.8963378,
+        "lon": 30.3346043,
+        "order": 43,
+        "connected": true
+      },
+      {
+        "name": "10",
+        "lat": 53.8957119,
+        "lon": 30.3362243,
+        "order": 44,
+        "connected": true
+      },
+      {
+        "name": "10",
+        "lat": 53.8955349,
+        "lon": 30.3359239,
+        "order": 45,
+        "connected": true
+      },
+      {
+        "name": "10",
+        "lat": 53.8949912,
+        "lon": 30.3342931,
+        "order": 46,
+        "connected": true
+      },
+      {
+        "name": "10",
+        "lat": 53.8943589,
+        "lon": 30.3320937,
+        "order": 47,
+        "connected": true
+      },
+      {
+        "name": "11",
+        "lat": 53.8972291,
+        "lon": 30.3323083,
+        "order": 48,
+        "connected": false
+      },
+      {
+        "name": "11",
+        "lat": 53.8961923,
+        "lon": 30.3316216,
+        "order": 49,
+        "connected": true
+      },
+      {
+        "name": "11",
+        "lat": 53.8951366,
+        "lon": 30.3309779,
+        "order": 50,
+        "connected": true
+      },
+      {
+        "name": "13",
+        "lat": 53.8963378,
+        "lon": 30.3346043,
+        "order": 51,
+        "connected": false
+      },
+      {
+        "name": "13",
+        "lat": 53.8954084,
+        "lon": 30.3325551,
+        "order": 52,
+        "connected": true
+      },
+      {
+        "name": "13",
+        "lat": 53.8949026,
+        "lon": 30.3314607,
+        "order": 53,
+        "connected": true
+      },
+      {
+        "name": "13",
+        "lat": 53.8951366,
+        "lon": 30.3309779,
+        "order": 54,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.8950607,
+        "lon": 30.3307526,
+        "order": 55,
+        "connected": false
+      },
+      {
+        "name": "14",
+        "lat": 53.8951871,
+        "lon": 30.3300338,
+        "order": 56,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.8946624,
+        "lon": 30.329551,
+        "order": 57,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.8944032,
+        "lon": 30.3297119,
+        "order": 58,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.8943905,
+        "lon": 30.3301411,
+        "order": 59,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.8943084,
+        "lon": 30.3305809,
+        "order": 60,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.894144,
+        "lon": 30.3309886,
+        "order": 61,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.8941629,
+        "lon": 30.3315465,
+        "order": 62,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.894302,
+        "lon": 30.3318255,
+        "order": 63,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.8946371,
+        "lon": 30.3311603,
+        "order": 64,
+        "connected": true
+      },
+      {
+        "name": "14",
+        "lat": 53.8950607,
+        "lon": 30.3307526,
+        "order": 65,
+        "connected": true
+      },
+      {
+        "name": "15",
+        "lat": 53.8946624,
+        "lon": 30.329551,
+        "order": 66,
+        "connected": false
+      },
+      {
+        "name": "15",
+        "lat": 53.8947699,
+        "lon": 30.329433,
+        "order": 67,
+        "connected": true
+      },
+      {
+        "name": "15",
+        "lat": 53.8943336,
+        "lon": 30.3284996,
+        "order": 68,
+        "connected": true
+      },
+      {
+        "name": "15",
+        "lat": 53.8933916,
+        "lon": 30.3269761,
+        "order": 69,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.895929,
+        "lon": 30.337995,
+        "order": 70,
+        "connected": false
+      },
+      {
+        "name": "16",
+        "lat": 53.8957308,
+        "lon": 30.3382413,
+        "order": 71,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8932715,
+        "lon": 30.3303771,
+        "order": 72,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8931261,
+        "lon": 30.3301625,
+        "order": 73,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8933158,
+        "lon": 30.3317611,
+        "order": 74,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8934865,
+        "lon": 30.3334455,
+        "order": 75,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8950417,
+        "lon": 30.3386598,
+        "order": 76,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8956992,
+        "lon": 30.3426616,
+        "order": 77,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8959774,
+        "lon": 30.3440993,
+        "order": 78,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8960027,
+        "lon": 30.3451292,
+        "order": 79,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8943147,
+        "lon": 30.3455906,
+        "order": 80,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8941819,
+        "lon": 30.3447323,
+        "order": 81,
+        "connected": true
+      },
+      {
+        "name": "16",
+        "lat": 53.8939986,
+        "lon": 30.3448288,
+        "order": 82,
+        "connected": true
+      },
+      {
+        "name": "17",
+        "lat": 53.8956297,
+        "lon": 30.3421574,
+        "order": 83,
+        "connected": false
+      },
+      {
+        "name": "17",
+        "lat": 53.895067,
+        "lon": 30.3429728,
+        "order": 84,
+        "connected": true
+      },
+      {
+        "name": "17",
+        "lat": 53.8946118,
+        "lon": 30.3440671,
+        "order": 85,
+        "connected": true
+      },
+      {
+        "name": "17",
+        "lat": 53.894517,
+        "lon": 30.3444641,
+        "order": 86,
+        "connected": true
+      },
+      {
+        "name": "17",
+        "lat": 53.8941819,
+        "lon": 30.3447323,
+        "order": 87,
+        "connected": true
+      },
+      {
+        "name": "18",
+        "lat": 53.895929,
+        "lon": 30.337995,
+        "order": 88,
+        "connected": false
+      },
+      {
+        "name": "18",
+        "lat": 53.8967925,
+        "lon": 30.340309,
+        "order": 89,
+        "connected": true
+      },
+      {
+        "name": "18",
+        "lat": 53.8977028,
+        "lon": 30.3411888,
+        "order": 90,
+        "connected": true
+      },
+      {
+        "name": "18",
+        "lat": 53.8996878,
+        "lon": 30.3430342,
+        "order": 91,
+        "connected": true
+      },
+      {
+        "name": "18",
+        "lat": 53.9004021,
+        "lon": 30.3436886,
+        "order": 92,
+        "connected": true
+      },
+      {
+        "name": "18",
+        "lat": 53.9011417,
+        "lon": 30.3423153,
+        "order": 93,
+        "connected": true
+      },
+      {
+        "name": "19",
+        "lat": 53.9072705,
+        "lon": 30.3400228,
+        "order": 94,
+        "connected": false
+      },
+      {
+        "name": "19",
+        "lat": 53.9077701,
+        "lon": 30.3403926,
+        "order": 95,
+        "connected": true
+      },
+      {
+        "name": "19",
+        "lat": 53.9086991,
+        "lon": 30.3406179,
+        "order": 96,
+        "connected": true
+      },
+      {
+        "name": "19",
+        "lat": 53.9085475,
+        "lon": 30.3426671,
+        "order": 97,
+        "connected": true
+      },
+      {
+        "name": "19",
+        "lat": 53.9083199,
+        "lon": 30.3452635,
+        "order": 98,
+        "connected": true
+      },
+      {
+        "name": "19",
+        "lat": 53.9069232,
+        "lon": 30.3449416,
+        "order": 99,
+        "connected": true
+      },
+      {
+        "name": "19",
+        "lat": 53.9051724,
+        "lon": 30.3445017,
+        "order": 100,
+        "connected": true
+      },
+      {
+        "name": "19",
+        "lat": 53.9049197,
+        "lon": 30.3445149,
+        "order": 101,
+        "connected": true
+      },
+      {
+        "name": "20",
+        "lat": 53.9085475,
+        "lon": 30.3426671,
+        "order": 102,
+        "connected": false
+      },
+      {
+        "name": "20",
+        "lat": 53.9061394,
+        "lon": 30.342195,
+        "order": 103,
+        "connected": true
+      },
+      {
+        "name": "21",
+        "lat": 53.9085095,
+        "lon": 30.3431177,
+        "order": 104,
+        "connected": false
+      },
+      {
+        "name": "21",
+        "lat": 53.9059184,
+        "lon": 30.3426052,
+        "order": 105,
+        "connected": true
+      },
+      {
+        "name": "22",
+        "lat": 53.8973913,
+        "lon": 30.33245,
+        "order": 106,
+        "connected": false
+      },
+      {
+        "name": "22",
+        "lat": 53.8964238,
+        "lon": 30.3347531,
+        "order": 107,
+        "connected": true
+      },
+      {
+        "name": "23",
+        "lat": 53.8964238,
+        "lon": 30.3347531,
+        "order": 108,
+        "connected": false
+      },
+      {
+        "name": "23",
+        "lat": 53.8958345,
+        "lon": 30.3363693,
+        "order": 109,
+        "connected": true
+      },
+      {
+        "name": "23",
+        "lat": 53.8962075,
+        "lon": 30.3369164,
+        "order": 110,
+        "connected": true
+      },
+      {
+        "name": "23",
+        "lat": 53.8976805,
+        "lon": 30.3387296,
+        "order": 111,
+        "connected": true
+      },
+      {
+        "name": "23",
+        "lat": 53.899185,
+        "lon": 30.3401351,
+        "order": 112,
+        "connected": true
+      },
+      {
+        "name": "23",
+        "lat": 53.9007022,
+        "lon": 30.3415406,
+        "order": 113,
+        "connected": true
+      },
+      {
+        "name": "24",
+        "lat": 53.8950836,
+        "lon": 30.3306611,
+        "order": 114,
+        "connected": false
+      },
+      {
+        "name": "24",
+        "lat": 53.897998,
+        "lon": 30.3325494,
+        "order": 115,
+        "connected": true
+      },
+      {
+        "name": "24",
+        "lat": 53.8992686,
+        "lon": 30.3334828,
+        "order": 116,
+        "connected": true
+      },
+      {
+        "name": "24",
+        "lat": 53.8999197,
+        "lon": 30.3339656,
+        "order": 117,
+        "connected": true
+      },
+      {
+        "name": "24",
+        "lat": 53.9018604,
+        "lon": 30.3355535,
+        "order": 118,
+        "connected": true
+      },
+      {
+        "name": "24",
+        "lat": 53.9031309,
+        "lon": 30.3365942,
+        "order": 119,
+        "connected": true
+      },
+      {
+        "name": "25",
+        "lat": 53.9031309,
+        "lon": 30.3365942,
+        "order": 120,
+        "connected": false
+      },
+      {
+        "name": "25",
+        "lat": 53.9067846,
+        "lon": 30.3393729,
+        "order": 121,
+        "connected": true
+      },
+      {
+        "name": "25",
+        "lat": 53.907423,
+        "lon": 30.339845,
+        "order": 122,
+        "connected": true
+      },
+      {
+        "name": "25",
+        "lat": 53.907581,
+        "lon": 30.3399845,
+        "order": 123,
+        "connected": true
+      },
+      {
+        "name": "25",
+        "lat": 53.908668,
+        "lon": 30.3403278,
+        "order": 124,
+        "connected": true
+      },
+      {
+        "name": "25",
+        "lat": 53.9091357,
+        "lon": 30.3342231,
+        "order": 125,
+        "connected": true
+      },
+      {
+        "name": "25",
+        "lat": 53.9097424,
+        "lon": 30.3311332,
+        "order": 126,
+        "connected": true
+      },
+      {
+        "name": "25",
+        "lat": 53.9106272,
+        "lon": 30.3274961,
+        "order": 127,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9089335,
+        "lon": 30.3406497,
+        "order": 128,
+        "connected": false
+      },
+      {
+        "name": "26",
+        "lat": 53.9085606,
+        "lon": 30.3453704,
+        "order": 129,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9091294,
+        "lon": 30.3455098,
+        "order": 130,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9092432,
+        "lon": 30.3441151,
+        "order": 131,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9094265,
+        "lon": 30.3439971,
+        "order": 132,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9095718,
+        "lon": 30.3439756,
+        "order": 133,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9097551,
+        "lon": 30.3423341,
+        "order": 134,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9094265,
+        "lon": 30.3419479,
+        "order": 135,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9094896,
+        "lon": 30.3407891,
+        "order": 136,
+        "connected": true
+      },
+      {
+        "name": "26",
+        "lat": 53.9089335,
+        "lon": 30.3406497,
+        "order": 137,
+        "connected": true
+      },
+      {
+        "name": "27",
+        "lat": 53.9094896,
+        "lon": 30.3407891,
+        "order": 138,
+        "connected": false
+      },
+      {
+        "name": "27",
+        "lat": 53.9115878,
+        "lon": 30.3412076,
+        "order": 139,
+        "connected": true
+      },
+      {
+        "name": "27",
+        "lat": 53.9136353,
+        "lon": 30.3416796,
+        "order": 140,
+        "connected": true
+      },
+      {
+        "name": "27",
+        "lat": 53.9156006,
+        "lon": 30.3420981,
+        "order": 141,
+        "connected": true
+      }
+    ]
+  },
+  {
+    "id": "Веладарожкі",
+    "name": "Веладарожкі",
+    "points": [
+      {
+        "name": "",
+        "lat": 53.8933036,
+        "lon": 30.3305168,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8956808,
+        "lon": 30.3381021,
+        "order": 2,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8916598,
+        "lon": 30.3298731,
+        "order": 3,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.88994,
+        "lon": 30.3296156,
+        "order": 4,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8843501,
+        "lon": 30.3337784,
+        "order": 5,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8917356,
+        "lon": 30.3294225,
+        "order": 6,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8899147,
+        "lon": 30.329165,
+        "order": 7,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.887651,
+        "lon": 30.3307314,
+        "order": 8,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8866639,
+        "lon": 30.3299276,
+        "order": 9,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8861643,
+        "lon": 30.3303567,
+        "order": 10,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9094505,
+        "lon": 30.336805,
+        "order": 11,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9102594,
+        "lon": 30.3363705,
+        "order": 12,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9104711,
+        "lon": 30.335421,
+        "order": 13,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8952491,
+        "lon": 30.3403914,
+        "order": 14,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8959635,
+        "lon": 30.3448868,
+        "order": 15,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8926127,
+        "lon": 30.3374731,
+        "order": 16,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8915441,
+        "lon": 30.3393721,
+        "order": 17,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8917275,
+        "lon": 30.3408742,
+        "order": 18,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8915441,
+        "lon": 30.3393721,
+        "order": 19,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8912389,
+        "lon": 30.3352308,
+        "order": 20,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8915441,
+        "lon": 30.3393721,
+        "order": 21,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8914286,
+        "lon": 30.3392005,
+        "order": 22,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8912895,
+        "lon": 30.339297,
+        "order": 23,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8912895,
+        "lon": 30.3395331,
+        "order": 24,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.891435,
+        "lon": 30.3395867,
+        "order": 25,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8915441,
+        "lon": 30.3393721,
+        "order": 26,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8913528,
+        "lon": 30.3392327,
+        "order": 27,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8903601,
+        "lon": 30.3385675,
+        "order": 28,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8912895,
+        "lon": 30.3395331,
+        "order": 29,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8902905,
+        "lon": 30.3388679,
+        "order": 30,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8903601,
+        "lon": 30.3385675,
+        "order": 31,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8902196,
+        "lon": 30.3385138,
+        "order": 32,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8901879,
+        "lon": 30.3387606,
+        "order": 33,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8902905,
+        "lon": 30.3388679,
+        "order": 34,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8903839,
+        "lon": 30.3387284,
+        "order": 35,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8903601,
+        "lon": 30.3385675,
+        "order": 36,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8901943,
+        "lon": 30.3385997,
+        "order": 37,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8890941,
+        "lon": 30.3358102,
+        "order": 38,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8889613,
+        "lon": 30.3341365,
+        "order": 39,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8899224,
+        "lon": 30.334351,
+        "order": 40,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9276466,
+        "lon": 30.3507277,
+        "order": 41,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9392181,
+        "lon": 30.3542897,
+        "order": 42,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9438155,
+        "lon": 30.3553626,
+        "order": 43,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9466949,
+        "lon": 30.3567359,
+        "order": 44,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9500288,
+        "lon": 30.3262231,
+        "order": 45,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9671988,
+        "lon": 30.3163525,
+        "order": 46,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9802736,
+        "lon": 30.31764,
+        "order": 47,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9802736,
+        "lon": 30.3167817,
+        "order": 48,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9671483,
+        "lon": 30.3155801,
+        "order": 49,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9496247,
+        "lon": 30.3257939,
+        "order": 50,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9205375,
+        "lon": 30.2847672,
+        "order": 51,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9268553,
+        "lon": 30.270648,
+        "order": 52,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8632005,
+        "lon": 30.3584528,
+        "order": 53,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.835454,
+        "lon": 30.3603411,
+        "order": 54,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8795733,
+        "lon": 30.4099994,
+        "order": 55,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8776253,
+        "lon": 30.416308,
+        "order": 56,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8751965,
+        "lon": 30.4316288,
+        "order": 57,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.875576,
+        "lon": 30.4322725,
+        "order": 58,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8744881,
+        "lon": 30.4373794,
+        "order": 59,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8709458,
+        "lon": 30.4582792,
+        "order": 60,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8668465,
+        "lon": 30.4782348,
+        "order": 61,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8769862,
+        "lon": 30.4219635,
+        "order": 62,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8851572,
+        "lon": 30.4227359,
+        "order": 63,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8826276,
+        "lon": 30.4231651,
+        "order": 64,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8848283,
+        "lon": 30.4190023,
+        "order": 65,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8809075,
+        "lon": 30.4229934,
+        "order": 66,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8818687,
+        "lon": 30.4151828,
+        "order": 67,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8832094,
+        "lon": 30.4165991,
+        "order": 68,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8796932,
+        "lon": 30.4239376,
+        "order": 69,
+        "connected": true
+      }
+    ]
+  },
+  {
+    "id": "Квест---Бронекау-пакі",
+    "name": "Квест - Бронекаўпакі",
+    "points": [
+      {
+        "name": "",
+        "lat": 53.8936013,
+        "lon": 30.3264267,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.894164,
+        "lon": 30.3267486,
+        "order": 2,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8944232,
+        "lon": 30.3278751,
+        "order": 3,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8941956,
+        "lon": 30.3285617,
+        "order": 4,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.893829,
+        "lon": 30.3283579,
+        "order": 5,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8933421,
+        "lon": 30.3277034,
+        "order": 6,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8932599,
+        "lon": 30.3268451,
+        "order": 7,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8936013,
+        "lon": 30.3264267,
+        "order": 8,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9660347,
+        "lon": 30.3730159,
+        "order": 9,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.964886,
+        "lon": 30.3732734,
+        "order": 10,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9642801,
+        "lon": 30.3750759,
+        "order": 11,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9653783,
+        "lon": 30.3771358,
+        "order": 12,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9666784,
+        "lon": 30.3751617,
+        "order": 13,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9660347,
+        "lon": 30.3730159,
+        "order": 14,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9253332,
+        "lon": 30.4233066,
+        "order": 15,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9248278,
+        "lon": 30.4258386,
+        "order": 16,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9257123,
+        "lon": 30.4262892,
+        "order": 17,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9261798,
+        "lon": 30.4258815,
+        "order": 18,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9269252,
+        "lon": 30.4260318,
+        "order": 19,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9270516,
+        "lon": 30.4255168,
+        "order": 20,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9253332,
+        "lon": 30.4233066,
+        "order": 21,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9126023,
+        "lon": 30.4110342,
+        "order": 22,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9123369,
+        "lon": 30.4106479,
+        "order": 23,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9116038,
+        "lon": 30.4123216,
+        "order": 24,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9119198,
+        "lon": 30.4141241,
+        "order": 25,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9140178,
+        "lon": 30.4186302,
+        "order": 26,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9150795,
+        "lon": 30.4180294,
+        "order": 27,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9158504,
+        "lon": 30.4163557,
+        "order": 28,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9156229,
+        "lon": 30.4153042,
+        "order": 29,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9152311,
+        "lon": 30.415669,
+        "order": 30,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9152059,
+        "lon": 30.4167419,
+        "order": 31,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9145866,
+        "lon": 30.4176002,
+        "order": 32,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9139673,
+        "lon": 30.4176002,
+        "order": 33,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9135376,
+        "lon": 30.416463,
+        "order": 34,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9136513,
+        "lon": 30.4157978,
+        "order": 35,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.913032,
+        "lon": 30.4151111,
+        "order": 36,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9128677,
+        "lon": 30.4139953,
+        "order": 37,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.912122,
+        "lon": 30.413416,
+        "order": 38,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9120083,
+        "lon": 30.4122572,
+        "order": 39,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9126023,
+        "lon": 30.4110342,
+        "order": 40,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9347653,
+        "lon": 30.3274636,
+        "order": 41,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9349359,
+        "lon": 30.3280001,
+        "order": 42,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9378727,
+        "lon": 30.3256827,
+        "order": 43,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9378349,
+        "lon": 30.3251033,
+        "order": 44,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.936698,
+        "lon": 30.3256397,
+        "order": 45,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9347653,
+        "lon": 30.3274636,
+        "order": 46,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9240377,
+        "lon": 30.2733754,
+        "order": 47,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.923507,
+        "lon": 30.2734934,
+        "order": 48,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9232227,
+        "lon": 30.2746307,
+        "order": 49,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9239114,
+        "lon": 30.2759825,
+        "order": 50,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9246632,
+        "lon": 30.2744805,
+        "order": 51,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9240377,
+        "lon": 30.2733754,
+        "order": 52,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8588379,
+        "lon": 30.2690782,
+        "order": 53,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9270208,
+        "lon": 30.274559,
+        "order": 54,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9280569,
+        "lon": 30.2761468,
+        "order": 55,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9279684,
+        "lon": 30.2787217,
+        "order": 56,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9271598,
+        "lon": 30.2797517,
+        "order": 57,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9260227,
+        "lon": 30.2792367,
+        "order": 58,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.925631,
+        "lon": 30.2773485,
+        "order": 59,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9270208,
+        "lon": 30.274559,
+        "order": 60,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8588379,
+        "lon": 30.2690782,
+        "order": 61,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9573526,
+        "lon": 30.3437193,
+        "order": 62,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9568728,
+        "lon": 30.3430327,
+        "order": 63,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9562794,
+        "lon": 30.3414233,
+        "order": 64,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9570433,
+        "lon": 30.3398355,
+        "order": 65,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9576556,
+        "lon": 30.3401573,
+        "order": 66,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9582805,
+        "lon": 30.34211,
+        "order": 67,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9573526,
+        "lon": 30.3437193,
+        "order": 68,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9050921,
+        "lon": 30.3892734,
+        "order": 69,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.9052691,
+        "lon": 30.39099,
+        "order": 70,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9074433,
+        "lon": 30.3899386,
+        "order": 71,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9075571,
+        "lon": 30.3905609,
+        "order": 72,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9053197,
+        "lon": 30.3918483,
+        "order": 73,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9057242,
+        "lon": 30.3936722,
+        "order": 74,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9050668,
+        "lon": 30.394552,
+        "order": 75,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9045233,
+        "lon": 30.3894451,
+        "order": 76,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9050921,
+        "lon": 30.3892734,
+        "order": 77,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8588379,
+        "lon": 30.2690782,
+        "order": 78,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.8583191,
+        "lon": 30.2729405,
+        "order": 79,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8559524,
+        "lon": 30.2716531,
+        "order": 80,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8557499,
+        "lon": 30.2690353,
+        "order": 81,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8561802,
+        "lon": 30.2673186,
+        "order": 82,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8588379,
+        "lon": 30.2690782,
+        "order": 83,
+        "connected": true
+      }
+    ]
+  },
+  {
+    "id": "Класіцызм",
+    "name": "Класіцызм",
+    "points": [
+      {
+        "name": "Будынак земскага суда, урачэбнай управы і архіва",
+        "lat": 53.8951215,
+        "lon": 30.3296238,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "Касцёл Дзевы Марыі кармелітаў / Ксацёл св. Станіслава",
+        "lat": 53.8984514,
+        "lon": 30.3339865,
+        "order": 2,
+        "connected": false
+      },
+      {
+        "name": "Магілёўскае Аляксандраўскае рэальнае вучылішча",
+        "lat": 53.8961861,
+        "lon": 30.3377092,
+        "order": 3,
+        "connected": false
+      },
+      {
+        "name": "Дом Эбіна",
+        "lat": 53.9033534,
+        "lon": 30.3366718,
+        "order": 4,
+        "connected": false
+      },
+      {
+        "name": "Жаночая гімназія",
+        "lat": 53.9032104,
+        "lon": 30.3364646,
+        "order": 5,
+        "connected": false
+      },
+      {
+        "name": "Дом Мінахера",
+        "lat": 53.898759,
+        "lon": 30.3335644,
+        "order": 6,
+        "connected": false
+      },
+      {
+        "name": "Дом Вільнера",
+        "lat": 53.8986492,
+        "lon": 30.3334504,
+        "order": 7,
+        "connected": false
+      },
+      {
+        "name": "Фельчарская школа",
+        "lat": 53.8968755,
+        "lon": 30.3406678,
+        "order": 8,
+        "connected": false
+      },
+      {
+        "name": "Брама Саборнай плошчы",
+        "lat": 53.9013374,
+        "lon": 30.3348465,
+        "order": 9,
+        "connected": false
+      },
+      {
+        "name": "Мужчынскае епархіяльнае вучылішча",
+        "lat": 53.893835,
+        "lon": 30.3213364,
+        "order": 10,
+        "connected": false
+      },
+      {
+        "name": "Карпусы губернскай бальніцы",
+        "lat": 53.8971752,
+        "lon": 30.3427181,
+        "order": 11,
+        "connected": false
+      },
+      {
+        "name": "Прыватна-ўласніцкі дом",
+        "lat": 53.8952174,
+        "lon": 30.3324827,
+        "order": 12,
+        "connected": false
+      },
+      {
+        "name": "Палац Станіслава Богуш-Сестранцэвіча / Сінагога Цукермана",
+        "lat": 53.8973319,
+        "lon": 30.336431,
+        "order": 13,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "Магдэбургскі-Магіле-у",
+    "name": "Магдэбургскі Магілёў",
+    "points": [
+      {
+        "name": "Ратуша",
+        "lat": 53.8945435,
+        "lon": 30.3320305,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "Завулак Брамны",
+        "lat": 53.896,
+        "lon": 30.3285,
+        "order": 2,
+        "connected": false
+      },
+      {
+        "name": "Дом кушнерскага цэха",
+        "lat": 53.894655,
+        "lon": 30.3322996,
+        "order": 3,
+        "connected": false
+      },
+      {
+        "name": "Мікалаеўская царква",
+        "lat": 53.8937901,
+        "lon": 30.3458912,
+        "order": 4,
+        "connected": false
+      },
+      {
+        "name": "Пакроўская царква",
+        "lat": 53.892434,
+        "lon": 30.3345241,
+        "order": 5,
+        "connected": false
+      },
+      {
+        "name": "Фарны касцёл",
+        "lat": 53.8965059,
+        "lon": 30.3334739,
+        "order": 6,
+        "connected": false
+      },
+      {
+        "name": "Касцёл св. Станіслава",
+        "lat": 53.8984107,
+        "lon": 30.3339413,
+        "order": 7,
+        "connected": false
+      },
+      {
+        "name": "Крыжаўзвіжанская царква",
+        "lat": 53.8962963,
+        "lon": 30.324949,
+        "order": 8,
+        "connected": false
+      },
+      {
+        "name": "Дом купца Анташкевіча / Аношкі",
+        "lat": 53.8994719,
+        "lon": 30.3387458,
+        "order": 9,
+        "connected": false
+      },
+      {
+        "name": "Пліта прадстаўніка роду Валовічаў",
+        "lat": 53.8949921,
+        "lon": 30.3106373,
+        "order": 10,
+        "connected": false
+      },
+      {
+        "name": "Рэшткі Богаяўленскага манастыра",
+        "lat": 53.8967758,
+        "lon": 30.3326966,
+        "order": 11,
+        "connected": false
+      },
+      {
+        "name": "Духоўная кансісторыя",
+        "lat": 53.8957305,
+        "lon": 30.333669,
+        "order": 12,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "Магіле-у-скае-барока",
+    "name": "Магілёўскае барока",
+    "points": [
+      {
+        "name": "Мікалаеўская царква",
+        "lat": 53.8937956,
+        "lon": 30.3459126,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "Духоўная кансісторыя",
+        "lat": 53.8957418,
+        "lon": 30.3336648,
+        "order": 2,
+        "connected": false
+      },
+      {
+        "name": "Дом Анташкевіча / Аношкі",
+        "lat": 53.8994447,
+        "lon": 30.3387955,
+        "order": 3,
+        "connected": false
+      },
+      {
+        "name": "Храм іконы Божай Маці \"Усецарыца\"",
+        "lat": 53.930357,
+        "lon": 30.2624742,
+        "order": 4,
+        "connected": false
+      },
+      {
+        "name": "МДУ імя А.А. Куляшова",
+        "lat": 53.9107705,
+        "lon": 30.3404379,
+        "order": 5,
+        "connected": false
+      },
+      {
+        "name": "Касцёл Дзевы Марыі кармелітаў / Ксацёл св. Станіслава",
+        "lat": 53.8983706,
+        "lon": 30.3339946,
+        "order": 6,
+        "connected": false
+      },
+      {
+        "name": "Ратуша",
+        "lat": 53.8945206,
+        "lon": 30.3319266,
+        "order": 7,
+        "connected": false
+      },
+      {
+        "name": "Свята-Пакроўская царква",
+        "lat": 53.8924279,
+        "lon": 30.334523,
+        "order": 8,
+        "connected": false
+      },
+      {
+        "name": "Дом кушнерскага цэха",
+        "lat": 53.894662791446,
+        "lon": 30.332271649517,
+        "order": 9,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "Маршрут-на-20-хвілін---Гістарычны-цэнтр",
+    "name": "Маршрут на 20 хвілін - Гістарычны цэнтр",
+    "points": [
+      {
+        "name": "",
+        "lat": 53.89471,
+        "lon": 30.33169,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.89535,
+        "lon": 30.33427,
+        "order": 2,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89589,
+        "lon": 30.33369,
+        "order": 3,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89562,
+        "lon": 30.33309,
+        "order": 4,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89539,
+        "lon": 30.33257,
+        "order": 5,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8949,
+        "lon": 30.33146,
+        "order": 6,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89481,
+        "lon": 30.33127,
+        "order": 7,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89468,
+        "lon": 30.33098,
+        "order": 8,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8945,
+        "lon": 30.33121,
+        "order": 9,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89481,
+        "lon": 30.33192,
+        "order": 10,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89472,
+        "lon": 30.33203,
+        "order": 11,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89479,
+        "lon": 30.33258,
+        "order": 12,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89472,
+        "lon": 30.33203,
+        "order": 13,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89481,
+        "lon": 30.33192,
+        "order": 14,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89471,
+        "lon": 30.33169,
+        "order": 15,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8945,
+        "lon": 30.33121,
+        "order": 16,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89468,
+        "lon": 30.33098,
+        "order": 17,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89481,
+        "lon": 30.33127,
+        "order": 18,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8949,
+        "lon": 30.33146,
+        "order": 19,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89539,
+        "lon": 30.33257,
+        "order": 20,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89562,
+        "lon": 30.33309,
+        "order": 21,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89589,
+        "lon": 30.33369,
+        "order": 22,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89622,
+        "lon": 30.33444,
+        "order": 23,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89639,
+        "lon": 30.33472,
+        "order": 24,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89696,
+        "lon": 30.33537,
+        "order": 25,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.897,
+        "lon": 30.33529,
+        "order": 26,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89723,
+        "lon": 30.33474,
+        "order": 27,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8973,
+        "lon": 30.33456,
+        "order": 28,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8975,
+        "lon": 30.33408,
+        "order": 29,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89781,
+        "lon": 30.33333,
+        "order": 30,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89801,
+        "lon": 30.33273,
+        "order": 31,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89799,
+        "lon": 30.33271,
+        "order": 32,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89768,
+        "lon": 30.33251,
+        "order": 33,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89735,
+        "lon": 30.33229,
+        "order": 34,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89701,
+        "lon": 30.33208,
+        "order": 35,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89634,
+        "lon": 30.33165,
+        "order": 36,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89627,
+        "lon": 30.3316,
+        "order": 37,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8958,
+        "lon": 30.3313,
+        "order": 38,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89513,
+        "lon": 30.33087,
+        "order": 39,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89503,
+        "lon": 30.33082,
+        "order": 40,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89468,
+        "lon": 30.33098,
+        "order": 41,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8945,
+        "lon": 30.32969,
+        "order": 42,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8947,
+        "lon": 30.32959,
+        "order": 43,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89488,
+        "lon": 30.32977,
+        "order": 44,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89519,
+        "lon": 30.33009,
+        "order": 45,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89503,
+        "lon": 30.33082,
+        "order": 46,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89468,
+        "lon": 30.33098,
+        "order": 47,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8945,
+        "lon": 30.33121,
+        "order": 48,
+        "connected": true
+      }
+    ]
+  },
+  {
+    "id": "Маршрут-на-20-хвілін---вуліца-Ленінская",
+    "name": "Маршрут на 20 хвілін - вуліца Ленінская",
+    "points": [
+      {
+        "name": "",
+        "lat": 53.89473,
+        "lon": 30.33111,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.90525,
+        "lon": 30.3438,
+        "order": 2,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90515,
+        "lon": 30.34367,
+        "order": 3,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90456,
+        "lon": 30.34304,
+        "order": 4,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90421,
+        "lon": 30.34271,
+        "order": 5,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90373,
+        "lon": 30.34223,
+        "order": 6,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90296,
+        "lon": 30.34144,
+        "order": 7,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90289,
+        "lon": 30.34136,
+        "order": 8,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90245,
+        "lon": 30.34088,
+        "order": 9,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90211,
+        "lon": 30.34057,
+        "order": 10,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90165,
+        "lon": 30.34011,
+        "order": 11,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9012,
+        "lon": 30.33967,
+        "order": 12,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90094,
+        "lon": 30.3394,
+        "order": 13,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90083,
+        "lon": 30.33931,
+        "order": 14,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90064,
+        "lon": 30.33911,
+        "order": 15,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90058,
+        "lon": 30.33904,
+        "order": 16,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90035,
+        "lon": 30.33882,
+        "order": 17,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89911,
+        "lon": 30.33759,
+        "order": 18,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89849,
+        "lon": 30.33697,
+        "order": 19,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89807,
+        "lon": 30.33654,
+        "order": 20,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8976,
+        "lon": 30.33607,
+        "order": 21,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89696,
+        "lon": 30.33537,
+        "order": 22,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89639,
+        "lon": 30.33472,
+        "order": 23,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89622,
+        "lon": 30.33444,
+        "order": 24,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89589,
+        "lon": 30.33369,
+        "order": 25,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89562,
+        "lon": 30.33309,
+        "order": 26,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89539,
+        "lon": 30.33257,
+        "order": 27,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8949,
+        "lon": 30.33146,
+        "order": 28,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89481,
+        "lon": 30.33127,
+        "order": 29,
+        "connected": true
+      }
+    ]
+  },
+  {
+    "id": "Маршрут-на-40-хвілін---Першамаи-ская-і-Ленінская",
+    "name": "Маршрут на 40 хвілін - Першамайская і Ленінская",
+    "points": [
+      {
+        "name": "",
+        "lat": 53.8951,
+        "lon": 30.33096,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "",
+        "lat": 53.89513,
+        "lon": 30.33087,
+        "order": 2,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8958,
+        "lon": 30.3313,
+        "order": 3,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89627,
+        "lon": 30.3316,
+        "order": 4,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89634,
+        "lon": 30.33165,
+        "order": 5,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89701,
+        "lon": 30.33208,
+        "order": 6,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89735,
+        "lon": 30.33229,
+        "order": 7,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89768,
+        "lon": 30.33251,
+        "order": 8,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89801,
+        "lon": 30.33273,
+        "order": 9,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89867,
+        "lon": 30.33322,
+        "order": 10,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89912,
+        "lon": 30.33356,
+        "order": 11,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89933,
+        "lon": 30.33371,
+        "order": 12,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89969,
+        "lon": 30.33396,
+        "order": 13,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8998,
+        "lon": 30.33405,
+        "order": 14,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89993,
+        "lon": 30.33416,
+        "order": 15,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9004,
+        "lon": 30.33453,
+        "order": 16,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90088,
+        "lon": 30.33491,
+        "order": 17,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90138,
+        "lon": 30.33532,
+        "order": 18,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90169,
+        "lon": 30.33557,
+        "order": 19,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90165,
+        "lon": 30.3357,
+        "order": 20,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.902,
+        "lon": 30.33608,
+        "order": 21,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90229,
+        "lon": 30.33633,
+        "order": 22,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90307,
+        "lon": 30.33695,
+        "order": 23,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90344,
+        "lon": 30.33715,
+        "order": 24,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90347,
+        "lon": 30.33717,
+        "order": 25,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90392,
+        "lon": 30.33752,
+        "order": 26,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90403,
+        "lon": 30.33759,
+        "order": 27,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90383,
+        "lon": 30.33837,
+        "order": 28,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90375,
+        "lon": 30.33871,
+        "order": 29,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90373,
+        "lon": 30.33877,
+        "order": 30,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90371,
+        "lon": 30.33884,
+        "order": 31,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90342,
+        "lon": 30.33931,
+        "order": 32,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90304,
+        "lon": 30.33993,
+        "order": 33,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90265,
+        "lon": 30.34058,
+        "order": 34,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90245,
+        "lon": 30.34088,
+        "order": 35,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9024,
+        "lon": 30.34097,
+        "order": 36,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90245,
+        "lon": 30.34088,
+        "order": 37,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90211,
+        "lon": 30.34057,
+        "order": 38,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90165,
+        "lon": 30.34011,
+        "order": 39,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.9012,
+        "lon": 30.33967,
+        "order": 40,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90094,
+        "lon": 30.3394,
+        "order": 41,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90083,
+        "lon": 30.33931,
+        "order": 42,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90064,
+        "lon": 30.33911,
+        "order": 43,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90058,
+        "lon": 30.33904,
+        "order": 44,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.90035,
+        "lon": 30.33882,
+        "order": 45,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89911,
+        "lon": 30.33759,
+        "order": 46,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89849,
+        "lon": 30.33697,
+        "order": 47,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89807,
+        "lon": 30.33654,
+        "order": 48,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8976,
+        "lon": 30.33607,
+        "order": 49,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89696,
+        "lon": 30.33537,
+        "order": 50,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89639,
+        "lon": 30.33472,
+        "order": 51,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89622,
+        "lon": 30.33444,
+        "order": 52,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89589,
+        "lon": 30.33369,
+        "order": 53,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89562,
+        "lon": 30.33309,
+        "order": 54,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89539,
+        "lon": 30.33257,
+        "order": 55,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8949,
+        "lon": 30.33146,
+        "order": 56,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.89506,
+        "lon": 30.33114,
+        "order": 57,
+        "connected": true
+      },
+      {
+        "name": "",
+        "lat": 53.8951,
+        "lon": 30.33096,
+        "order": 58,
+        "connected": true
+      }
+    ]
+  },
+  {
+    "id": "Музеі-і-галерэі",
+    "name": "Музеі і галерэі",
+    "points": [
+      {
+        "name": "Музей гісторыі Магілёва",
+        "lat": 53.8945401,
+        "lon": 30.3319992,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "Магілёўскі абласны краязнаўчы музей",
+        "lat": 53.8951265,
+        "lon": 30.3296255,
+        "order": 2,
+        "connected": false
+      },
+      {
+        "name": "Выставачная зала Музея гісторыі Магілёва",
+        "lat": 53.8970822,
+        "lon": 30.3325719,
+        "order": 3,
+        "connected": false
+      },
+      {
+        "name": "Музей этнаграфіі (аддзел Магілёўскага абласнога краязнаўчага музея)",
+        "lat": 53.8972362,
+        "lon": 30.3315346,
+        "order": 4,
+        "connected": false
+      },
+      {
+        "name": "Музей імя В.К. Бялыніцкага-Бірулі (філіял Беларускага дзяржаўнага мастацкага музея)",
+        "lat": 53.8994427,
+        "lon": 30.3387389,
+        "order": 5,
+        "connected": false
+      },
+      {
+        "name": "Магілёўскі абласны мастацкі музей імя П.В. Масленікава",
+        "lat": 53.9081353,
+        "lon": 30.338459,
+        "order": 6,
+        "connected": false
+      },
+      {
+        "name": "Галерэя Андрэя Вараб'ёва",
+        "lat": 53.9111326,
+        "lon": 30.3279951,
+        "order": 7,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "Помнікі-і-памятныя-знакі",
+    "name": "Помнікі і памятныя знакі",
+    "points": [
+      {
+        "name": "Спірыдон Собаль",
+        "lat": 53.8970809,
+        "lon": 30.3322774,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "name": "Георгі Каніскі",
+        "lat": 53.8952188,
+        "lon": 30.3344392,
+        "order": 2,
+        "connected": false
+      },
+      {
+        "name": "Георгі Каніскі",
+        "lat": 53.8949534,
+        "lon": 30.3347352,
+        "order": 3,
+        "connected": false
+      },
+      {
+        "name": "Пахаванне нямецкіх салдат",
+        "lat": 53.8875819,
+        "lon": 30.4195122,
+        "order": 4,
+        "connected": false
+      },
+      {
+        "name": "Генерал М. Раманаў",
+        "lat": 53.8937417,
+        "lon": 30.3080148,
+        "order": 5,
+        "connected": false
+      },
+      {
+        "name": "Капітан К. Уладзіміраў",
+        "lat": 53.9263137,
+        "lon": 30.3406719,
+        "order": 6,
+        "connected": false
+      },
+      {
+        "name": "Генерал І. Болдзін",
+        "lat": 53.8958714,
+        "lon": 30.3358379,
+        "order": 7,
+        "connected": false
+      },
+      {
+        "name": "Буйніцкае поле",
+        "lat": 53.860873,
+        "lon": 30.2575239,
+        "order": 8,
+        "connected": false
+      },
+      {
+        "name": "Вітольд Бялыніцкі-Біруля",
+        "lat": 53.8996075,
+        "lon": 30.3385598,
+        "order": 9,
+        "connected": false
+      },
+      {
+        "name": "Павел Масленікаў",
+        "lat": 53.9074325,
+        "lon": 30.3397401,
+        "order": 10,
+        "connected": false
+      },
+      {
+        "name": "Яўген Мікалуцкі",
+        "lat": 53.9054784,
+        "lon": 30.3368731,
+        "order": 11,
+        "connected": false
+      },
+      {
+        "name": "Брацкая магіла",
+        "lat": 53.9034212,
+        "lon": 30.3210199,
+        "order": 12,
+        "connected": false
+      },
+      {
+        "name": "Памятны знак на яўрэйскіх могілках",
+        "lat": 53.899522,
+        "lon": 30.3538005,
+        "order": 13,
+        "connected": false
+      },
+      {
+        "name": "Нулявы кіламетр Магілёўская вобласці",
+        "lat": 53.9089099,
+        "lon": 30.3429489,
+        "order": 14,
+        "connected": false
+      },
+      {
+        "name": "Помнік воінам-інтэрнацыяналістам",
+        "lat": 53.8844145,
+        "lon": 30.3374239,
+        "order": 15,
+        "connected": false
+      },
+      {
+        "name": "Супрацоўнікам міліцыі што загінулі пры выкананні службовага і воінскага абавязкаў.",
+        "lat": 53.8999968,
+        "lon": 30.3448208,
+        "order": 16,
+        "connected": false
+      },
+      {
+        "name": "Аркадзь Куляшоў",
+        "lat": 53.9120022,
+        "lon": 30.316113,
+        "order": 17,
+        "connected": false
+      },
+      {
+        "name": "Віктар Тураў",
+        "lat": 53.9020636,
+        "lon": 30.3409826,
+        "order": 18,
+        "connected": false
+      },
+      {
+        "name": "Зорнік",
+        "lat": 53.9022872,
+        "lon": 30.3407278,
+        "order": 19,
+        "connected": false
+      },
+      {
+        "name": "Зорка БРСМ",
+        "lat": 53.9024306,
+        "lon": 30.340451,
+        "order": 20,
+        "connected": false
+      },
+      {
+        "name": "Ёган Себасцьян Бах",
+        "lat": 53.9029237,
+        "lon": 30.34165,
+        "order": 21,
+        "connected": false
+      },
+      {
+        "name": "Маленькі прынц",
+        "lat": 53.903133,
+        "lon": 30.3392252,
+        "order": 22,
+        "connected": false
+      },
+      {
+        "name": "Дама з сабачкам",
+        "lat": 53.8977219,
+        "lon": 30.3329144,
+        "order": 23,
+        "connected": false
+      },
+      {
+        "name": "Будынак гарадской управы",
+        "lat": 53.8947049,
+        "lon": 30.3312229,
+        "order": 24,
+        "connected": false
+      },
+      {
+        "name": "Ветраная брама",
+        "lat": 53.8964409,
+        "lon": 30.3351256,
+        "order": 25,
+        "connected": false
+      },
+      {
+        "name": "Штабны сход Стаўкі вярхоўнага галоўнакамандавання",
+        "lat": 53.8969949,
+        "lon": 30.3356486,
+        "order": 26,
+        "connected": false
+      },
+      {
+        "name": "Рэзідэнцыя С. Богуш-Сестранцэвіча",
+        "lat": 53.8973609,
+        "lon": 30.3363214,
+        "order": 27,
+        "connected": false
+      },
+      {
+        "name": "Паштовае ведамства",
+        "lat": 53.8986034,
+        "lon": 30.3373097,
+        "order": 28,
+        "connected": false
+      },
+      {
+        "name": "Сустрэча Кацярыны ІІ і Іосіфа ІІ",
+        "lat": 53.8994684,
+        "lon": 30.3386677,
+        "order": 29,
+        "connected": false
+      },
+      {
+        "name": "Мужчынская гімназія",
+        "lat": 53.9008023,
+        "lon": 30.3393745,
+        "order": 30,
+        "connected": false
+      },
+      {
+        "name": "Сімвалічны залаты ключ ад горада",
+        "lat": 53.9008308,
+        "lon": 30.339105,
+        "order": 31,
+        "connected": false
+      },
+      {
+        "name": "Магдэбургскае права",
+        "lat": 53.9047917,
+        "lon": 30.3366244,
+        "order": 32,
+        "connected": false
+      },
+      {
+        "name": "Аслан Везіраў",
+        "lat": 53.8966396,
+        "lon": 30.3312994,
+        "order": 33,
+        "connected": false
+      },
+      {
+        "name": "Тарас Шаўчэнка",
+        "lat": 53.8851518,
+        "lon": 30.3346597,
+        "order": 34,
+        "connected": false
+      },
+      {
+        "name": "Іосіф Гусакоўскі",
+        "lat": 53.8942306,
+        "lon": 30.3304299,
+        "order": 35,
+        "connected": false
+      },
+      {
+        "name": "Сцяпан Шутаў",
+        "lat": 53.89418,
+        "lon": 30.330387,
+        "order": 36,
+        "connected": false
+      },
+      {
+        "name": "Іван Якубоўскі",
+        "lat": 53.8941247,
+        "lon": 30.330336,
+        "order": 37,
+        "connected": false
+      },
+      {
+        "name": "Еўдакім Раманаў",
+        "lat": 53.8950467,
+        "lon": 30.3297451,
+        "order": 38,
+        "connected": false
+      },
+      {
+        "name": "Дзмітрый Маўчанскі",
+        "lat": 53.8785776,
+        "lon": 30.3692876,
+        "order": 39,
+        "connected": false
+      },
+      {
+        "name": "Знак у памяць пра яўрэяў - ахвяр нацызму",
+        "lat": 53.9312661,
+        "lon": 30.2724192,
+        "order": 40,
+        "connected": false
+      },
+      {
+        "name": "Станцыйны наглядчык - пакаленням працаўнікоў стальных магістраляў",
+        "lat": 53.9263167,
+        "lon": 30.3382902,
+        "order": 41,
+        "connected": false
+      },
+      {
+        "name": "Аслан Фархад аглы Везіраў",
+        "lat": 53.9090789,
+        "lon": 30.3111571,
+        "order": 42,
+        "connected": false
+      },
+      {
+        "name": "Дзецям вайны",
+        "lat": 53.903293,
+        "lon": 30.3216657,
+        "order": 43,
+        "connected": false
+      },
+      {
+        "name": "Памяці пацыентаў Магілёўскай псіхіятрычнай бальніцы",
+        "lat": 53.9283345,
+        "lon": 30.3139585,
+        "order": 44,
+        "connected": false
+      },
+      {
+        "name": "Гімнастка",
+        "lat": 53.9509926,
+        "lon": 30.3611305,
+        "order": 45,
+        "connected": false
+      },
+      {
+        "name": "Эдуард Калманоўскі",
+        "lat": 53.8995088,
+        "lon": 30.3340992,
+        "order": 46,
+        "connected": false
+      },
+      {
+        "name": "Магілёў - культурная сталіца",
+        "lat": 53.9045517,
+        "lon": 30.3373627,
+        "order": 47,
+        "connected": false
+      },
+      {
+        "name": "Паклонны крыж ахвярам фашызма",
+        "lat": 53.8743047,
+        "lon": 30.319101,
+        "order": 48,
+        "connected": false
+      },
+      {
+        "name": "Армянскі хачкар",
+        "lat": 53.8883374,
+        "lon": 30.3314688,
+        "order": 49,
+        "connected": false
+      },
+      {
+        "name": "Эдуард Вішнякоў",
+        "lat": 53.9601033,
+        "lon": 30.3672365,
+        "order": 50,
+        "connected": false
+      },
+      {
+        "name": "Генерал Міхаіл Раманаў",
+        "lat": 53.8932854,
+        "lon": 30.309601,
+        "order": 51,
+        "connected": false
+      },
+      {
+        "name": "Лёва з Магілёва",
+        "lat": 53.9064071,
+        "lon": 30.3418728,
+        "order": 52,
+        "connected": false
+      },
+      {
+        "name": "Валянцін Ермаловіч",
+        "lat": 53.9113904,
+        "lon": 30.3406203,
+        "order": 53,
+        "connected": false
+      },
+      {
+        "name": "Аляксандр Пушкін",
+        "lat": 53.9117758,
+        "lon": 30.3138939,
+        "order": 54,
+        "connected": false
+      },
+      {
+        "name": "Сямён Куцепаў",
+        "lat": 53.8730333,
+        "lon": 30.3120618,
+        "order": 55,
+        "connected": false
+      },
+      {
+        "name": "Львы",
+        "lat": 53.8923452,
+        "lon": 30.3297452,
+        "order": 56,
+        "connected": false
+      },
+      {
+        "name": "Стаўка Вярхоўнага галоўнакамандуючага",
+        "lat": 53.8941827,
+        "lon": 30.3312794,
+        "order": 57,
+        "connected": false
+      },
+      {
+        "name": "Магілёўскі замак",
+        "lat": 53.8943249,
+        "lon": 30.3284881,
+        "order": 58,
+        "connected": false
+      },
+      {
+        "name": "Рукапажацце",
+        "lat": 53.9044474,
+        "lon": 30.3430942,
+        "order": 59,
+        "connected": false
+      },
+      {
+        "name": "55 гадоў Ленінскаму раёну",
+        "lat": 53.9067862,
+        "lon": 30.3497711,
+        "order": 60,
+        "connected": false
+      },
+      {
+        "name": "Сустрэча",
+        "lat": 53.9060224,
+        "lon": 30.343407,
+        "order": 61,
+        "connected": false
+      },
+      {
+        "name": "Трыумфальная арка",
+        "lat": 53.936542,
+        "lon": 30.2500014,
+        "order": 62,
+        "connected": false
+      },
+      {
+        "name": "Пётр Лярскі",
+        "lat": 53.9107329,
+        "lon": 30.3404963,
+        "order": 63,
+        "connected": false
+      },
+      {
+        "name": "Саборныя могілкі",
+        "lat": 53.908811,
+        "lon": 30.3344941,
+        "order": 64,
+        "connected": false
+      }
+    ]
+  },
+  {
+    "id": "Рэнесанс",
+    "name": "Рэнесанс",
+    "points": [
+      {
+        "name": "Фарны Касцёл",
+        "lat": 53.8965104,
+        "lon": 30.3333903,
+        "order": 1,
+        "connected": false
+      }
+    ]
+  }
+]

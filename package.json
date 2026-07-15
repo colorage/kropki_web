@@ -5,8 +5,10 @@
   "type": "module",
   "description": "Static heritage map of Mahilioŭ (Кропкі) for GitHub Pages",
   "scripts": {
+    "predev": "node scripts/use-vite-index.mjs",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "prebuild": "node scripts/use-vite-index.mjs",
+    "build": "tsc && vite build && node scripts/sync-pages-root.mjs",
     "preview": "vite preview",
     "import": "node scripts/import-notion.mjs",
     "bootstrap": "node scripts/bootstrap-osm.mjs"

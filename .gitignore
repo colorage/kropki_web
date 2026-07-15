@@ -3,5 +3,9 @@ dist
 .DS_Store
 *.local
 notion-export
+notion
 .env
 .env.*
+# Local unzip of Drive export (do not commit raw Notion dump)
+*.zip
+
