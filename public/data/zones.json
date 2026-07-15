@@ -1,0 +1,32 @@
+[
+  {
+    "id": "III-1",
+    "name": "III-1",
+    "points": [
+      {
+        "lat": 53.887898257994,
+        "lon": 30.337217563734,
+        "order": 1,
+        "connected": false
+      },
+      {
+        "lat": 53.8885,
+        "lon": 30.338,
+        "order": 2,
+        "connected": false
+      },
+      {
+        "lat": 53.8875,
+        "lon": 30.339,
+        "order": 3,
+        "connected": false
+      },
+      {
+        "lat": 53.887,
+        "lon": 30.3375,
+        "order": 4,
+        "connected": false
+      }
+    ]
+  }
+]

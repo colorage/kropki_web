@@ -1,2 +1,7 @@
-.cursor/
+node_modules
+dist
 .DS_Store
+*.local
+notion-export
+.env
+.env.*

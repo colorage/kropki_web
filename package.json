@@ -1,0 +1,25 @@
+{
+  "name": "kropki_web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Static heritage map of Mahilioŭ (Кропкі) for GitHub Pages",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "import": "node scripts/import-notion.mjs",
+    "bootstrap": "node scripts/bootstrap-osm.mjs"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.21",
+    "csv-parse": "^6.1.0",
+    "node-html-parser": "^7.0.1",
+    "sharp": "^0.34.5",
+    "typescript": "~5.9.3",
+    "vite": "^6.3.5"
+  }
+}
