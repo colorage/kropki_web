@@ -12,10 +12,9 @@
  *   4. ~/Downloads/notion
  */
 
-import { createReadStream, existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync, copyFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync, copyFileSync } from 'node:fs'
 import { basename, dirname, extname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { createInterface } from 'node:readline'
 import { parse } from 'csv-parse/sync'
 import { parse as parseHtml } from 'node-html-parser'
 import sharp from 'sharp'
