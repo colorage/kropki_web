@@ -83,6 +83,7 @@ input {
   flex: 1;
   position: relative;
   max-width: 420px;
+  margin-left: auto;
 }
 
 .search-wrap input {
@@ -159,28 +160,6 @@ input {
   color: var(--ink-soft);
 }
 
-.header-actions {
-  display: flex;
-  gap: 8px;
-  margin-left: auto;
-}
-
-.chip-toggle {
-  border: 1px solid var(--line);
-  background: #fff;
-  border-radius: 999px;
-  padding: 8px 12px;
-  cursor: pointer;
-  color: var(--ink-soft);
-  white-space: nowrap;
-}
-
-.chip-toggle[aria-pressed='true'] {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-
 .main {
   position: relative;
   min-height: 0;
@@ -253,7 +232,6 @@ input {
 }
 
 .filter-panel,
-.legend-control,
 .detail-panel {
   background: var(--panel);
   backdrop-filter: blur(12px);
@@ -371,63 +349,6 @@ input {
 
 .filter-empty[hidden] {
   display: none;
-}
-
-.legend-control {
-  position: absolute;
-  z-index: 500;
-  left: 12px;
-  bottom: 12px;
-  border-radius: var(--panel-radius);
-  padding: 8px 10px;
-  display: grid;
-  gap: 8px;
-  max-width: min(220px, calc(100% - 80px));
-}
-
-.legend-toggle {
-  border: 0;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--accent-deep);
-  text-align: left;
-}
-
-.legend-toggle[aria-expanded='true']::after {
-  content: ' ▴';
-  font-size: 0.75em;
-  color: var(--ink-soft);
-}
-
-.legend-toggle[aria-expanded='false']::after {
-  content: ' ▾';
-  font-size: 0.75em;
-  color: var(--ink-soft);
-}
-
-.legend {
-  display: grid;
-  gap: 6px;
-  font-size: 0.78rem;
-  color: var(--ink-soft);
-}
-
-.legend[hidden] {
-  display: none;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.legend-item img {
-  width: 16px;
-  height: 16px;
 }
 
 .detail-panel {
@@ -596,10 +517,6 @@ input {
     font-size: 1.05rem;
   }
 
-  .chip-toggle span {
-    display: none;
-  }
-
   .search-wrap {
     max-width: none;
   }
@@ -615,15 +532,6 @@ input {
 
   .main.has-selection .filter-panel {
     max-width: calc(100% - 16px);
-  }
-
-  .legend-control {
-    left: 8px;
-    bottom: 12px;
-  }
-
-  .main.has-selection .legend-control {
-    display: none;
   }
 
   .detail-panel {

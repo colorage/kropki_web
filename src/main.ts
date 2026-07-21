@@ -1,13 +1,12 @@
 import 'leaflet/dist/leaflet.css'
 import './styles/main.css'
 
-import type { Building, BuildingStatus, BuildingType, Tour, Zone } from './types'
+import type { Building, BuildingStatus, BuildingType } from './types'
 import { STATUS_LABELS, TYPE_LABELS } from './types'
 import { asset } from './asset'
 import { createMap } from './map'
 
 const DEFAULT_COVER = 'default/building_default.svg'
-const LEGEND_STATUSES: BuildingStatus[] = ['preserved', 'restored', 'perspective', 'warning', 'lost']
 
 const app = document.querySelector<HTMLDivElement>('#app')
 if (!app) throw new Error('#app missing')
@@ -23,10 +22,6 @@ app.innerHTML = `
         <input id="search" type="search" placeholder="Пошук па назве або адрасе" autocomplete="off" />
         <button class="clear" id="clear-search" type="button" hidden aria-label="Ачысціць">✕</button>
         <div class="suggestions" id="suggestions" role="listbox"></div>
-      </div>
-      <div class="header-actions">
-        <button class="chip-toggle" id="toggle-tours" type="button" aria-pressed="false" hidden>Туры <span>на карце</span></button>
-        <button class="chip-toggle" id="toggle-zones" type="button" aria-pressed="false" hidden>Зоны <span>аховы</span></button>
       </div>
     </header>
     <main class="main" id="main">
@@ -47,10 +42,6 @@ app.innerHTML = `
           <p class="filter-empty" id="filter-empty" hidden>Нічога не знойдзена. <button class="text-btn" id="clear-filters-empty" type="button">Скінуць фільтры</button></p>
         </div>
       </aside>
-      <div class="legend-control" id="legend-control">
-        <button class="legend-toggle" id="legend-toggle" type="button" aria-expanded="false" aria-controls="legend">Легенда</button>
-        <div class="legend" id="legend" hidden></div>
-      </div>
       <section class="detail-panel" id="detail" aria-hidden="true">
         <button class="close" id="close-detail" type="button">Закрыць</button>
         <img class="detail-cover" id="detail-cover" alt="" />
@@ -72,8 +63,6 @@ const loadingEl = document.querySelector<HTMLElement>('#loading')!
 const countEl = document.querySelector<HTMLElement>('#count')!
 const statusFiltersEl = document.querySelector<HTMLElement>('#status-filters')!
 const typeFiltersEl = document.querySelector<HTMLElement>('#type-filters')!
-const legendEl = document.querySelector<HTMLElement>('#legend')!
-const legendToggleBtn = document.querySelector<HTMLButtonElement>('#legend-toggle')!
 const filterToggleBtn = document.querySelector<HTMLButtonElement>('#filter-toggle')!
 const filterBodyEl = document.querySelector<HTMLElement>('#filter-body')!
 const filterEmptyEl = document.querySelector<HTMLElement>('#filter-empty')!
@@ -84,8 +73,6 @@ const clearSearchBtn = document.querySelector<HTMLButtonElement>('#clear-search'
 const clearFiltersBtn = document.querySelector<HTMLButtonElement>('#clear-filters')!
 const clearFiltersEmptyBtn = document.querySelector<HTMLButtonElement>('#clear-filters-empty')!
 const suggestionsEl = document.querySelector<HTMLElement>('#suggestions')!
-const toggleToursBtn = document.querySelector<HTMLButtonElement>('#toggle-tours')!
-const toggleZonesBtn = document.querySelector<HTMLButtonElement>('#toggle-zones')!
 const coverEl = document.querySelector<HTMLImageElement>('#detail-cover')!
 const galleryEl = document.querySelector<HTMLElement>('#detail-gallery')!
 const addressEl = document.querySelector<HTMLElement>('#detail-address')!
@@ -94,8 +81,6 @@ const yearEl = document.querySelector<HTMLElement>('#detail-year')!
 const map = createMap(mapEl)
 
 let allBuildings: Building[] = []
-let tours: Tour[] = []
-let zones: Zone[] = []
 let activeStatuses = new Set<BuildingStatus>()
 let activeTypes = new Set<BuildingType>()
 let query = ''
@@ -185,14 +170,6 @@ function renderFilters() {
         `<button type="button" class="filter-chip" data-type="${t}" aria-pressed="${activeTypes.has(t)}">${TYPE_LABELS[t] || t}</button>`,
     )
     .join('')
-
-  legendEl.innerHTML = LEGEND_STATUSES.map(
-    (s) => `
-      <div class="legend-item">
-        <img src="${asset(`pins/building_${pinStatusFile(s)}.svg`)}" alt="" />
-        <span>${STATUS_LABELS[s]}</span>
-      </div>`,
-  ).join('')
 
   syncClearFilters()
 }
@@ -329,12 +306,6 @@ filterToggleBtn.addEventListener('click', () => {
   setFiltersExpanded(!filtersExpanded)
 })
 
-legendToggleBtn.addEventListener('click', () => {
-  const open = legendToggleBtn.getAttribute('aria-expanded') !== 'true'
-  legendToggleBtn.setAttribute('aria-expanded', String(open))
-  legendEl.hidden = !open
-})
-
 statusFiltersEl.addEventListener('click', (e) => {
   const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-status]')
   if (!btn) return
@@ -401,18 +372,6 @@ galleryEl.addEventListener('click', (e) => {
 
 closeDetailBtn.addEventListener('click', hideDetail)
 
-toggleToursBtn.addEventListener('click', () => {
-  const next = toggleToursBtn.getAttribute('aria-pressed') !== 'true'
-  toggleToursBtn.setAttribute('aria-pressed', String(next))
-  map.setToursVisible(next, tours)
-})
-
-toggleZonesBtn.addEventListener('click', () => {
-  const next = toggleZonesBtn.getAttribute('aria-pressed') !== 'true'
-  toggleZonesBtn.setAttribute('aria-pressed', String(next))
-  map.setZonesVisible(next, zones)
-})
-
 document.addEventListener('click', (e) => {
   if (!(e.target as HTMLElement).closest('.search-wrap')) {
     suggestionsEl.classList.remove('open')
@@ -427,25 +386,9 @@ document.addEventListener('keydown', (e) => {
 })
 
 async function boot() {
-  const [buildings, tourData, zoneData] = await Promise.all([
-    loadJson<Building[]>('data/buildings.json', []),
-    loadJson<Tour[]>('data/tours.json', []),
-    loadJson<Zone[]>('data/zones.json', []),
-  ])
+  const buildings = await loadJson<Building[]>('data/buildings.json', [])
 
   allBuildings = buildings
-  tours = tourData
-  zones = zoneData
-
-  if (tours.length) {
-    toggleToursBtn.hidden = false
-    toggleToursBtn.innerHTML = `Туры <span>(${tours.length})</span>`
-  }
-
-  if (zones.length) {
-    toggleZonesBtn.hidden = false
-    toggleZonesBtn.innerHTML = `Зоны <span>(${zones.length})</span>`
-  }
 
   renderFilters()
   refresh()
