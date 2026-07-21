@@ -13,6 +13,21 @@
         <button class="clear" id="clear-search" type="button" hidden aria-label="Ачысціць">✕</button>
         <div class="suggestions" id="suggestions" role="listbox"></div>
       </div>
+      <a
+        class="bmc-link"
+        href="https://buymeacoffee.com/siaroza"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Buy me a coffee"
+      >
+        <svg class="bmc-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <path
+            fill="currentColor"
+            d="M18 5h-1V4a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v7a5 5 0 0 0 5 5h4a5 5 0 0 0 5-5V9h1a3 3 0 0 0 0-6zm0 4h-1V7h1a1 1 0 1 1 0 2zM4 19.25c0-.41.34-.75.75-.75h14.5a.75.75 0 0 1 0 1.5H4.75a.75.75 0 0 1-.75-.75z"
+          />
+        </svg>
+        <span class="bmc-label">Buy me a coffee</span>
+      </a>
     </header>
     <main class="main" id="main">
       <div id="map"></div>
@@ -61,4 +76,4 @@
         <span class="name">${h.name}</span>
         <span class="meta">${h.address||h.statusLabel}</span>
       </button>`).join(""),et.classList.add("open")}$n.addEventListener("click",()=>{wi(!Xn)});Vn.addEventListener("click",c=>{const d=c.target.closest("button[data-status]");if(!d)return;const h=d.dataset.status;pt.has(h)?pt.delete(h):pt.add(h),d.setAttribute("aria-pressed",String(pt.has(h))),Et(),Ze()});jn.addEventListener("click",c=>{const d=c.target.closest("button[data-type]");if(!d)return;const h=d.dataset.type;gt.has(h)?gt.delete(h):gt.add(h),d.setAttribute("aria-pressed",String(gt.has(h))),Et(),Ze()});Yn.addEventListener("click",oo);Us.addEventListener("click",oo);se.addEventListener("input",()=>{vt=se.value,re.hidden=!vt,Et(),Ze()});re.addEventListener("click",()=>{se.value="",vt="",re.hidden=!0,et.classList.remove("open"),Et()});et.addEventListener("click",c=>{const d=c.target.closest("button[data-id]");if(!d)return;const h=zt.find(I=>I.id===d.dataset.id);h&&(se.value=h.name,vt=h.name,re.hidden=!1,et.classList.remove("open"),Et(),no(h),ae.focusBuilding(h))});Ht.addEventListener("click",c=>{const d=c.target.closest("button[data-src]");if(!d)return;const h=d.dataset.src;h&&(io(h,Ft.alt),Ht.querySelectorAll(".gallery-thumb").forEach(I=>I.classList.remove("is-active")),d.classList.add("is-active"))});Kn.addEventListener("click",xi);document.addEventListener("click",c=>{c.target.closest(".search-wrap")||et.classList.remove("open")});document.addEventListener("keydown",c=>{c.key==="Escape"&&(et.classList.remove("open"),oe.classList.contains("open")&&xi())});async function Ys(){const[c,d]=await Promise.all([Wn("data/buildings.json",[]),Wn("data/zones.json",[])]);if(zt=c,ae.setZones(d),eo(),Et(),Hs.remove(),!c.length){const h=document.createElement("div");h.className="error",h.textContent="Няма дадзеных. Запусціце npm run import з Notion-экспартам.",Oe.appendChild(h)}}Ys();
-//# sourceMappingURL=index-BhWSjLM5.js.map
+//# sourceMappingURL=index-lV5IH1Zg.js.map
