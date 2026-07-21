@@ -376,10 +376,6 @@ async function boot() {
   tours = tourData
   zones = zoneData
 
-  if (tours.length) {
-    toggleToursBtn.hidden = false
-    toggleToursBtn.innerHTML = `Туры <span>(${tours.length})</span>`
-  }
   if (zones.length) {
     toggleZonesBtn.hidden = false
     toggleZonesBtn.innerHTML = `Зоны <span>(${zones.length})</span>`
