@@ -55,6 +55,6 @@ Synced to root for Pages: `index.html`, `assets/`, `data/`, `media/`, `pins/`, `
 2. Dots by type + status
 3. Search with suggestions
 4. Detail panel with descriptions + photo gallery
-5. Status / type filters, clear filters, legend (incl. restored)
+5. Status / type filters, clear filters
 6. Mobile-friendly header and bottom sheet
 7. Fully static JSON + media (no API keys)
