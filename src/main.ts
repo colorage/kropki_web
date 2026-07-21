@@ -29,7 +29,7 @@ app.innerHTML = `
       </div>
       <div class="header-actions">
         <button class="chip-toggle" id="toggle-tours" type="button" aria-pressed="false" hidden>Туры <span>на карце</span></button>
-        <button class="chip-toggle" id="toggle-zones" type="button" aria-pressed="false" hidden>Зоны <span>аховы</span></button>
+        <button class="chip-toggle" id="toggle-zones" type="button" aria-pressed="true" hidden>Зоны <span>аховы</span></button>
       </div>
     </header>
     <main class="main" id="main">
@@ -448,6 +448,8 @@ async function boot() {
   if (zones.length) {
     toggleZonesBtn.hidden = false
     toggleZonesBtn.innerHTML = `Зоны <span>(${zones.length})</span>`
+    toggleZonesBtn.setAttribute('aria-pressed', 'true')
+    map.setZonesVisible(true, zones)
   }
 
   renderFilters()
