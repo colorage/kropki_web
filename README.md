@@ -4,7 +4,7 @@ Static interactive map of historic buildings in **Mahilioŭ (Магілёў)** f
 
 - Leaflet + white Carto Positron (OSM) tiles — no Mapbox / no backend
 - Data imported from a Notion HTML/CSV export
-- Pin icons by building type and preservation status
+- Dot markers by building type and preservation status
 
 **Live:** https://kropki.siaroza.com/
 
@@ -52,7 +52,7 @@ Synced to root for Pages: `index.html`, `assets/`, `data/`, `media/`, `pins/`, `
 ## UI features
 
 1. Mahilioŭ-centered map (not Minsk)
-2. Pins by type + status
+2. Dots by type + status
 3. Search with suggestions
 4. Detail panel with descriptions + photo gallery
 5. Status / type filters, clear filters, legend (incl. restored)

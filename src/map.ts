@@ -19,10 +19,10 @@ function pinIcon(pin: string, focused = false): L.DivIcon {
   const file = focused ? `${pin}_focus.svg` : `${pin}.svg`
   return L.divIcon({
     className: `kropki-marker${focused ? ' is-focused' : ''}`,
-    iconSize: [32, 42],
-    iconAnchor: [16, 40],
-    popupAnchor: [0, -36],
-    html: `<img src="${asset(`pins/${file}`)}" width="32" height="42" alt="" draggable="false" />`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14],
+    popupAnchor: [0, -14],
+    html: `<img src="${asset(`pins/${file}`)}" width="28" height="28" alt="" draggable="false" />`,
   })
 }
 
