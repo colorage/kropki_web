@@ -14,7 +14,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DIST = join(ROOT, 'dist')
 
 const PUBLISH_DIRS = ['assets', 'data', 'default', 'media', 'pins', 'icons']
-const PUBLISH_FILES = ['index.html', 'logo.svg', 'robots.txt']
+const PUBLISH_FILES = ['index.html', 'logo.svg', 'robots.txt', 'meta-cover.png']
 
 if (!existsSync(DIST) || !existsSync(join(DIST, 'index.html'))) {
   console.error('dist/ missing — run vite build first')
