@@ -63,15 +63,7 @@ input {
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   min-width: max-content;
-}
-
-.brand img {
-  height: 28px;
-  width: auto;
 }
 
 .brand-title {

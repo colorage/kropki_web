@@ -16,11 +16,8 @@ app.innerHTML = `
   <div class="app-shell">
     <header class="header">
       <div class="brand">
-        <img src="${asset('logo.svg')}" alt="Кропкі" />
-        <div>
-          <div class="brand-title">Кропкі</div>
-          <div class="brand-sub">Гістарычныя будынкі Магілёва</div>
-        </div>
+        <div class="brand-title">Кропкі</div>
+        <div class="brand-sub">Гістарычныя будынкі Магілёва</div>
       </div>
       <div class="search-wrap">
         <input id="search" type="search" placeholder="Пошук па назве або адрасе" autocomplete="off" />
