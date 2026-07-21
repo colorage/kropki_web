@@ -19,10 +19,10 @@ function buildingIcon(pin: string, mapIcon: string | undefined, focused = false)
   if (mapIcon) {
     return L.divIcon({
       className: `kropki-marker kropki-marker--custom${focused ? ' is-focused' : ''}`,
-      iconSize: [48, 48],
-      iconAnchor: [24, 44],
-      popupAnchor: [0, -40],
-      html: `<img src="${asset(mapIcon)}" width="48" height="48" alt="" draggable="false" />`,
+      iconSize: [52, 56],
+      iconAnchor: [26, 54],
+      popupAnchor: [0, -48],
+      html: `<img src="${asset(mapIcon)}" width="52" height="56" alt="" draggable="false" />`,
     })
   }
   const file = focused ? `${pin}_focus.svg` : `${pin}.svg`

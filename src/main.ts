@@ -7,6 +7,7 @@ import { asset } from './asset'
 import { createMap } from './map'
 
 const DEFAULT_COVER = 'default/building_default.svg'
+const LEGEND_STATUSES: BuildingStatus[] = ['preserved', 'restored', 'perspective', 'warning', 'lost']
 
 const app = document.querySelector<HTMLDivElement>('#app')
 if (!app) throw new Error('#app missing')
@@ -31,47 +32,60 @@ app.innerHTML = `
         <button class="chip-toggle" id="toggle-zones" type="button" aria-pressed="false" hidden>Зоны <span>аховы</span></button>
       </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
       <div id="map"></div>
-      <aside class="sidebar" id="sidebar">
-        <div class="sidebar-head">
-          <div>
-            <h2>Фільтры</h2>
-            <p class="count" id="count"></p>
-          </div>
+      <aside class="filter-panel" id="filter-panel">
+        <div class="filter-panel-head">
+          <button class="filter-toggle" id="filter-toggle" type="button" aria-expanded="true" aria-controls="filter-body">
+            <span class="filter-toggle-label">Фільтры</span>
+            <span class="count" id="count"></span>
+          </button>
           <button class="text-btn" id="clear-filters" type="button" hidden>Скінуць</button>
         </div>
-        <div class="filters">
-          <div class="filter-row" id="status-filters"></div>
-          <div class="filter-row" id="type-filters"></div>
+        <div class="filter-body" id="filter-body">
+          <div class="filters">
+            <div class="filter-row" id="status-filters"></div>
+            <div class="filter-row" id="type-filters"></div>
+          </div>
+          <p class="filter-empty" id="filter-empty" hidden>Нічога не знойдзена. <button class="text-btn" id="clear-filters-empty" type="button">Скінуць фільтры</button></p>
         </div>
-        <div class="legend" id="legend"></div>
-        <section class="detail" id="detail">
-          <button class="close" id="close-detail" type="button">Закрыць</button>
-          <img class="detail-cover" id="detail-cover" alt="" />
-          <div class="gallery" id="detail-gallery" hidden></div>
-          <h3 id="detail-title"></h3>
-          <div class="detail-meta" id="detail-meta"></div>
-          <p id="detail-address" hidden></p>
-          <p id="detail-year" hidden></p>
-          <p id="detail-description"></p>
-        </section>
       </aside>
+      <div class="legend-control" id="legend-control">
+        <button class="legend-toggle" id="legend-toggle" type="button" aria-expanded="false" aria-controls="legend">Легенда</button>
+        <div class="legend" id="legend" hidden></div>
+      </div>
+      <section class="detail-panel" id="detail" aria-hidden="true">
+        <button class="close" id="close-detail" type="button">Закрыць</button>
+        <img class="detail-cover" id="detail-cover" alt="" />
+        <div class="gallery" id="detail-gallery" hidden></div>
+        <h3 id="detail-title"></h3>
+        <div class="detail-meta" id="detail-meta"></div>
+        <p id="detail-address" hidden></p>
+        <p id="detail-year" hidden></p>
+        <p id="detail-description"></p>
+      </section>
       <div class="loading" id="loading">Загрузка карты…</div>
     </main>
   </div>
 `
 
+const mainEl = document.querySelector<HTMLElement>('#main')!
 const mapEl = document.querySelector<HTMLElement>('#map')!
 const loadingEl = document.querySelector<HTMLElement>('#loading')!
 const countEl = document.querySelector<HTMLElement>('#count')!
 const statusFiltersEl = document.querySelector<HTMLElement>('#status-filters')!
 const typeFiltersEl = document.querySelector<HTMLElement>('#type-filters')!
 const legendEl = document.querySelector<HTMLElement>('#legend')!
+const legendToggleBtn = document.querySelector<HTMLButtonElement>('#legend-toggle')!
+const filterToggleBtn = document.querySelector<HTMLButtonElement>('#filter-toggle')!
+const filterBodyEl = document.querySelector<HTMLElement>('#filter-body')!
+const filterEmptyEl = document.querySelector<HTMLElement>('#filter-empty')!
 const detailEl = document.querySelector<HTMLElement>('#detail')!
+const closeDetailBtn = document.querySelector<HTMLButtonElement>('#close-detail')!
 const searchInput = document.querySelector<HTMLInputElement>('#search')!
 const clearSearchBtn = document.querySelector<HTMLButtonElement>('#clear-search')!
 const clearFiltersBtn = document.querySelector<HTMLButtonElement>('#clear-filters')!
+const clearFiltersEmptyBtn = document.querySelector<HTMLButtonElement>('#clear-filters-empty')!
 const suggestionsEl = document.querySelector<HTMLElement>('#suggestions')!
 const toggleToursBtn = document.querySelector<HTMLButtonElement>('#toggle-tours')!
 const toggleZonesBtn = document.querySelector<HTMLButtonElement>('#toggle-zones')!
@@ -89,6 +103,7 @@ let activeStatuses = new Set<BuildingStatus>()
 let activeTypes = new Set<BuildingType>()
 let query = ''
 let selectedId: string | null = null
+let filtersExpanded = true
 
 async function loadJson<T>(path: string, fallback: T): Promise<T> {
   try {
@@ -128,8 +143,29 @@ function pinStatusFile(status: BuildingStatus): string {
   return status
 }
 
+function activeFilterCount(): number {
+  return activeStatuses.size + activeTypes.size
+}
+
 function syncClearFilters() {
-  clearFiltersBtn.hidden = activeStatuses.size === 0 && activeTypes.size === 0
+  const hasFilters = activeFilterCount() > 0
+  clearFiltersBtn.hidden = !hasFilters
+}
+
+function syncFilterToggleLabel(shown: number) {
+  const n = activeFilterCount()
+  if (n > 0) {
+    countEl.textContent = `${shown} · ${n} фільтр${n === 1 ? '' : n < 5 ? 'ы' : 'аў'}`
+  } else {
+    countEl.textContent = `Паказана ${shown} з ${allBuildings.length}`
+  }
+}
+
+function setFiltersExpanded(expanded: boolean) {
+  filtersExpanded = expanded
+  filterToggleBtn.setAttribute('aria-expanded', String(expanded))
+  filterBodyEl.hidden = !expanded
+  mainEl.classList.toggle('filters-collapsed', !expanded)
 }
 
 function renderFilters() {
@@ -138,31 +174,29 @@ function renderFilters() {
 
   statusFiltersEl.innerHTML = statuses
     .map(
-      (s) =>
-        `<button type="button" data-status="${s}" aria-pressed="${activeStatuses.has(s)}">${STATUS_LABELS[s] || s}</button>`,
+      (s) => `
+      <button type="button" class="filter-chip" data-status="${s}" aria-pressed="${activeStatuses.has(s)}">
+        <img src="${asset(`pins/building_${pinStatusFile(s)}.svg`)}" alt="" width="14" height="14" />
+        <span>${STATUS_LABELS[s] || s}</span>
+      </button>`,
     )
     .join('')
 
   typeFiltersEl.innerHTML = types
     .map(
       (t) =>
-        `<button type="button" data-type="${t}" aria-pressed="${activeTypes.has(t)}">${TYPE_LABELS[t] || t}</button>`,
+        `<button type="button" class="filter-chip" data-type="${t}" aria-pressed="${activeTypes.has(t)}">${TYPE_LABELS[t] || t}</button>`,
     )
     .join('')
 
-  const legendStatuses: BuildingStatus[] = ['preserved', 'restored', 'perspective', 'warning', 'lost']
-  legendEl.innerHTML = `
-    <strong>Легенда статусаў</strong>
-    ${legendStatuses
-      .map(
-        (s) => `
+  legendEl.innerHTML = LEGEND_STATUSES.map(
+    (s) => `
       <div class="legend-item">
         <img src="${asset(`pins/building_${pinStatusFile(s)}.svg`)}" alt="" />
         <span>${STATUS_LABELS[s]}</span>
       </div>`,
-      )
-      .join('')}
-  `
+  ).join('')
+
   syncClearFilters()
 }
 
@@ -197,6 +231,10 @@ function renderGallery(b: Building) {
 function showDetail(b: Building) {
   selectedId = b.id
   detailEl.classList.add('open')
+  detailEl.setAttribute('aria-hidden', 'false')
+  mainEl.classList.add('has-selection')
+  mapEl.classList.add('has-selection')
+  setFiltersExpanded(false)
   setCover(b.image || DEFAULT_COVER, b.name)
   renderGallery(b)
 
@@ -225,17 +263,38 @@ function showDetail(b: Building) {
 
   document.querySelector('#detail-description')!.textContent =
     b.description || 'Апісанне пакуль адсутнічае.'
+
+  closeDetailBtn.focus()
 }
 
 function hideDetail() {
   selectedId = null
   detailEl.classList.remove('open')
+  detailEl.setAttribute('aria-hidden', 'true')
+  mainEl.classList.remove('has-selection')
+  mapEl.classList.remove('has-selection')
   map.highlight(null)
+  setFiltersExpanded(true)
+}
+
+function clearAllFilters() {
+  activeStatuses.clear()
+  activeTypes.clear()
+  if (query) {
+    query = ''
+    searchInput.value = ''
+    clearSearchBtn.hidden = true
+    suggestionsEl.classList.remove('open')
+  }
+  renderFilters()
+  refresh()
+  renderSuggestions()
 }
 
 function refresh() {
   const items = filtered()
-  countEl.textContent = `Паказана ${items.length} з ${allBuildings.length}`
+  syncFilterToggleLabel(items.length)
+  filterEmptyEl.hidden = !(items.length === 0 && allBuildings.length > 0)
   map.setBuildings(items, (b) => {
     showDetail(b)
     map.focusBuilding(b)
@@ -269,6 +328,16 @@ function renderSuggestions() {
   suggestionsEl.classList.add('open')
 }
 
+filterToggleBtn.addEventListener('click', () => {
+  setFiltersExpanded(!filtersExpanded)
+})
+
+legendToggleBtn.addEventListener('click', () => {
+  const open = legendToggleBtn.getAttribute('aria-expanded') !== 'true'
+  legendToggleBtn.setAttribute('aria-expanded', String(open))
+  legendEl.hidden = !open
+})
+
 statusFiltersEl.addEventListener('click', (e) => {
   const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-status]')
   if (!btn) return
@@ -291,13 +360,8 @@ typeFiltersEl.addEventListener('click', (e) => {
   renderSuggestions()
 })
 
-clearFiltersBtn.addEventListener('click', () => {
-  activeStatuses.clear()
-  activeTypes.clear()
-  renderFilters()
-  refresh()
-  renderSuggestions()
-})
+clearFiltersBtn.addEventListener('click', clearAllFilters)
+clearFiltersEmptyBtn.addEventListener('click', clearAllFilters)
 
 searchInput.addEventListener('input', () => {
   query = searchInput.value
@@ -338,7 +402,7 @@ galleryEl.addEventListener('click', (e) => {
   btn.classList.add('is-active')
 })
 
-document.querySelector('#close-detail')!.addEventListener('click', hideDetail)
+closeDetailBtn.addEventListener('click', hideDetail)
 
 toggleToursBtn.addEventListener('click', () => {
   const next = toggleToursBtn.getAttribute('aria-pressed') !== 'true'
@@ -376,6 +440,11 @@ async function boot() {
   tours = tourData
   zones = zoneData
 
+  if (tours.length) {
+    toggleToursBtn.hidden = false
+    toggleToursBtn.innerHTML = `Туры <span>(${tours.length})</span>`
+  }
+
   if (zones.length) {
     toggleZonesBtn.hidden = false
     toggleZonesBtn.innerHTML = `Зоны <span>(${zones.length})</span>`
@@ -389,7 +458,7 @@ async function boot() {
     const err = document.createElement('div')
     err.className = 'error'
     err.textContent = 'Няма дадзеных. Запусціце npm run import з Notion-экспартам.'
-    document.querySelector('.main')!.appendChild(err)
+    mainEl.appendChild(err)
   }
 }
 
