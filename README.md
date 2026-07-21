@@ -52,7 +52,7 @@ Synced to root for Pages: `index.html`, `assets/`, `data/`, `media/`, `pins/`, `
 ## UI features
 
 1. Mahilioŭ-centered map (not Minsk)
-2. Pins by type + status
+2. Dots by type + status
 3. Search with suggestions
 4. Detail panel with descriptions + photo gallery
 5. Status / type filters, clear filters, legend (incl. restored)
