@@ -4,7 +4,7 @@ import { asset } from './asset'
 
 const MAHILIOU: L.LatLngExpression = [53.9006, 30.3314]
 
-type MarkerWithPin = L.Marker & { __pin: string }
+type MarkerState = L.Marker & { __pin: string; __mapIcon?: string }
 
 export interface MapController {
   map: L.Map
@@ -15,7 +15,16 @@ export interface MapController {
   highlight: (id: string | null) => void
 }
 
-function pinIcon(pin: string, focused = false): L.DivIcon {
+function buildingIcon(pin: string, mapIcon: string | undefined, focused = false): L.DivIcon {
+  if (mapIcon) {
+    return L.divIcon({
+      className: `kropki-marker kropki-marker--custom${focused ? ' is-focused' : ''}`,
+      iconSize: [48, 48],
+      iconAnchor: [24, 44],
+      popupAnchor: [0, -40],
+      html: `<img src="${asset(mapIcon)}" width="48" height="48" alt="" draggable="false" />`,
+    })
+  }
   const file = focused ? `${pin}_focus.svg` : `${pin}.svg`
   return L.divIcon({
     className: `kropki-marker${focused ? ' is-focused' : ''}`,
@@ -47,11 +56,13 @@ export function createMap(container: HTMLElement): MapController {
   const buildingsLayer = L.layerGroup().addTo(map)
   const toursLayer = L.layerGroup()
   const zonesLayer = L.layerGroup()
-  const markers = new Map<string, MarkerWithPin>()
+  const markers = new Map<string, MarkerState>()
 
   function highlight(id: string | null) {
     markers.forEach((marker, mid) => {
-      marker.setIcon(pinIcon(marker.__pin, mid === id))
+      marker.setIcon(buildingIcon(marker.__pin, marker.__mapIcon, mid === id))
+      if (mid === id) marker.setZIndexOffset(1000)
+      else marker.setZIndexOffset(marker.__mapIcon ? 200 : 0)
     })
   }
 
@@ -60,10 +71,12 @@ export function createMap(container: HTMLElement): MapController {
     markers.clear()
     for (const b of buildings) {
       const marker = L.marker([b.lat, b.lon], {
-        icon: pinIcon(b.pin),
+        icon: buildingIcon(b.pin, b.mapIcon),
         title: b.name,
-      }) as MarkerWithPin
+        zIndexOffset: b.mapIcon ? 200 : 0,
+      }) as MarkerState
       marker.__pin = b.pin
+      marker.__mapIcon = b.mapIcon
       marker.on('click', () => {
         highlight(b.id)
         onSelect(b)

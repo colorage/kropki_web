@@ -11,6 +11,7 @@
     "build": "tsc && vite build && node scripts/sync-pages-root.mjs",
     "preview": "vite preview",
     "import": "node scripts/import-notion.mjs",
+    "import:dropbox": "node scripts/import-dropbox-media.mjs",
     "bootstrap": "node scripts/bootstrap-osm.mjs"
   },
   "dependencies": {
