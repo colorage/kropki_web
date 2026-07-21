@@ -41,6 +41,20 @@ export interface MapIcon {
   img: string
 }
 
+export interface PathPoint {
+  name?: string
+  lat: number
+  lon: number
+  order: number
+  connected?: boolean
+}
+
+export interface Zone {
+  id: string
+  name: string
+  points: PathPoint[]
+}
+
 export const STATUS_LABELS: Record<BuildingStatus, string> = {
   preserved: 'Захаваўся',
   perspective: 'Перспектыўны',

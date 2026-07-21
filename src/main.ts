@@ -1,7 +1,7 @@
 import 'leaflet/dist/leaflet.css'
 import './styles/main.css'
 
-import type { Building, BuildingStatus, BuildingType } from './types'
+import type { Building, BuildingStatus, BuildingType, Zone } from './types'
 import { STATUS_LABELS, TYPE_LABELS } from './types'
 import { asset } from './asset'
 import { createMap } from './map'
@@ -386,9 +386,13 @@ document.addEventListener('keydown', (e) => {
 })
 
 async function boot() {
-  const buildings = await loadJson<Building[]>('data/buildings.json', [])
+  const [buildings, zones] = await Promise.all([
+    loadJson<Building[]>('data/buildings.json', []),
+    loadJson<Zone[]>('data/zones.json', []),
+  ])
 
   allBuildings = buildings
+  map.setZones(zones)
 
   renderFilters()
   refresh()

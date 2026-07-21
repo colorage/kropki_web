@@ -1,5 +1,5 @@
 import L from 'leaflet'
-import type { Building } from './types'
+import type { Building, PathPoint, Zone } from './types'
 import { asset } from './asset'
 
 const MAHILIOU: L.LatLngExpression = [53.9006, 30.3314]
@@ -10,7 +10,27 @@ export interface MapController {
   map: L.Map
   setBuildings: (buildings: Building[], onSelect: (b: Building) => void) => void
   focusBuilding: (b: Building) => void
+  setZones: (zones: Zone[]) => void
   highlight: (id: string | null) => void
+}
+
+/** Split path points into rings where `connected === false` starts a new one. */
+function splitPathSegments(points: PathPoint[]): PathPoint[][] {
+  const segments: PathPoint[][] = []
+  let current: PathPoint[] = []
+  for (const point of points) {
+    if (point.connected === false && current.length > 0) {
+      segments.push(current)
+      current = []
+    }
+    current.push(point)
+  }
+  if (current.length > 0) segments.push(current)
+  return segments
+}
+
+function toLatLngs(points: PathPoint[]): L.LatLngExpression[] {
+  return points.map((p) => [p.lat, p.lon] as L.LatLngExpression)
 }
 
 function buildingIcon(pin: string, mapIcon: string | undefined, focused = false): L.DivIcon {
@@ -52,6 +72,7 @@ export function createMap(container: HTMLElement): MapController {
   }).addTo(map)
 
   const buildingsLayer = L.layerGroup().addTo(map)
+  const zonesLayer = L.layerGroup().addTo(map)
   const markers = new Map<string, MarkerState>()
 
   function highlight(id: string | null) {
@@ -87,10 +108,29 @@ export function createMap(container: HTMLElement): MapController {
     highlight(b.id)
   }
 
+  function setZones(zones: Zone[]) {
+    zonesLayer.clearLayers()
+    for (const zone of zones) {
+      for (const ring of splitPathSegments(zone.points)) {
+        const latlngs = toLatLngs(ring)
+        if (latlngs.length < 3) continue
+        L.polygon(latlngs, {
+          color: '#C45C26',
+          weight: 1,
+          fillColor: '#C45C26',
+          fillOpacity: 0.12,
+        })
+          .bindTooltip(zone.name)
+          .addTo(zonesLayer)
+      }
+    }
+  }
+
   return {
     map,
     setBuildings,
     focusBuilding,
+    setZones,
     highlight,
   }
 }
