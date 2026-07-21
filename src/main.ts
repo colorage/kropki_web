@@ -23,6 +23,15 @@ app.innerHTML = `
         <button class="clear" id="clear-search" type="button" hidden aria-label="Ачысціць">✕</button>
         <div class="suggestions" id="suggestions" role="listbox"></div>
       </div>
+      <button
+        class="authors-btn"
+        id="authors-btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="about-panel"
+      >
+        Аўтары
+      </button>
     </header>
     <main class="main" id="main">
       <div id="map"></div>
@@ -54,6 +63,34 @@ app.innerHTML = `
       </section>
       <div class="loading" id="loading">Загрузка карты…</div>
     </main>
+    <div class="about-backdrop" id="about-backdrop" hidden></div>
+    <section
+      class="about-panel"
+      id="about-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="about-title"
+      aria-hidden="true"
+      hidden
+    >
+      <button class="close" id="close-about" type="button">Закрыць</button>
+      <h2 id="about-title">Аўтары</h2>
+      <p class="about-lead">Праект створаны ў 2019м і адноўлены ў 2026м</p>
+      <p class="about-label">На праекце працавалі:</p>
+      <ul class="about-authors">
+        <li>Аляксей Бацюкоў</li>
+        <li>Сяргей Пехцераў</li>
+        <li>Антон Турко</li>
+      </ul>
+      <a
+        class="about-support"
+        href="https://buymeacoffee.com/siaroza"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Падтрымаць
+      </a>
+    </section>
   </div>
 `
 
@@ -77,6 +114,10 @@ const coverEl = document.querySelector<HTMLImageElement>('#detail-cover')!
 const galleryEl = document.querySelector<HTMLElement>('#detail-gallery')!
 const addressEl = document.querySelector<HTMLElement>('#detail-address')!
 const yearEl = document.querySelector<HTMLElement>('#detail-year')!
+const authorsBtn = document.querySelector<HTMLButtonElement>('#authors-btn')!
+const aboutBackdrop = document.querySelector<HTMLElement>('#about-backdrop')!
+const aboutPanel = document.querySelector<HTMLElement>('#about-panel')!
+const closeAboutBtn = document.querySelector<HTMLButtonElement>('#close-about')!
 
 const map = createMap(mapEl)
 
@@ -372,6 +413,36 @@ galleryEl.addEventListener('click', (e) => {
 
 closeDetailBtn.addEventListener('click', hideDetail)
 
+function showAbout() {
+  aboutBackdrop.hidden = false
+  aboutPanel.hidden = false
+  aboutPanel.setAttribute('aria-hidden', 'false')
+  authorsBtn.setAttribute('aria-expanded', 'true')
+  requestAnimationFrame(() => {
+    aboutBackdrop.classList.add('open')
+    aboutPanel.classList.add('open')
+  })
+  closeAboutBtn.focus()
+}
+
+function hideAbout() {
+  aboutBackdrop.classList.remove('open')
+  aboutPanel.classList.remove('open')
+  aboutPanel.setAttribute('aria-hidden', 'true')
+  authorsBtn.setAttribute('aria-expanded', 'false')
+  aboutBackdrop.hidden = true
+  aboutPanel.hidden = true
+  authorsBtn.focus()
+}
+
+authorsBtn.addEventListener('click', () => {
+  if (aboutPanel.classList.contains('open')) hideAbout()
+  else showAbout()
+})
+
+closeAboutBtn.addEventListener('click', hideAbout)
+aboutBackdrop.addEventListener('click', hideAbout)
+
 document.addEventListener('click', (e) => {
   if (!(e.target as HTMLElement).closest('.search-wrap')) {
     suggestionsEl.classList.remove('open')
@@ -381,6 +452,10 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     suggestionsEl.classList.remove('open')
+    if (aboutPanel.classList.contains('open')) {
+      hideAbout()
+      return
+    }
     if (detailEl.classList.contains('open')) hideDetail()
   }
 })
