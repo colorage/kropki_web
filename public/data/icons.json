@@ -1,110 +1,142 @@
 [
   {
-    "name": "Царква Трох свяціцеляў",
-    "lat": 53.91124275968,
+    "id": "60",
+    "name": "Царква Трох Свяціцеляў",
+    "lat": 53.91104275968,
     "lon": 30.341493119362,
-    "img": "https://www.dropbox.com/s/oniczryzm5qx66k/3_svet.png?raw=1"
+    "img": "icons/3_svet.png"
   },
   {
+    "id": "45",
     "name": "Архірэйскі палац Г. Каніскага",
-    "lat": 53.895407584518,
+    "lat": 53.895207584518,
     "lon": 30.334459726586,
-    "img": "https://www.dropbox.com/s/avsvjwv7zjc4xb2/archiereysky.png?raw=1"
+    "img": "icons/archiereysky.png"
   },
   {
+    "id": "49",
     "name": "Аддзяленне Дзяржаўнага банка",
-    "lat": 53.904331427764,
+    "lat": 53.904131427764,
     "lon": 30.342166215799,
-    "img": "https://www.dropbox.com/s/mbek2p5mx4mkzyh/bank.png?raw=1"
+    "img": "icons/bank.png"
   },
   {
-    "name": "Крыжаўзвіжанская царква",
-    "lat": 53.896495893054,
-    "lon": 30.324940256878,
-    "img": "https://www.dropbox.com/s/rn8pqnir8ersqa9/krestovosdvizh.png?raw=1"
-  },
-  {
-    "name": "Гарадскі тэатр",
-    "lat": 53.897821315913,
-    "lon": 30.333101021483,
-    "img": "https://www.dropbox.com/s/ksmu2luqfapkoks/dram.png?raw=1"
-  },
-  {
-    "name": "Фарны касцёл",
-    "lat": 53.89672,
-    "lon": 30.33349,
-    "img": "https://www.dropbox.com/s/ugjas38bye9hwzn/farny.png?raw=1"
-  },
-  {
+    "id": "64",
     "name": "Рэшткі Богаяўленскага манастыра",
-    "lat": 53.8971039749,
+    "lat": 53.8969039749,
     "lon": 30.332664168843,
-    "img": "https://www.dropbox.com/s/askmsd3qp4cq496/bogoyavlensky.png?raw=1"
+    "img": "icons/bogoyavlensky.png"
   },
   {
+    "id": "144",
     "name": "Буйніцкае поле",
-    "lat": 53.861220931767,
+    "lat": 53.861020931767,
     "lon": 30.257202132258,
-    "img": "https://www.dropbox.com/s/07sueo0u04r6x3a/buynichy.png?raw=1"
+    "img": "icons/buynichy.png"
   },
   {
-    "name": "Касцёл св. Станіслава",
-    "lat": 53.898648835246,
+    "id": "135",
+    "name": "Гарадскі тэатр",
+    "lat": 53.897621315913,
+    "lon": 30.333101021483,
+    "img": "icons/dram.png"
+  },
+  {
+    "id": "119",
+    "name": "Фарны касцёл",
+    "lat": 53.89652,
+    "lon": 30.33349,
+    "img": "icons/farny.png"
+  },
+  {
+    "id": "126",
+    "name": "Касцёл Дзевы Марыі кармелітаў / Ксацёл св. Станіслава",
+    "lat": 53.898448835246,
     "lon": 30.33402249624,
-    "img": "https://www.dropbox.com/s/d0wvtz4vkgi82m3/kostel.png?raw=1"
+    "img": "icons/kostel.png"
   },
   {
-    "name": "Магілёўскае замчышча",
-    "lat": 53.893922208272,
-    "lon": 30.327415933183,
-    "img": "https://www.dropbox.com/s/p1s741rz60uod5f/zamchyscha.png?raw=1"
+    "id": "122",
+    "name": "Крыжаўзвіжанская царква",
+    "lat": 53.896295893054,
+    "lon": 30.324940256878,
+    "img": "icons/krestovosdvizh.png"
   },
   {
-    "name": "Дваранскі і Сялянскі пазямельныя банкі",
-    "lat": 53.908273276849,
-    "lon": 30.338546917753,
-    "img": "https://www.dropbox.com/s/2ch79yymey4mchg/pozemelny.png?raw=1"
+    "id": "152",
+    "name": "Касцёл св. Ксаверыя і калегіум езуітаў",
+    "lat": 53.89729,
+    "lon": 30.33182,
+    "img": "icons/ksavery.png"
   },
   {
-    "name": "Чырвоная зорка",
-    "lat": 53.900324266833,
-    "lon": 30.333864250558,
-    "img": "https://www.dropbox.com/s/bf0slqwqlsyebd8/zorka.png?raw=1"
-  },
-  {
-    "name": "Пакроўская царква",
-    "lat": 53.892623142138,
-    "lon": 30.33446166765,
-    "img": "https://www.dropbox.com/s/fshx56tvfe87ocz/pokrovskaya.png?raw=1"
-  },
-  {
+    "id": "137",
     "name": "Плошча Леніна",
-    "lat": 53.909123003484,
+    "lat": 53.908923003484,
     "lon": 30.342949043709,
-    "img": "https://www.dropbox.com/s/d481g04dgj8i0ek/lenina.png?raw=1"
+    "img": "icons/lenina.png"
   },
   {
-    "name": "Гарадзішча Змяёўка",
-    "lat": 53.91069684243,
-    "lon": 30.32752559356,
-    "img": "https://www.dropbox.com/s/opql81ppbbamyan/zmeevka.png?raw=1"
-  },
-  {
-    "name": "Ратуша",
-    "lat": 53.89472,
-    "lon": 30.33186,
-    "img": "https://www.dropbox.com/s/zixhkcum0otoqno/ratusha.png?raw=1"
-  },
-  {
-    "name": "Дом Анташкевіча",
-    "lat": 53.899649864821,
+    "id": "47",
+    "name": "Дом Анташкевіча / Аношкі",
+    "lat": 53.899449864821,
     "lon": 30.33873142276,
-    "img": "https://www.dropbox.com/s/mbou2i0f2th71jv/muzey.png?raw=1"
+    "img": "icons/muzey.png"
   },
   {
+    "id": "39",
     "name": "Мікольскі манастыр",
-    "lat": 53.894094443657,
+    "lat": 53.893894443657,
     "lon": 30.345398377692,
-    "img": "https://www.dropbox.com/s/9uaehpar4ui530s/nickolsky.png?raw=1"
+    "img": "icons/nickolsky.png"
+  },
+  {
+    "id": "66",
+    "name": "Пакроўская царква",
+    "lat": 53.892423142138,
+    "lon": 30.33446166765,
+    "img": "icons/pokrovskaya.png"
+  },
+  {
+    "id": "132",
+    "name": "Дваранскі і Сялянскі пазямельныя банкі",
+    "lat": 53.908073276849,
+    "lon": 30.338546917753,
+    "img": "icons/pozemelny.png"
+  },
+  {
+    "id": "1",
+    "name": "Ратуша",
+    "lat": 53.89452,
+    "lon": 30.33186,
+    "img": "icons/ratusha.png"
+  },
+  {
+    "id": "65",
+    "name": "Спаская царква",
+    "lat": 53.895054529142,
+    "lon": 30.333791455396,
+    "img": "icons/spasskaya.png"
+  },
+  {
+    "id": "147",
+    "name": "Магілёўскае замчышча",
+    "lat": 53.893722208272,
+    "lon": 30.327415933183,
+    "img": "icons/zamchyscha.png"
+  },
+  {
+    "id": "148",
+    "name": "Гарадзішча Змяёўка",
+    "lat": 53.91049684243,
+    "lon": 30.32752559356,
+    "img": "icons/zmeevka.png"
+  },
+  {
+    "id": "53",
+    "name": "Электратэатр \"Чары\" / Кінатэатр \"Чырвоная зорка\"",
+    "lat": 53.900124266833,
+    "lon": 30.333864250558,
+    "img": "icons/zorka.png"
   }
 ]

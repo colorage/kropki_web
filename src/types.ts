@@ -28,7 +28,17 @@ export interface Building {
   images: string[]
   description: string
   pin: string
+  /** Custom map marker for significant landmarks (e.g. icons/ratusha.png). */
+  mapIcon?: string
   source?: string
+}
+
+export interface MapIcon {
+  id: string
+  name: string
+  lat: number
+  lon: number
+  img: string
 }
 
 export interface PathPoint {
