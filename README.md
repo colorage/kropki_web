@@ -4,7 +4,7 @@ Static interactive map of historic buildings in **Mahilioŭ (Магілёў)** f
 
 - Leaflet + white Carto Positron (OSM) tiles — no Mapbox / no backend
 - Data imported from a Notion HTML/CSV export
-- Pin icons by building type and preservation status
+- Dot markers by building type and preservation status
 
 **Live:** https://kropki.siaroza.com/
 
