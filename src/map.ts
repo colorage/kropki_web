@@ -1,5 +1,5 @@
 import L from 'leaflet'
-import type { Building, Tour, Zone } from './types'
+import type { Building, PathPoint, Tour, Zone } from './types'
 import { asset } from './asset'
 
 const MAHILIOU: L.LatLngExpression = [53.9006, 30.3314]
@@ -13,6 +13,25 @@ export interface MapController {
   setToursVisible: (visible: boolean, tours: Tour[]) => void
   setZonesVisible: (visible: boolean, zones: Zone[]) => void
   highlight: (id: string | null) => void
+}
+
+/** Split path points into rings/segments where `connected === false` starts a new one. */
+function splitPathSegments(points: PathPoint[]): PathPoint[][] {
+  const segments: PathPoint[][] = []
+  let current: PathPoint[] = []
+  for (const point of points) {
+    if (point.connected === false && current.length > 0) {
+      segments.push(current)
+      current = []
+    }
+    current.push(point)
+  }
+  if (current.length > 0) segments.push(current)
+  return segments
+}
+
+function toLatLngs(points: PathPoint[]): L.LatLngExpression[] {
+  return points.map((p) => [p.lat, p.lon] as L.LatLngExpression)
 }
 
 function buildingIcon(pin: string, mapIcon: string | undefined, focused = false): L.DivIcon {
@@ -96,15 +115,17 @@ export function createMap(container: HTMLElement): MapController {
     map.removeLayer(toursLayer)
     if (!visible) return
     for (const tour of tours) {
-      const latlngs = tour.points.map((p) => [p.lat, p.lon] as L.LatLngExpression)
-      if (latlngs.length < 2) continue
-      L.polyline(latlngs, {
-        color: '#2F6F8F',
-        weight: 3,
-        opacity: 0.75,
-      })
-        .bindTooltip(tour.name)
-        .addTo(toursLayer)
+      for (const segment of splitPathSegments(tour.points)) {
+        const latlngs = toLatLngs(segment)
+        if (latlngs.length < 2) continue
+        L.polyline(latlngs, {
+          color: '#2F6F8F',
+          weight: 3,
+          opacity: 0.75,
+        })
+          .bindTooltip(tour.name)
+          .addTo(toursLayer)
+      }
     }
     toursLayer.addTo(map)
   }
@@ -114,16 +135,18 @@ export function createMap(container: HTMLElement): MapController {
     map.removeLayer(zonesLayer)
     if (!visible) return
     for (const zone of zones) {
-      const latlngs = zone.points.map((p) => [p.lat, p.lon] as L.LatLngExpression)
-      if (latlngs.length < 3) continue
-      L.polygon(latlngs, {
-        color: '#C45C26',
-        weight: 1,
-        fillColor: '#C45C26',
-        fillOpacity: 0.12,
-      })
-        .bindTooltip(zone.name)
-        .addTo(zonesLayer)
+      for (const ring of splitPathSegments(zone.points)) {
+        const latlngs = toLatLngs(ring)
+        if (latlngs.length < 3) continue
+        L.polygon(latlngs, {
+          color: '#C45C26',
+          weight: 1,
+          fillColor: '#C45C26',
+          fillOpacity: 0.12,
+        })
+          .bindTooltip(zone.name)
+          .addTo(zonesLayer)
+      }
     }
     zonesLayer.addTo(map)
   }
