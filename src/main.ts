@@ -7,7 +7,6 @@ import { asset } from './asset'
 import { createMap } from './map'
 
 const DEFAULT_COVER = 'default/building_default.svg'
-const LEGEND_STATUSES: BuildingStatus[] = ['preserved', 'restored', 'perspective', 'warning', 'lost']
 
 const app = document.querySelector<HTMLDivElement>('#app')
 if (!app) throw new Error('#app missing')
@@ -50,10 +49,6 @@ app.innerHTML = `
           <p class="filter-empty" id="filter-empty" hidden>Нічога не знойдзена. <button class="text-btn" id="clear-filters-empty" type="button">Скінуць фільтры</button></p>
         </div>
       </aside>
-      <div class="legend-control" id="legend-control">
-        <button class="legend-toggle" id="legend-toggle" type="button" aria-expanded="false" aria-controls="legend">Легенда</button>
-        <div class="legend" id="legend" hidden></div>
-      </div>
       <section class="detail-panel" id="detail" aria-hidden="true">
         <button class="close" id="close-detail" type="button">Закрыць</button>
         <img class="detail-cover" id="detail-cover" alt="" />
@@ -75,8 +70,6 @@ const loadingEl = document.querySelector<HTMLElement>('#loading')!
 const countEl = document.querySelector<HTMLElement>('#count')!
 const statusFiltersEl = document.querySelector<HTMLElement>('#status-filters')!
 const typeFiltersEl = document.querySelector<HTMLElement>('#type-filters')!
-const legendEl = document.querySelector<HTMLElement>('#legend')!
-const legendToggleBtn = document.querySelector<HTMLButtonElement>('#legend-toggle')!
 const filterToggleBtn = document.querySelector<HTMLButtonElement>('#filter-toggle')!
 const filterBodyEl = document.querySelector<HTMLElement>('#filter-body')!
 const filterEmptyEl = document.querySelector<HTMLElement>('#filter-empty')!
@@ -188,14 +181,6 @@ function renderFilters() {
         `<button type="button" class="filter-chip" data-type="${t}" aria-pressed="${activeTypes.has(t)}">${TYPE_LABELS[t] || t}</button>`,
     )
     .join('')
-
-  legendEl.innerHTML = LEGEND_STATUSES.map(
-    (s) => `
-      <div class="legend-item">
-        <img src="${asset(`pins/building_${pinStatusFile(s)}.svg`)}" alt="" />
-        <span>${STATUS_LABELS[s]}</span>
-      </div>`,
-  ).join('')
 
   syncClearFilters()
 }
@@ -330,12 +315,6 @@ function renderSuggestions() {
 
 filterToggleBtn.addEventListener('click', () => {
   setFiltersExpanded(!filtersExpanded)
-})
-
-legendToggleBtn.addEventListener('click', () => {
-  const open = legendToggleBtn.getAttribute('aria-expanded') !== 'true'
-  legendToggleBtn.setAttribute('aria-expanded', String(open))
-  legendEl.hidden = !open
 })
 
 statusFiltersEl.addEventListener('click', (e) => {
