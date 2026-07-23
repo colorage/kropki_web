@@ -75,7 +75,7 @@ app.innerHTML = `
     >
       <button class="close" id="close-about" type="button">Закрыць</button>
       <h2 id="about-title">Аўтары</h2>
-      <p class="about-lead">Праект створаны ў 2019м і адноўлены ў 2026м</p>
+      <p class="about-lead">Праект створаны ў 2021м і адноўлены ў 2026м</p>
       <p class="about-label">На праекце працавалі:</p>
       <ul class="about-authors">
         <li>Аляксей Бацюкоў</li>
