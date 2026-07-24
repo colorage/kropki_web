@@ -109,12 +109,86 @@ function readCsv(path) {
   })
 }
 
+/** Split cover CSV without breaking commas inside Notion folder names. */
 function decodeCoverPath(cover) {
   if (!cover) return []
   return cover
-    .split(',')
-    .map((p) => decodeURIComponent(p.trim()))
+    .split(/,(?=%|https?:\/\/|Будынкі)/)
+    .map((p) => {
+      try {
+        return decodeURIComponent(p.trim())
+      } catch {
+        return p.trim()
+      }
+    })
     .filter(Boolean)
+}
+
+function normalizeTitle(input) {
+  return String(input || '')
+    .normalize('NFC')
+    .replace(/[\"“”«»/()?]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase()
+}
+
+const SHORT_ID_RE = /([0-9a-f]{4})-([0-9a-f]{4})/gi
+const FULL_ID_RE = /([0-9a-f]{32})$/i
+
+function extractShortIds(text) {
+  const out = []
+  const s = String(text || '')
+  SHORT_ID_RE.lastIndex = 0
+  let m
+  while ((m = SHORT_ID_RE.exec(s))) {
+    out.push(m[0].toLowerCase())
+  }
+  return out
+}
+
+function shortIdFromFull(fullId) {
+  const id = String(fullId || '').toLowerCase()
+  if (id.length !== 32) return null
+  return `${id.slice(0, 4)}-${id.slice(-4)}`
+}
+
+function parseHtmlMeta(filename) {
+  const stem = basename(filename, '.html').normalize('NFC')
+  const m = stem.match(FULL_ID_RE)
+  if (m) {
+    const fullId = m[1].toLowerCase()
+    const title = stem.slice(0, m.index).replace(/\s+$/, '')
+    return {
+      filename,
+      title,
+      norm: normalizeTitle(title),
+      fullId,
+      shortId: shortIdFromFull(fullId),
+    }
+  }
+  return {
+    filename,
+    title: stem,
+    norm: normalizeTitle(stem),
+    fullId: null,
+    shortId: null,
+  }
+}
+
+function buildHtmlIndex(buildingsDir) {
+  const files = existsSync(buildingsDir)
+    ? readdirSync(buildingsDir).filter((f) => f.endsWith('.html'))
+    : []
+  const metas = files.map(parseHtmlMeta)
+  const byShort = new Map()
+  const byNorm = new Map()
+  for (const meta of metas) {
+    if (meta.shortId) byShort.set(meta.shortId, meta)
+    if (!byNorm.has(meta.norm)) byNorm.set(meta.norm, [])
+    byNorm.get(meta.norm).push(meta)
+  }
+  return { metas, byShort, byNorm }
 }
 
 function extractDescription(htmlPath) {
@@ -136,26 +210,165 @@ function extractDescription(htmlPath) {
   return unique.slice(0, 12).join('\n\n')
 }
 
-function findBuildingHtml(buildingsDir, name, code) {
-  if (!existsSync(buildingsDir)) return null
-  const files = readdirSync(buildingsDir).filter((f) => f.endsWith('.html'))
-  const exact = files.find((f) => f.startsWith(`${name} `) || f === `${name}.html`)
-  if (exact) return join(buildingsDir, exact)
-  if (code) {
-    const byCode = files.find((f) => f.includes(code))
-    if (byCode) return join(buildingsDir, byCode)
+function addressScore(htmlPath, address) {
+  if (!htmlPath || !address || !existsSync(htmlPath)) return 0
+  const text = readFileSync(htmlPath, 'utf8')
+  const addr = address.normalize('NFC')
+  let score = 0
+  // Prefer longer street tokens from the address
+  const tokens = addr
+    .replace(/[.,]/g, ' ')
+    .split(/\s+/)
+    .map((t) => t.trim())
+    .filter((t) => t.length >= 4 && !/^\d+$/.test(t))
+  for (const token of tokens) {
+    if (text.includes(token)) score += token.length >= 6 ? 3 : 1
   }
-  return null
+  const num = addr.match(/(\d+)/g)
+  if (num) {
+    for (const n of num) {
+      if (new RegExp(`(?:^|\\D)${n}(?:\\D|$)`).test(text)) score += 1
+    }
+  }
+  return score
+}
+
+/**
+ * Resolve Notion page HTML for a building.
+ * Priority: cover short-id → cover folder sibling → unique title → unique prefix → address score.
+ * Each HTML file may only be claimed once.
+ */
+function findBuildingHtml(buildingsDir, name, coverPaths, address, htmlIndex, claimed) {
+  if (!existsSync(buildingsDir)) {
+    return { path: null, method: 'missing-dir' }
+  }
+
+  const available = (meta) => meta && !claimed.has(meta.filename)
+
+  // 1) Short Notion ids embedded anywhere in cover paths (folder or filename)
+  for (const cover of coverPaths) {
+    for (const shortId of extractShortIds(cover)) {
+      const meta = htmlIndex.byShort.get(shortId)
+      if (available(meta)) {
+        return { path: join(buildingsDir, meta.filename), method: 'cover-short-id', meta }
+      }
+    }
+  }
+
+  // 2) Cover folder → sibling .html (exact stem, or stem without short-id suffix)
+  for (const cover of coverPaths) {
+    if (cover.startsWith('http')) continue
+    const parts = cover.split('/')
+    if (parts.length < 2 || parts[0] !== 'Будынкі') continue
+    const folderOrFile = parts[1]
+    const folderStem = folderOrFile.replace(/\.(jpg|jpeg|png|webp|gif)$/i, '')
+    const exactName = `${folderStem}.html`
+    if (existsSync(join(buildingsDir, exactName)) && !claimed.has(exactName)) {
+      return {
+        path: join(buildingsDir, exactName),
+        method: 'cover-folder-exact',
+        meta: parseHtmlMeta(exactName),
+      }
+    }
+    const withoutShort = folderStem.replace(/\s+[0-9a-f]{4}-[0-9a-f]{4}$/i, '').trim()
+    const titleKeys = [normalizeTitle(folderStem), normalizeTitle(withoutShort)].filter(Boolean)
+    for (const key of titleKeys) {
+      const cands = (htmlIndex.byNorm.get(key) || []).filter(available)
+      if (cands.length === 1) {
+        return { path: join(buildingsDir, cands[0].filename), method: 'cover-folder-title', meta: cands[0] }
+      }
+    }
+  }
+
+  // 3) Unique normalized title from building name
+  const nameKeys = [
+    normalizeTitle(name),
+    normalizeTitle(name.split('/')[0]),
+  ].filter(Boolean)
+  for (const key of [...new Set(nameKeys)]) {
+    const cands = (htmlIndex.byNorm.get(key) || []).filter(available)
+    if (cands.length === 1) {
+      return { path: join(buildingsDir, cands[0].filename), method: 'unique-title', meta: cands[0] }
+    }
+  }
+
+  // 4) Unique prefix among remaining HTML (only when exactly one)
+  const prefixCands = []
+  const seen = new Set()
+  for (const key of [...new Set(nameKeys)]) {
+    if (!key) continue
+    for (const meta of htmlIndex.metas) {
+      if (!available(meta) || seen.has(meta.filename)) continue
+      if (meta.norm === key || meta.norm.startsWith(`${key} `)) {
+        seen.add(meta.filename)
+        prefixCands.push(meta)
+      }
+    }
+  }
+  if (prefixCands.length === 1) {
+    return { path: join(buildingsDir, prefixCands[0].filename), method: 'unique-prefix', meta: prefixCands[0] }
+  }
+
+  // 5) Disambiguate remaining exact-title candidates with address tokens
+  const pool = []
+  const poolSeen = new Set()
+  for (const key of [...new Set(nameKeys)]) {
+    for (const meta of htmlIndex.byNorm.get(key) || []) {
+      if (!available(meta) || poolSeen.has(meta.filename)) continue
+      poolSeen.add(meta.filename)
+      pool.push(meta)
+    }
+  }
+  if (pool.length === 1) {
+    return { path: join(buildingsDir, pool[0].filename), method: 'unique-title-remaining', meta: pool[0] }
+  }
+  if (pool.length > 1 && address) {
+    let best = null
+    let bestScore = -1
+    let tie = false
+    for (const meta of pool) {
+      const score = addressScore(join(buildingsDir, meta.filename), address)
+      if (score > bestScore) {
+        best = meta
+        bestScore = score
+        tie = false
+      } else if (score === bestScore) {
+        tie = true
+      }
+    }
+    if (best && bestScore > 0 && !tie) {
+      return { path: join(buildingsDir, best.filename), method: 'address-score', meta: best }
+    }
+    return { path: null, method: 'ambiguous', candidates: pool.map((m) => m.filename) }
+  }
+
+  if (pool.length > 1) {
+    return { path: null, method: 'ambiguous', candidates: pool.map((m) => m.filename) }
+  }
+
+  return { path: null, method: 'unmatched' }
 }
 
 function findBuildingFolder(buildingsDir, name, coverPaths) {
   if (!existsSync(buildingsDir)) return null
   // Prefer folder referenced by cover path
   for (const cover of coverPaths) {
+    if (cover.startsWith('http')) continue
     const parts = cover.split('/')
     if (parts.length >= 2 && parts[0] === 'Будынкі') {
       const folder = join(buildingsDir, parts[1])
       if (existsSync(folder) && statSync(folder).isDirectory()) return folder
+      // Cover may be a file directly under Будынкі (…/Name short-id.jpg)
+      if (parts.length === 2 && IMAGE_EXT.has(extname(parts[1]).toLowerCase())) {
+        const shortIds = extractShortIds(parts[1])
+        if (shortIds.length) {
+          const dirs = readdirSync(buildingsDir).filter((f) => {
+            const p = join(buildingsDir, f)
+            return statSync(p).isDirectory() && extractShortIds(f).some((id) => shortIds.includes(id))
+          })
+          if (dirs.length === 1) return join(buildingsDir, dirs[0])
+        }
+      }
     }
   }
   const dirs = readdirSync(buildingsDir).filter((f) => {
@@ -259,6 +472,48 @@ function parseTourCsv(path, name) {
   }
 }
 
+function buildImportReport(buildings, matchLog) {
+  const byDesc = new Map()
+  for (const b of buildings) {
+    const d = (b.description || '').trim()
+    if (!d) continue
+    if (!byDesc.has(d)) byDesc.set(d, [])
+    byDesc.get(d).push({ id: b.id, name: b.name })
+  }
+  const sharedDescriptions = [...byDesc.entries()]
+    .filter(([, items]) => items.length > 1)
+    .map(([description, items]) => ({
+      count: items.length,
+      preview: description.slice(0, 120),
+      buildings: items,
+    }))
+    .sort((a, b) => b.count - a.count)
+
+  const unmatched = matchLog.filter((m) => !m.html)
+  const emptyDescriptions = buildings
+    .filter((b) => !(b.description || '').trim())
+    .map((b) => ({ id: b.id, name: b.name, matchMethod: matchLog.find((m) => m.id === b.id)?.method }))
+
+  const methodCounts = {}
+  for (const m of matchLog) {
+    methodCounts[m.method] = (methodCounts[m.method] || 0) + 1
+  }
+
+  return {
+    total: buildings.length,
+    withDescription: buildings.length - emptyDescriptions.length,
+    emptyDescriptions,
+    sharedDescriptions,
+    unmatched,
+    methodCounts,
+    matches: matchLog,
+  }
+}
+
+function rowHasCoverShortId(coverPaths) {
+  return coverPaths.some((c) => extractShortIds(c).length > 0)
+}
+
 async function importBuildings(notionRoot) {
   const csvPath = findFile(notionRoot, 'Будынкі', '.csv')
   if (!csvPath) throw new Error(`Buildings CSV not found under ${notionRoot}`)
@@ -266,7 +521,13 @@ async function importBuildings(notionRoot) {
   const rows = readCsv(csvPath)
   console.log(`Buildings CSV: ${rows.length} rows from ${basename(csvPath)}`)
 
+  const htmlIndex = buildHtmlIndex(buildingsDir)
+  const claimed = new Set()
+  const matchLog = []
   const buildings = []
+
+  // Prepare valid rows; claim short-id HTML first so duplicate names resolve later.
+  const prepared = []
   for (const row of rows) {
     const name = (row.name || '').trim()
     const code = String(row.code || '').trim()
@@ -276,22 +537,53 @@ async function importBuildings(notionRoot) {
       console.warn(`  skip invalid row: ${name || '(no name)'}`)
       continue
     }
+    const coverPaths = decodeCoverPath(row.cover)
+    prepared.push({
+      row,
+      name,
+      code,
+      lat,
+      lon,
+      address: (row.address || '').trim(),
+      coverPaths,
+      hasShortId: rowHasCoverShortId(coverPaths),
+    })
+  }
+  prepared.sort((a, b) => Number(b.hasShortId) - Number(a.hasShortId))
 
+  for (const item of prepared) {
+    const { row, name, code, lat, lon, address, coverPaths } = item
     const statusBe = (row.status || '').trim()
     const typeBe = (row.type || '').trim()
     const status = STATUS_MAP[statusBe] || 'preserved'
     const type = TYPE_MAP[typeBe] || 'building'
     const mediaKey = slugify(code || name)
-    const coverPaths = decodeCoverPath(row.cover)
     const folder = findBuildingFolder(buildingsDir, name, coverPaths)
-    const htmlPath = findBuildingHtml(buildingsDir, name, code)
+    const match = findBuildingHtml(buildingsDir, name, coverPaths, address, htmlIndex, claimed)
+    if (match.meta?.filename) claimed.add(match.meta.filename)
+    else if (match.path) claimed.add(basename(match.path))
+
+    const htmlPath = match.path
     const images = await collectImages(folder, mediaKey, coverPaths, notionRoot)
     const description = extractDescription(htmlPath)
+
+    matchLog.push({
+      id: code || mediaKey,
+      name,
+      method: match.method,
+      html: htmlPath ? basename(htmlPath) : null,
+      candidates: match.candidates || undefined,
+      descriptionChars: description.length,
+    })
+
+    if (!htmlPath) {
+      console.warn(`  unmatched HTML: ${code || '?'} ${name} (${match.method})`)
+    }
 
     buildings.push({
       id: code || mediaKey,
       name,
-      address: (row.address || '').trim(),
+      address,
       lat,
       lon,
       status,
@@ -310,6 +602,20 @@ async function importBuildings(notionRoot) {
   buildings.sort((a, b) => a.name.localeCompare(b.name, 'be'))
   writeFileSync(join(DATA_DIR, 'buildings.json'), JSON.stringify(buildings, null, 2))
   console.log(`Wrote ${buildings.length} buildings → public/data/buildings.json`)
+
+  const report = buildImportReport(buildings, matchLog)
+  writeFileSync(join(DATA_DIR, 'import-report.json'), JSON.stringify(report, null, 2))
+  console.log(
+    `HTML match: ${buildings.length - report.unmatched.length}/${buildings.length}` +
+      ` | descriptions: ${report.withDescription}` +
+      ` | shared descriptions: ${report.sharedDescriptions.length}` +
+      ` | empty: ${report.emptyDescriptions.length}`,
+  )
+  if (report.sharedDescriptions.length) {
+    console.warn('  WARNING: shared descriptions detected — check public/data/import-report.json')
+  }
+  console.log('Match methods:', report.methodCounts)
+
   return buildings
 }
 

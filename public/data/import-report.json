@@ -1,0 +1,1312 @@
+{
+  "total": 180,
+  "withDescription": 173,
+  "emptyDescriptions": [
+    {
+      "id": "174",
+      "name": "Брацкая магіла",
+      "matchMethod": "cover-short-id"
+    },
+    {
+      "id": "67",
+      "name": "Жылы дом",
+      "matchMethod": "cover-short-id"
+    },
+    {
+      "id": "71",
+      "name": "Жылы дом",
+      "matchMethod": "cover-short-id"
+    },
+    {
+      "id": "79",
+      "name": "Жылы дом",
+      "matchMethod": "cover-short-id"
+    },
+    {
+      "id": "81",
+      "name": "Жылы дом",
+      "matchMethod": "cover-short-id"
+    },
+    {
+      "id": "124",
+      "name": "Жылы дом",
+      "matchMethod": "cover-short-id"
+    },
+    {
+      "id": "176",
+      "name": "Паштовая станцыя",
+      "matchMethod": "cover-folder-title"
+    }
+  ],
+  "sharedDescriptions": [],
+  "unmatched": [],
+  "methodCounts": {
+    "cover-short-id": 39,
+    "cover-folder-title": 130,
+    "unique-title": 9,
+    "unique-prefix": 1,
+    "address-score": 1
+  },
+  "matches": [
+    {
+      "id": "3",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 136bb2044a7b43348409a2d86faa7219.html",
+      "descriptionChars": 795
+    },
+    {
+      "id": "5",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 3a2ef49ce4c94569b037ab6c5128cd2f.html",
+      "descriptionChars": 761
+    },
+    {
+      "id": "6",
+      "name": "Даходны дом",
+      "method": "cover-short-id",
+      "html": "Даходны дом 3cd904ea487148ceadae9b55f5d9d8c4.html",
+      "descriptionChars": 1271
+    },
+    {
+      "id": "8",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 6be6b2622231486399c757d6842766fd.html",
+      "descriptionChars": 919
+    },
+    {
+      "id": "9",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом a8540ca77ed547a9b76697f6a3ba7ffe.html",
+      "descriptionChars": 1095
+    },
+    {
+      "id": "23",
+      "name": "Даходны дом",
+      "method": "cover-short-id",
+      "html": "Даходны дом 38f21d7f1d3449f49a435a9516c33600.html",
+      "descriptionChars": 543
+    },
+    {
+      "id": "26",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 4619c0a9ab7f41d8bf7ef763c54dc767.html",
+      "descriptionChars": 1679
+    },
+    {
+      "id": "51",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 52eedea9a9e14ab6a0188c88de15eaba.html",
+      "descriptionChars": 784
+    },
+    {
+      "id": "54",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом b5060ac926b24a63a76476e66b70b60e.html",
+      "descriptionChars": 1327
+    },
+    {
+      "id": "55",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 985d0086fdd7481097545eb31a459a10.html",
+      "descriptionChars": 1271
+    },
+    {
+      "id": "62",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом de5b3112b16d401e9a771964e326a5dd.html",
+      "descriptionChars": 169
+    },
+    {
+      "id": "67",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом d9ed994862334df7b1d6e0938a436b33.html",
+      "descriptionChars": 0
+    },
+    {
+      "id": "68",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 8903c94387ac4e73839f73237a7ffb8e.html",
+      "descriptionChars": 714
+    },
+    {
+      "id": "69",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 4b4f64d9dc024c78bfe63359589e8858.html",
+      "descriptionChars": 958
+    },
+    {
+      "id": "71",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 09f0bdd5dccd461386812a1dc4647b73.html",
+      "descriptionChars": 0
+    },
+    {
+      "id": "73",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 97e85164a7f34c56adb3e3cdae289e6a.html",
+      "descriptionChars": 1626
+    },
+    {
+      "id": "79",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом a0c2b2a9785a4bd9a1e9c395ed5c8dba.html",
+      "descriptionChars": 0
+    },
+    {
+      "id": "80",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 63ab31b99b1f4067ba0e2172948fa3e5.html",
+      "descriptionChars": 533
+    },
+    {
+      "id": "81",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом cc977a60a6464f4da75fe43d02ed62a8.html",
+      "descriptionChars": 0
+    },
+    {
+      "id": "84",
+      "name": "Дом Ландау",
+      "method": "cover-short-id",
+      "html": "Дом Ландау 1a7028b752ac44f5b1fbd9187ec24e6f.html",
+      "descriptionChars": 1280
+    },
+    {
+      "id": "91",
+      "name": "Даходны дом",
+      "method": "cover-short-id",
+      "html": "Даходны дом 76ea2f07df73448084a984ad75418966.html",
+      "descriptionChars": 730
+    },
+    {
+      "id": "93",
+      "name": "Даходны дом",
+      "method": "cover-short-id",
+      "html": "Даходны дом e92c335ee5354dca9dad4dcd78055328.html",
+      "descriptionChars": 1205
+    },
+    {
+      "id": "98",
+      "name": "Дом Лур'е",
+      "method": "cover-short-id",
+      "html": "Дом Лур'е 5324e71afb9c44e88fc9c418d05130d8.html",
+      "descriptionChars": 781
+    },
+    {
+      "id": "101",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 06b8d6da3dfe453dae37739f2a281cba.html",
+      "descriptionChars": 837
+    },
+    {
+      "id": "109",
+      "name": "Дом Лур'е",
+      "method": "cover-short-id",
+      "html": "Дом Лур'е 0e0fffe728b342ba8094caf64667a89a.html",
+      "descriptionChars": 1269
+    },
+    {
+      "id": "112",
+      "name": "Дом Граната",
+      "method": "cover-short-id",
+      "html": "Дом Граната 4d77b7fdeb7246cd9fa252867adb7818.html",
+      "descriptionChars": 1229
+    },
+    {
+      "id": "116",
+      "name": "Дом Ландау",
+      "method": "cover-short-id",
+      "html": "Дом Ландау a0c3b01885e44e38863a2673b1041680.html",
+      "descriptionChars": 1627
+    },
+    {
+      "id": "120",
+      "name": "Даходны дом",
+      "method": "cover-short-id",
+      "html": "Даходны дом 0853c73a0d954ec28979e722d261ea50.html",
+      "descriptionChars": 764
+    },
+    {
+      "id": "124",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 1e293cb460314decb2135b28e6af96f2.html",
+      "descriptionChars": 0
+    },
+    {
+      "id": "130",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом d6ff0335a8734fbb89b1c69d86aa532c.html",
+      "descriptionChars": 4662
+    },
+    {
+      "id": "131",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом fc11ff6ab2ea4051a93c0280e1679d00.html",
+      "descriptionChars": 1312
+    },
+    {
+      "id": "138",
+      "name": "Жылы даходны дом",
+      "method": "cover-short-id",
+      "html": "Жылы даходны дом 1b9c3b0ef12949d599acd80334eda3f8.html",
+      "descriptionChars": 1419
+    },
+    {
+      "id": "149",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом c08b12bd95544eb8971cf78cb57cfbb1.html",
+      "descriptionChars": 1131
+    },
+    {
+      "id": "150",
+      "name": "Жылы дом",
+      "method": "cover-short-id",
+      "html": "Жылы дом 559fdea09e4f4929985448288ac7f3dd.html",
+      "descriptionChars": 1136
+    },
+    {
+      "id": "166",
+      "name": "Брацкая магіла",
+      "method": "cover-short-id",
+      "html": "Брацкая магіла a5e97004836543c8aaff064d939443b5.html",
+      "descriptionChars": 81
+    },
+    {
+      "id": "170",
+      "name": "Успенская царква",
+      "method": "cover-short-id",
+      "html": "Успенская царква 5d8dd7e04f5446e5a6ac1fffbe05b2e8.html",
+      "descriptionChars": 707
+    },
+    {
+      "id": "171",
+      "name": "Брацкая магіла",
+      "method": "cover-short-id",
+      "html": "Брацкая магіла a642ad5afc1042438fbfc62c7d5dd025.html",
+      "descriptionChars": 58
+    },
+    {
+      "id": "172",
+      "name": "Брацкая магіла",
+      "method": "cover-short-id",
+      "html": "Брацкая магіла c55b7e4f1b2244d8995d02dadd297a43.html",
+      "descriptionChars": 54
+    },
+    {
+      "id": "174",
+      "name": "Брацкая магіла",
+      "method": "cover-short-id",
+      "html": "Брацкая магіла d5082ddf6cda457abe3184c83fed9a2f.html",
+      "descriptionChars": 0
+    },
+    {
+      "id": "4",
+      "name": "Даходны дом",
+      "method": "cover-folder-title",
+      "html": "Даходны дом 08ec2b7040c147949d83de3e0b32e5b8.html",
+      "descriptionChars": 749
+    },
+    {
+      "id": "1",
+      "name": "Ратуша",
+      "method": "unique-title",
+      "html": "Ратуша 40c91245b92646e7912c5430fbad7ce2.html",
+      "descriptionChars": 3798
+    },
+    {
+      "id": "2",
+      "name": "Жылы дом",
+      "method": "cover-folder-title",
+      "html": "Жылы дом 5d4e632a956b466889b1d086f100a37d.html",
+      "descriptionChars": 859
+    },
+    {
+      "id": "7",
+      "name": "Даходны дом Брука",
+      "method": "cover-folder-title",
+      "html": "Даходны дом Брука 5cd97e9ac02e47ad8e042b29b97ccde4.html",
+      "descriptionChars": 1337
+    },
+    {
+      "id": "10",
+      "name": "Пансіён Бельскай",
+      "method": "cover-folder-title",
+      "html": "Пансіён Бельскай 63dab88d3d554df983c5f849217701c0.html",
+      "descriptionChars": 3234
+    },
+    {
+      "id": "11",
+      "name": "Вытворча-складскі будынак",
+      "method": "cover-folder-title",
+      "html": "Вытворча-складскі будынак c55b28f680904f8bb8ec8b2f45fe2c3e.html",
+      "descriptionChars": 725
+    },
+    {
+      "id": "12",
+      "name": "Дом Гурэвіча",
+      "method": "cover-folder-title",
+      "html": "Дом Гурэвіча d6b96339fa3c4c1a865edf69958c22a8.html",
+      "descriptionChars": 738
+    },
+    {
+      "id": "13",
+      "name": "Дом Левінсона",
+      "method": "cover-folder-title",
+      "html": "Дом Левінсона 832a20c7f254423886ea64c1b85599b5.html",
+      "descriptionChars": 1422
+    },
+    {
+      "id": "14",
+      "name": "Дом Лур'е",
+      "method": "cover-folder-title",
+      "html": "Дом Лур'е 2bece961f7234988a15c8c11ccf6f6e2.html",
+      "descriptionChars": 723
+    },
+    {
+      "id": "15",
+      "name": "Дом Шура",
+      "method": "cover-folder-title",
+      "html": "Дом Шура f100481778be4052baae9230a3e77b6a.html",
+      "descriptionChars": 1028
+    },
+    {
+      "id": "16",
+      "name": "Дом Локшына",
+      "method": "cover-folder-title",
+      "html": "Дом Локшына e992bcbd50a84a40a5e8753f0b984668.html",
+      "descriptionChars": 957
+    },
+    {
+      "id": "17",
+      "name": "Дом Кітаёва",
+      "method": "cover-folder-title",
+      "html": "Дом Кітаёва 6b7772761b11469caaccf4b15f801fa4.html",
+      "descriptionChars": 1337
+    },
+    {
+      "id": "18",
+      "name": "Флігель архірэйскага дома",
+      "method": "cover-folder-title",
+      "html": "Флігель архірэйскага дома 498aae96d0af4c8f96cc5296e8602b73.html",
+      "descriptionChars": 1322
+    },
+    {
+      "id": "19",
+      "name": "Дом Ландау",
+      "method": "cover-folder-title",
+      "html": "Дом Ландау 7b08281ab56d452ba4fe9f70b6a3b653.html",
+      "descriptionChars": 1749
+    },
+    {
+      "id": "20",
+      "name": "Гасцініца \"Тульская\"",
+      "method": "cover-folder-title",
+      "html": "Гасцініца Тульская e18a4e208a1a479e82a20de19f7aefb7.html",
+      "descriptionChars": 1937
+    },
+    {
+      "id": "21",
+      "name": "Палац Станіслава Богуш-Сестранцэвіча / Сінагога Цукермана",
+      "method": "cover-folder-title",
+      "html": "Палац Станіслава Богуш-Сестранцэвіча Сінагога Цуке 3526a56521b54106b2d67164fbf30e3d.html",
+      "descriptionChars": 2562
+    },
+    {
+      "id": "22",
+      "name": "Дом Левіна",
+      "method": "cover-folder-title",
+      "html": "Дом Левіна 66e18d81f81b40debcf50bc216457160.html",
+      "descriptionChars": 1178
+    },
+    {
+      "id": "24",
+      "name": "Жылы дом / Явачны пункт Белай арміі",
+      "method": "cover-folder-title",
+      "html": "Жылы дом Явачны пункт Белай арміі f9b937497b414f7a8b2f884564a403c0.html",
+      "descriptionChars": 1969
+    },
+    {
+      "id": "25",
+      "name": "Дом Сенажэцкага(?)",
+      "method": "cover-folder-title",
+      "html": "Дом Сенажэцкага( ) b6edbb429724470aa58b0d4be71e6f3b.html",
+      "descriptionChars": 1478
+    },
+    {
+      "id": "27",
+      "name": "Дом Казлоўскага",
+      "method": "cover-folder-title",
+      "html": "Дом Казлоўскага c38e68e10661478c9be2fe147de5746a.html",
+      "descriptionChars": 1201
+    },
+    {
+      "id": "28",
+      "name": "Флігель гасцініцы \"Метраполь\"",
+      "method": "cover-folder-title",
+      "html": "Флігель гасцініцы Метраполь e67131d5e9f443458b0fc95caae0a906.html",
+      "descriptionChars": 1761
+    },
+    {
+      "id": "29",
+      "name": "Прыватна-ўласніцкі дом",
+      "method": "cover-folder-title",
+      "html": "Прыватна-ўласніцкі дом d83ba984293c4fe5af93e22bd21bbfab.html",
+      "descriptionChars": 1405
+    },
+    {
+      "id": "30",
+      "name": "Гаўптвахта з салянымі складамі",
+      "method": "cover-folder-title",
+      "html": "Гаўптвахта з салянымі складамі f86aa0efb788447c832cb712fa78e58e.html",
+      "descriptionChars": 1657
+    },
+    {
+      "id": "31",
+      "name": "Дом Тыркельтаўба",
+      "method": "cover-folder-title",
+      "html": "Дом Тыркельтаўба 1e654151a2de4912aeb9cf5a76942217.html",
+      "descriptionChars": 1063
+    },
+    {
+      "id": "32",
+      "name": "Дом Ханіна",
+      "method": "cover-folder-title",
+      "html": "Дом Ханіна 377cc5e9592c4a34bc436b41e80dbc10.html",
+      "descriptionChars": 918
+    },
+    {
+      "id": "33",
+      "name": "Дом Грубіна / Гасцініца \"Метраполь\"",
+      "method": "cover-folder-title",
+      "html": "Дом Грубіна Гасцініца Метраполь d390430314b74001b9764cd0f08c1862.html",
+      "descriptionChars": 1655
+    },
+    {
+      "id": "34",
+      "name": "Дом імя Леніна",
+      "method": "cover-folder-title",
+      "html": "Дом імя Леніна 69da3f6f60b64f869122a85e721ba286.html",
+      "descriptionChars": 932
+    },
+    {
+      "id": "35",
+      "name": "Дом імя Будзённага",
+      "method": "cover-folder-title",
+      "html": "Дом імя Будзённага 7b4d10e3476a42f2b73f412e64f189fd.html",
+      "descriptionChars": 1209
+    },
+    {
+      "id": "36",
+      "name": "Карпусы губернскай бальніцы",
+      "method": "cover-folder-title",
+      "html": "Карпусы губернскай бальніцы 6365bf2423df4f9493e6a96103aba2f3.html",
+      "descriptionChars": 3974
+    },
+    {
+      "id": "37",
+      "name": "Мужчынскае епархіяльнае вучылішча",
+      "method": "cover-folder-title",
+      "html": "Мужчынскае епархіяльнае вучылішча dc00c0c5a4204c4889ea9bf107e1b79c.html",
+      "descriptionChars": 3334
+    },
+    {
+      "id": "38",
+      "name": "Жаночае епархіяльнае вучылішча",
+      "method": "cover-folder-title",
+      "html": "Жаночае епархіяльнае вучылішча 0e9201d4941a4f7f93c8a22cd6b3ce7b.html",
+      "descriptionChars": 2190
+    },
+    {
+      "id": "39",
+      "name": "Мікольскі манастыр",
+      "method": "cover-folder-title",
+      "html": "Мікольскі манастыр 86fbad6fba7d42a2b5c68ca104ba2a43.html",
+      "descriptionChars": 3477
+    },
+    {
+      "id": "40",
+      "name": "Ешыбот, хедэр і сінагога",
+      "method": "unique-title",
+      "html": "Ешыбот, хедэр і сінагога 964d75140aa2400080f2ac87b6c8f587.html",
+      "descriptionChars": 2891
+    },
+    {
+      "id": "41",
+      "name": "Вайсковыя могілкі",
+      "method": "cover-folder-title",
+      "html": "Вайсковыя могілкі 32080d13b5d1447882124d7f75744ffc.html",
+      "descriptionChars": 1954
+    },
+    {
+      "id": "42",
+      "name": "Капліца-пахавальня Сенажэцкіх",
+      "method": "cover-folder-title",
+      "html": "Капліца-пахавальня Сенажэцкіх fd5fa85ed672432fb3e5a4209d6478d8.html",
+      "descriptionChars": 1510
+    },
+    {
+      "id": "43",
+      "name": "Водацяжная вежа",
+      "method": "cover-folder-title",
+      "html": "Водацяжная вежа e1556b883eec435d8a5b9b2e4cd5fe82.html",
+      "descriptionChars": 1563
+    },
+    {
+      "id": "44",
+      "name": "Жылы дом / Дом 1790",
+      "method": "cover-folder-title",
+      "html": "Жылы дом Дом 1790 a5ab1d7d76854db49246f0b04761286b.html",
+      "descriptionChars": 890
+    },
+    {
+      "id": "45",
+      "name": "Архірэйскі палац Г. Каніскага",
+      "method": "cover-folder-title",
+      "html": "Архірэйскі палац Г Каніскага 61639064f6f24189a2d8abe5a34f6e02.html",
+      "descriptionChars": 4204
+    },
+    {
+      "id": "46",
+      "name": "Дом І.Е. Відаровіча (?)",
+      "method": "cover-folder-title",
+      "html": "Дом І Е Відаровіча ( ) 57b59d99f3d74430acabc7b0c6893456.html",
+      "descriptionChars": 1637
+    },
+    {
+      "id": "47",
+      "name": "Дом Анташкевіча / Аношкі",
+      "method": "cover-folder-title",
+      "html": "Дом Анташкевіча Аношкі 5ec2df783e03492cbe5452ffc951f9b5.html",
+      "descriptionChars": 2325
+    },
+    {
+      "id": "48",
+      "name": "Будынак банка",
+      "method": "cover-folder-title",
+      "html": "Будынак банка be132af530f642d4977480331e20e434.html",
+      "descriptionChars": 1327
+    },
+    {
+      "id": "49",
+      "name": "Аддзяленне Дзяржаўнага банка",
+      "method": "cover-folder-title",
+      "html": "Аддзяленне Дзяржаўнага банка 1e442fdd2c33477db0f0ee5a3e3b62e0.html",
+      "descriptionChars": 1865
+    },
+    {
+      "id": "50",
+      "name": "Жылы дом для супрацоўнікаў банка",
+      "method": "cover-folder-title",
+      "html": "Жылы дом для супрацоўнікаў банка 738070b52e5844a5815174e4b34506b4.html",
+      "descriptionChars": 2234
+    },
+    {
+      "id": "52",
+      "name": "Брама Саборнай плошчы",
+      "method": "cover-folder-title",
+      "html": "Брама Саборнай плошчы bdeb781cec3b49d788815e9ec8baa192.html",
+      "descriptionChars": 1485
+    },
+    {
+      "id": "53",
+      "name": "Электратэатр \"Чары\" / Кінатэатр \"Чырвоная зорка\"",
+      "method": "cover-folder-title",
+      "html": "Электратэатр Чары Кінатэатр Чырвоная зорка 6890c068475d4b5abc24332d65d8d5b7.html",
+      "descriptionChars": 1472
+    },
+    {
+      "id": "56",
+      "name": "Жылы дом / \"Дом 90\"",
+      "method": "cover-folder-title",
+      "html": "Жылы дом Дом 90 2b95a232c7e040b08c63dfac4c267646.html",
+      "descriptionChars": 1548
+    },
+    {
+      "id": "57",
+      "name": "Будынак Магілёўскай міжкраёвай школы НКВД",
+      "method": "cover-folder-title",
+      "html": "Будынак Магілёўскай міжкраёвай школы НКВД 66e4e2acab424a078c6b15e6d438bba0.html",
+      "descriptionChars": 3226
+    },
+    {
+      "id": "58",
+      "name": "Помнік Леніну",
+      "method": "cover-folder-title",
+      "html": "Помнік Леніну 3a929f4eae9c4a0aab226fb58e1b53f0.html",
+      "descriptionChars": 2813
+    },
+    {
+      "id": "59",
+      "name": "Жандарская казарма",
+      "method": "cover-folder-title",
+      "html": "Жандарская казарма cb7a602356174527838b2dbb13da8f8b.html",
+      "descriptionChars": 1598
+    },
+    {
+      "id": "60",
+      "name": "Царква Трох Свяціцеляў",
+      "method": "cover-folder-title",
+      "html": "Царква Трох Свяціцеляў 6e27903bc3554b4d810099b4e3682f38.html",
+      "descriptionChars": 2143
+    },
+    {
+      "id": "61",
+      "name": "Габрэйскае рамеснае вучылішча",
+      "method": "cover-folder-title",
+      "html": "Габрэйскае рамеснае вучылішча aa8df9c1d4c84612beb1847d4f31504a.html",
+      "descriptionChars": 3244
+    },
+    {
+      "id": "63",
+      "name": "Дом Грум-Гржымайлы",
+      "method": "cover-folder-title",
+      "html": "Дом Грум-Гржымайлы 9befe07f0a6541038bc86ab93ca21a3d.html",
+      "descriptionChars": 177
+    },
+    {
+      "id": "64",
+      "name": "Рэшткі Богаяўленскага манастыра",
+      "method": "cover-folder-title",
+      "html": "Рэшткі Богаяўленскага манастыра 9d3b2e772ffc4f23a8dcf06cdfdd475e.html",
+      "descriptionChars": 4259
+    },
+    {
+      "id": "65",
+      "name": "Спаская царква",
+      "method": "cover-folder-title",
+      "html": "Спаская царква b431a223c84942309cbf2fe6e787e068.html",
+      "descriptionChars": 1742
+    },
+    {
+      "id": "66",
+      "name": "Пакроўская царква",
+      "method": "cover-folder-title",
+      "html": "Пакроўская царква 1db128306b694cb1a659ab587ac8e890.html",
+      "descriptionChars": 832
+    },
+    {
+      "id": "70",
+      "name": "Дом Ліўшыца",
+      "method": "cover-folder-title",
+      "html": "Дом Ліўшыца f1fd4fb9c96a47eeb649028e41ca7703.html",
+      "descriptionChars": 2174
+    },
+    {
+      "id": "72",
+      "name": "Жылы даходны дом",
+      "method": "cover-folder-title",
+      "html": "Жылы даходны дом ed791845159e47db8fa069c3b86a71ba.html",
+      "descriptionChars": 2004
+    },
+    {
+      "id": "74",
+      "name": "Жылы, даходны дом / Дом Брука (?)",
+      "method": "unique-title",
+      "html": "Жылы, даходны дом Дом Брука ( ) 26ed04e022744a8b8cf4b34dc11c047c.html",
+      "descriptionChars": 891
+    },
+    {
+      "id": "75",
+      "name": "Даходны дом / Крама \"На паўгары\"",
+      "method": "cover-folder-title",
+      "html": "Даходны дом Крама На паўгары db2fb59c17c64fa98a85bbe8c0978fa1.html",
+      "descriptionChars": 1297
+    },
+    {
+      "id": "77",
+      "name": "Склады Лекерта",
+      "method": "cover-folder-title",
+      "html": "Склады Лекерта 9c69747fb4e149a6a748aea8d7fbf350.html",
+      "descriptionChars": 2015
+    },
+    {
+      "id": "76",
+      "name": "Дом Ратнера / Талмуд Тора",
+      "method": "cover-folder-title",
+      "html": "Дом Ратнера Талмуд Тора d156d22c6c3f4d5bb295fa18ff7c58d6.html",
+      "descriptionChars": 3227
+    },
+    {
+      "id": "78",
+      "name": "Прыватнаўласніцкая сядзіба",
+      "method": "cover-folder-title",
+      "html": "Прыватнаўласніцкая сядзіба a80124e05cb24ccabac08232d724a76a.html",
+      "descriptionChars": 75
+    },
+    {
+      "id": "82",
+      "name": "Духоўная кансісторыя",
+      "method": "cover-folder-title",
+      "html": "Духоўная кансісторыя a0da1012f4ca4b90b3b25ffc3f81add2.html",
+      "descriptionChars": 2934
+    },
+    {
+      "id": "83",
+      "name": "Дом Берштэйна",
+      "method": "cover-folder-title",
+      "html": "Дом Берштэйна d9f7538fe6164ab684468a51ffe71314.html",
+      "descriptionChars": 763
+    },
+    {
+      "id": "85",
+      "name": "Дом Магітсона / Гатэль \"Вена\"",
+      "method": "cover-folder-title",
+      "html": "Дом Магітсона Гатэль Вена 5a2c0cf4e85947b0b327864e9a98cc3b.html",
+      "descriptionChars": 958
+    },
+    {
+      "id": "86",
+      "name": "Дом Махавера / Бібліятэка \"праўдзістаў\"",
+      "method": "cover-folder-title",
+      "html": "Дом Махавера Бібліятэка праўдзістаў 90a0b079dd6a49fdb673185d8ee38508.html",
+      "descriptionChars": 1366
+    },
+    {
+      "id": "87",
+      "name": "Гасцініца \"Брыстоль\"",
+      "method": "cover-folder-title",
+      "html": "Гасцініца Брыстоль f9b001295a9445bba18142acb68fece2.html",
+      "descriptionChars": 1974
+    },
+    {
+      "id": "88",
+      "name": "Дом Фрэйдсана",
+      "method": "cover-folder-title",
+      "html": "Дом Фрэйдсана 197b8a01c65543ac9b4e245f43b2d425.html",
+      "descriptionChars": 2805
+    },
+    {
+      "id": "89",
+      "name": "Дом Сары Зільберман",
+      "method": "cover-folder-title",
+      "html": "Дом Сары Зільберман cca32ecb87ab4f1a9131e76416e397e5.html",
+      "descriptionChars": 1640
+    },
+    {
+      "id": "90",
+      "name": "Губернскае жандармскае праўленне",
+      "method": "cover-folder-title",
+      "html": "Губернскае жандармскае праўленне 992d0092775f420f8461e0d92abce8bd.html",
+      "descriptionChars": 1270
+    },
+    {
+      "id": "94",
+      "name": "Дом Мееровіча",
+      "method": "cover-folder-title",
+      "html": "Дом Мееровіча 7f4e3e4b7ca14d36950f52ba4adf2c73.html",
+      "descriptionChars": 1162
+    },
+    {
+      "id": "96",
+      "name": "Мужчынская гімназія",
+      "method": "cover-folder-title",
+      "html": "Мужчынская гімназія 58a2b8ac252f48d98ce045f774c6fe26.html",
+      "descriptionChars": 1572
+    },
+    {
+      "id": "95",
+      "name": "Дом Бабовіка",
+      "method": "cover-folder-title",
+      "html": "Дом Бабовіка ef8e9f758b3a45869aedfee25b806be0.html",
+      "descriptionChars": 1975
+    },
+    {
+      "id": "97",
+      "name": "Дом Берліна / Гасцініца \"Дняпроўская\"",
+      "method": "cover-folder-title",
+      "html": "Дом Берліна Гасцініца Дняпроўская 67650906161943068d1fa5c1dc3bc02f.html",
+      "descriptionChars": 2343
+    },
+    {
+      "id": "99",
+      "name": "Дом Гісіна",
+      "method": "cover-folder-title",
+      "html": "Дом Гісіна 7a0d79eaeaa74738816badee9fab4b47.html",
+      "descriptionChars": 1413
+    },
+    {
+      "id": "100",
+      "name": "Дом Вільчынскага",
+      "method": "cover-folder-title",
+      "html": "Дом Вільчынскага 738b8b6e67484aad88bb63b5f8d0d2be.html",
+      "descriptionChars": 1737
+    },
+    {
+      "id": "103",
+      "name": "Дом Махавера",
+      "method": "cover-folder-title",
+      "html": "Дом Махавера a0ab618a5ba747be8ed5a64ddac6a073.html",
+      "descriptionChars": 1042
+    },
+    {
+      "id": "102",
+      "name": "Дом Каца",
+      "method": "cover-folder-title",
+      "html": "Дом Каца aebff383473c4b1d906de9b6428a4a93.html",
+      "descriptionChars": 967
+    },
+    {
+      "id": "104",
+      "name": "Дом гарадскога купецтва",
+      "method": "cover-folder-title",
+      "html": "Дом гарадскога купецтва 4e1d378321db4856b32e071de6ef3535.html",
+      "descriptionChars": 1689
+    },
+    {
+      "id": "106",
+      "name": "Фельчарская школа",
+      "method": "cover-folder-title",
+      "html": "Фельчарская школа 541462fd9809422e80531d8c84404abb.html",
+      "descriptionChars": 3426
+    },
+    {
+      "id": "105",
+      "name": "Купецкая сінагога",
+      "method": "cover-folder-title",
+      "html": "Купецкая сінагога 8655e272cbcb48b28c01811b7eedad43.html",
+      "descriptionChars": 1512
+    },
+    {
+      "id": "107",
+      "name": "Дом Вільнера",
+      "method": "cover-folder-title",
+      "html": "Дом Вільнера 90e5cb4792694472a5927999ae60d9fb.html",
+      "descriptionChars": 709
+    },
+    {
+      "id": "108",
+      "name": "Дом Мінахера",
+      "method": "cover-folder-title",
+      "html": "Дом Мінахера a42158ee6be04b63bce8e234e0ba9cc7.html",
+      "descriptionChars": 894
+    },
+    {
+      "id": "110",
+      "name": "Дом Ідэльсона",
+      "method": "cover-folder-title",
+      "html": "Дом Ідэльсона 0ee14ea02488443caa393eeffa657100.html",
+      "descriptionChars": 1046
+    },
+    {
+      "id": "111",
+      "name": "Дом Граната",
+      "method": "cover-folder-title",
+      "html": "Дом Граната 3b8c58172c0e457588d21ec924461065.html",
+      "descriptionChars": 953
+    },
+    {
+      "id": "114",
+      "name": "Дом Шыка",
+      "method": "cover-folder-title",
+      "html": "Дом Шыка 900e34a611d1413d86204214e5390f09.html",
+      "descriptionChars": 1368
+    },
+    {
+      "id": "113",
+      "name": "Жаночая гімназія",
+      "method": "cover-folder-title",
+      "html": "Жаночая гімназія d6700e63610f46ffbc523f4920643535.html",
+      "descriptionChars": 2025
+    },
+    {
+      "id": "115",
+      "name": "Дом Эбіна",
+      "method": "cover-folder-title",
+      "html": "Дом Эбіна d81eba38e90244f49d0ca54978b3f2b9.html",
+      "descriptionChars": 1048
+    },
+    {
+      "id": "117",
+      "name": "Магілёўскае Аляксандраўскае рэальнае вучылішча",
+      "method": "cover-folder-title",
+      "html": "Магілёўскае Аляксандраўскае рэальнае вучылішча 1e84c046bbf347c8be51526aec435f6b.html",
+      "descriptionChars": 4026
+    },
+    {
+      "id": "118",
+      "name": "Жылы, даходны дом",
+      "method": "unique-title",
+      "html": "Жылы, даходны дом 0ea7a9cf319b47b6959d95dfe9a72316.html",
+      "descriptionChars": 1414
+    },
+    {
+      "id": "119",
+      "name": "Фарны касцёл",
+      "method": "cover-folder-title",
+      "html": "Фарны касцёл 5900d999a01b48708dd2a69ba54a58b3.html",
+      "descriptionChars": 1001
+    },
+    {
+      "id": "121",
+      "name": "Барысаглебскі Свята-Крыжаўзвіжанскі сабор",
+      "method": "cover-folder-title",
+      "html": "Барысаглебскі Свята-Крыжаўзвіжанскі сабор 13eea72fa23144b2868810baab1c7b7a.html",
+      "descriptionChars": 1785
+    },
+    {
+      "id": "122",
+      "name": "Крыжаўзвіжанская царква",
+      "method": "cover-folder-title",
+      "html": "Крыжаўзвіжанская царква f69bf046c80b44389f0cc54c94091b49.html",
+      "descriptionChars": 2954
+    },
+    {
+      "id": "123",
+      "name": "Дом Ліфанда",
+      "method": "cover-folder-title",
+      "html": "Дом Ліфанда 6cb48aca88e04e6cb7d85fe756da6022.html",
+      "descriptionChars": 1557
+    },
+    {
+      "id": "125",
+      "name": "Царква Канстанціна і Алены",
+      "method": "cover-folder-title",
+      "html": "Царква Канстанціна і Алены 35431d75766d485897018e2eefdc7f92.html",
+      "descriptionChars": 1724
+    },
+    {
+      "id": "126",
+      "name": "Касцёл Дзевы Марыі кармелітаў / Ксацёл св. Станіслава",
+      "method": "cover-folder-title",
+      "html": "Касцёл Дзевы Марыі кармелітаў Ксацёл св Станіслава e68ea76876094daabb877a05fb4493cd.html",
+      "descriptionChars": 2278
+    },
+    {
+      "id": "128",
+      "name": "Каталіцкія / Польскія могілкі",
+      "method": "cover-folder-title",
+      "html": "Каталіцкія Польскія могілкі 55a82b7557a1407daab9e76d92359a03.html",
+      "descriptionChars": 853
+    },
+    {
+      "id": "127",
+      "name": "Артылерыйскія казармы",
+      "method": "cover-folder-title",
+      "html": "Артылерыйскія казармы 90d2dbd88fb849668c856d79eaabf1c3.html",
+      "descriptionChars": 1540
+    },
+    {
+      "id": "129",
+      "name": "Будынак цэхгаўза, гасцінага двара і важніцы / Гарадская управа",
+      "method": "unique-prefix",
+      "html": "Будынак цэхгаўза, гасцінага двара і важніцы Гарадс e5d8efa0e44d4e70b1315f0105054a72.html",
+      "descriptionChars": 3371
+    },
+    {
+      "id": "132",
+      "name": "Дваранскі і Сялянскі пазямельныя банкі",
+      "method": "cover-folder-title",
+      "html": "Дваранскі і Сялянскі пазямельныя банкі fb4038f5291f4487aac24cb9bae47f16.html",
+      "descriptionChars": 3287
+    },
+    {
+      "id": "134",
+      "name": "Магіла І.С. Лазарэнкі",
+      "method": "cover-folder-title",
+      "html": "Магіла І С Лазарэнкі 64b25e3fa6574475a3753ea146116120.html",
+      "descriptionChars": 2841
+    },
+    {
+      "id": "133",
+      "name": "Бюст Гусакоўскага",
+      "method": "cover-folder-title",
+      "html": "Бюст Гусакоўскага ef882404f6d44a69b045da2a43518bb4.html",
+      "descriptionChars": 2368
+    },
+    {
+      "id": "135",
+      "name": "Гарадскі тэатр",
+      "method": "cover-folder-title",
+      "html": "Гарадскі тэатр 3525ec79f4c9463f8e28666d1c109dc3.html",
+      "descriptionChars": 4723
+    },
+    {
+      "id": "136",
+      "name": "Дом Дваранскага сходу",
+      "method": "cover-folder-title",
+      "html": "Дом Дваранскага сходу d6ee8a105ed147d4a1a5125b46cd7f4c.html",
+      "descriptionChars": 4009
+    },
+    {
+      "id": "137",
+      "name": "Плошча Леніна",
+      "method": "cover-folder-title",
+      "html": "Плошча Леніна b9aa9a61640e4ef9a95968f47e896011.html",
+      "descriptionChars": 2144
+    },
+    {
+      "id": "139",
+      "name": "Будынак",
+      "method": "cover-folder-title",
+      "html": "Будынак 05e87689b9d848b7bcabb4b2d89acaad.html",
+      "descriptionChars": 352
+    },
+    {
+      "id": "140",
+      "name": "Чыгуначны вакзал",
+      "method": "cover-folder-title",
+      "html": "Чыгуначны вакзал 883bd4734ce14f5ea97f685bd0ac4ba6.html",
+      "descriptionChars": 2761
+    },
+    {
+      "id": "141",
+      "name": "Будынак земскага суда, урачэбнай управы і архіва",
+      "method": "unique-title",
+      "html": "Будынак земскага суда, урачэбнай управы і архіва c246142b6a6a4e24b80700e788300dbb.html",
+      "descriptionChars": 5489
+    },
+    {
+      "id": "142",
+      "name": "Магіла байцоў бронеатрада",
+      "method": "cover-folder-title",
+      "html": "Магіла байцоў бронеатрада f8e4eec4e9a846bf9163e2423e8e187d.html",
+      "descriptionChars": 549
+    },
+    {
+      "id": "143",
+      "name": "Загарадная рэзідэнцыя Станіслава Богуш-Сестранцэвіча (рэшткі)",
+      "method": "cover-folder-title",
+      "html": "Загарадная рэзідэнцыя Станіслава Богуш-Сестранцэві c67ac100a13641ed9e72f8558e7a8380.html",
+      "descriptionChars": 4521
+    },
+    {
+      "id": "144",
+      "name": "Буйніцкае поле",
+      "method": "cover-folder-title",
+      "html": "Буйніцкае поле d17ec6052a744fa296901e4011a04b7a.html",
+      "descriptionChars": 3473
+    },
+    {
+      "id": "145",
+      "name": "Рэшткі Буйніцкага манастыра",
+      "method": "cover-folder-title",
+      "html": "Рэшткі Буйніцкага манастыра 39c3a4f9cd194d83ad7ed8f41c49d852.html",
+      "descriptionChars": 1347
+    },
+    {
+      "id": "146",
+      "name": "Дом кушнерскага цэха",
+      "method": "cover-folder-title",
+      "html": "Дом кушнерскага цэха ed0886f540cf48c1895375d6d6871c68.html",
+      "descriptionChars": 1696
+    },
+    {
+      "id": "147",
+      "name": "Магілёўскае замчышча",
+      "method": "cover-folder-title",
+      "html": "Магілёўскае замчышча 9eaf729ecdf649acae9e71d212e5de87.html",
+      "descriptionChars": 2703
+    },
+    {
+      "id": "148",
+      "name": "Гарадзішча Змяёўка",
+      "method": "cover-folder-title",
+      "html": "Гарадзішча Змяёўка 997fe84f60f64ed4bbc1ae6a9fe331b5.html",
+      "descriptionChars": 588
+    },
+    {
+      "id": "92",
+      "name": "Дом Сімховіча",
+      "method": "cover-folder-title",
+      "html": "Дом Сімховіча 300f706fd0ee4646b13d5e05fbedb392.html",
+      "descriptionChars": 1045
+    },
+    {
+      "id": "151",
+      "name": "Касцёл св. Антонія і кляштар бернардзінцаў",
+      "method": "cover-folder-title",
+      "html": "Касцёл св Антонія і кляштар бернардзінцаў 2ffcd6f50091448d9740b7caf7a1318d.html",
+      "descriptionChars": 662
+    },
+    {
+      "id": "152",
+      "name": "Касцёл св. Ксаверыя і калегіум езуітаў",
+      "method": "cover-folder-title",
+      "html": "Касцёл св Ксаверыя і калегіум езуітаў ff4b0084098642a29ceb97588f623952.html",
+      "descriptionChars": 1306
+    },
+    {
+      "id": "153",
+      "name": "Дом губернскага праўлення",
+      "method": "cover-folder-title",
+      "html": "Дом губернскага праўлення e21242c1436f4498911e26c7da5e0578.html",
+      "descriptionChars": 1111
+    },
+    {
+      "id": "154",
+      "name": "Дом губернатара",
+      "method": "cover-folder-title",
+      "html": "Дом губернатара 24477acb14a547d69c1eee48026d7f28.html",
+      "descriptionChars": 1010
+    },
+    {
+      "id": "155",
+      "name": "Дом віцэ-губернатара і двух саветнікаў",
+      "method": "cover-folder-title",
+      "html": "Дом віцэ-губернатара і двух саветнікаў b9010694dfd046b9bf21df0da75e1ac9.html",
+      "descriptionChars": 1007
+    },
+    {
+      "id": "156",
+      "name": "Алейная брама",
+      "method": "cover-folder-title",
+      "html": "Алейная брама b06fc7a028e442848322183931292426.html",
+      "descriptionChars": 944
+    },
+    {
+      "id": "157",
+      "name": "Каралеўская брама",
+      "method": "cover-folder-title",
+      "html": "Каралеўская брама 9a62962b19914dc6a8689dc470f22019.html",
+      "descriptionChars": 594
+    },
+    {
+      "id": "158",
+      "name": "Рэшткі экзэрцыргаўза",
+      "method": "cover-folder-title",
+      "html": "Рэшткі экзэрцыргаўза c45f43d1c5404abd974f6793a5cd2575.html",
+      "descriptionChars": 1151
+    },
+    {
+      "id": "159",
+      "name": "Комплекс духоўнай семінарыі",
+      "method": "cover-folder-title",
+      "html": "Комплекс духоўнай семінарыі da75c436fa774501af7e655f052c23b7.html",
+      "descriptionChars": 590
+    },
+    {
+      "id": "160",
+      "name": "Царква Пакроваў Багародзіцы з фрэскамі ў інтэр’еры царквы",
+      "method": "cover-folder-title",
+      "html": "Царква Пакроваў Багародзіцы з фрэскамі ў інтэр’еры b7066f621a044848a8b8218941db2d0e.html",
+      "descriptionChars": 452
+    },
+    {
+      "id": "161",
+      "name": "Брацкая магіла байцоў зводнага батальёна міліцыі з помнікам у іх гонар",
+      "method": "cover-folder-title",
+      "html": "Брацкая магіла байцоў зводнага батальёна міліцыі з ab3ebaeff0274dbf909e11aaea320928.html",
+      "descriptionChars": 256
+    },
+    {
+      "id": "162",
+      "name": "Успенская царква",
+      "method": "cover-folder-title",
+      "html": "Успенская царква 0ad09c9ec1ec4930b5fad5afdc5bf246.html",
+      "descriptionChars": 714
+    },
+    {
+      "id": "163",
+      "name": "Сядзіба Жукоўскіх",
+      "method": "cover-folder-title",
+      "html": "Сядзіба Жукоўскіх 5f98a002ca6d40fcaaa1f245a9b5d303.html",
+      "descriptionChars": 1014
+    },
+    {
+      "id": "165",
+      "name": "Касцёл дамініканцаў",
+      "method": "cover-folder-title",
+      "html": "Касцёл дамініканцаў 2f852fb98fb84ec1a30a71065eb7fe59.html",
+      "descriptionChars": 1285
+    },
+    {
+      "id": "164",
+      "name": "Брацкая магіла",
+      "method": "cover-folder-title",
+      "html": "Брацкая магіла c5b9b5af90e3485b9c5ff589349d5f4b.html",
+      "descriptionChars": 331
+    },
+    {
+      "id": "168",
+      "name": "Мемарыяльная капліца ў памяць аб Айчыннай вайне 1812 года",
+      "method": "cover-folder-title",
+      "html": "Мемарыяльная капліца ў памяць аб Айчыннай вайне 18 1252e5beef254e69a7d8f4545aed7798.html",
+      "descriptionChars": 331
+    },
+    {
+      "id": "169",
+      "name": "Капліца",
+      "method": "cover-folder-title",
+      "html": "Капліца d7f173d0eba64693b0e10bf7e3344d0e.html",
+      "descriptionChars": 61
+    },
+    {
+      "id": "173",
+      "name": "Будынак паштовай станцыі",
+      "method": "cover-folder-title",
+      "html": "Будынак паштовай станцыі 3d70671349d540d092ff75d8f24eebaa.html",
+      "descriptionChars": 792
+    },
+    {
+      "id": "175",
+      "name": "Руіны царквы",
+      "method": "cover-folder-title",
+      "html": "Руіны царквы 4067ff3b6a0c471f9a23e1e29903b85c.html",
+      "descriptionChars": 558
+    },
+    {
+      "id": "176",
+      "name": "Паштовая станцыя",
+      "method": "cover-folder-title",
+      "html": "Паштовая станцыя 876447bcf7e043ccb6644404bd23c859.html",
+      "descriptionChars": 0
+    },
+    {
+      "id": "178",
+      "name": "Курганны могільнік",
+      "method": "address-score",
+      "html": "Курганны могільнік 36dae092f99045f1b2d157e92df54a08.html",
+      "descriptionChars": 222
+    },
+    {
+      "id": "179",
+      "name": "Курганны могільнік",
+      "method": "unique-title",
+      "html": "Курганны могільнік fa452ba50f8241db94912dab112a0046.html",
+      "descriptionChars": 157
+    },
+    {
+      "id": "180",
+      "name": "Гарадзішча",
+      "method": "unique-title",
+      "html": "Гарадзішча c471642461054bc5976380ea8fd7cd13.html",
+      "descriptionChars": 228
+    },
+    {
+      "id": "181",
+      "name": "Пліта прадстаўніка рода Валовічаў",
+      "method": "unique-title",
+      "html": "Пліта прадстаўніка рода Валовічаў 53ad92352cba49679449bb06bf0a702e.html",
+      "descriptionChars": 818
+    },
+    {
+      "id": "182",
+      "name": "Рэшткі Троіцкай царквы",
+      "method": "unique-title",
+      "html": "Рэшткі Троіцкай царквы d0c587daf9ba45c8a9abfbb53bcad810.html",
+      "descriptionChars": 366
+    }
+  ]
+}
