@@ -1,8 +1,25 @@
 import L from 'leaflet'
+import { setWorkerUrl, type Map as GLMap } from 'maplibre-gl'
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
+import { maplibreGL } from '@maplibre/maplibre-gl-leaflet'
 import type { Building, PathPoint, Zone } from './types'
 import { asset } from './asset'
 
+// MapLibre v6 loads its worker from a sibling file; point it at the Vite-emitted asset.
+setWorkerUrl(maplibreWorkerUrl)
+
 const MAHILIOU: L.LatLngExpression = [53.9006, 30.3314]
+const BASEMAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
+
+/** Positron labels default to "latin\nnonlatin"; show Belarusian names, falling back to local. */
+function preferBelarusianLabels(glMap: GLMap) {
+  for (const layer of glMap.getStyle().layers) {
+    if (layer.type !== 'symbol') continue
+    const field = glMap.getLayoutProperty(layer.id, 'text-field')
+    if (!field || !JSON.stringify(field).includes('name')) continue
+    glMap.setLayoutProperty(layer.id, 'text-field', ['coalesce', ['get', 'name:be'], ['get', 'name']])
+  }
+}
 
 type MarkerState = L.Marker & { __pin: string; __mapIcon?: string }
 
@@ -64,12 +81,10 @@ export function createMap(container: HTMLElement): MapController {
 
   L.control.zoom({ position: 'bottomright' }).addTo(map)
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 20,
-  }).addTo(map)
+  // OpenFreeMap Positron: free, keyless vector basemap (CARTO light_all now requires an API key).
+  const basemap = maplibreGL({ style: BASEMAP_STYLE }).addTo(map)
+  const glMap = basemap.getMaplibreMap()
+  glMap.on('style.load', () => preferBelarusianLabels(glMap))
 
   const buildingsLayer = L.layerGroup().addTo(map)
   const zonesLayer = L.layerGroup().addTo(map)
